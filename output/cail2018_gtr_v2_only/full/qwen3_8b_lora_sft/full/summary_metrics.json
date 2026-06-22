@@ -1,0 +1,32 @@
+{
+  "rows": [
+    {
+      "n": 276,
+      "exact_match": 0.7391304347826086,
+      "micro_f1": 0.7919254658385093,
+      "macro_f1": 0.3798632680262382,
+      "precision": 0.7919254658385093,
+      "recall": 0.7919254658385093,
+      "avg_pred_labels": 1.1666666666666667,
+      "invalid_pred_labels": 0,
+      "condition": "raw_pool_gtr_rerank",
+      "k": 5,
+      "parse_ok_rate": 0.9927536231884058,
+      "model": "Qwen/Qwen3-8B"
+    },
+    {
+      "n": 276,
+      "exact_match": 0.75,
+      "micro_f1": 0.7919876733436055,
+      "macro_f1": 0.3901935907720725,
+      "precision": 0.7859327217125383,
+      "recall": 0.7981366459627329,
+      "avg_pred_labels": 1.184782608695652,
+      "invalid_pred_labels": 0,
+      "condition": "raw_pool_gtr_rerank_score_prompt",
+      "k": 5,
+      "parse_ok_rate": 0.9927536231884058,
+      "model": "Qwen/Qwen3-8B"
+    }
+  ]
+}

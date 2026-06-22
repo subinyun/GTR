@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "prompts": "output/cail2018_gtr_v2_only/full/llm_prompts/gpt/prompts_276.jsonl",
+    "results": "output/cail2018_gtr_v2_only/full/gpt54_gtr_v2_rerank_276/results_gpt54_rerank_276.jsonl",
+    "train_path": "final_all_data/cail2018_statute_classification/train.jsonl",
+    "n_result_rows": 552
+  },
+  "rows": [
+    {
+      "n": 276,
+      "exact_match": 0.7427536231884058,
+      "micro_f1": 0.7987012987012987,
+      "macro_f1": 0.3781722478176506,
+      "precision": 0.7834394904458599,
+      "recall": 0.8145695364238411,
+      "avg_pred_labels": 1.1376811594202898,
+      "invalid_pred_labels": 0,
+      "condition": "raw_pool_gtr_rerank",
+      "k": 5,
+      "parse_ok_rate": 1.0,
+      "model": "gpt-5.4"
+    },
+    {
+      "n": 276,
+      "exact_match": 0.7608695652173914,
+      "micro_f1": 0.803921568627451,
+      "macro_f1": 0.3773177668402187,
+      "precision": 0.7935483870967742,
+      "recall": 0.8145695364238411,
+      "avg_pred_labels": 1.1231884057971016,
+      "invalid_pred_labels": 0,
+      "condition": "raw_pool_gtr_rerank_score_prompt",
+      "k": 5,
+      "parse_ok_rate": 1.0,
+      "model": "gpt-5.4"
+    }
+  ]
+}

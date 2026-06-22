@@ -1,0 +1,97 @@
+{
+  "meta": {
+    "purpose": "Expected metrics for PI-facing GTR reproducibility checks.",
+    "dataset": "CAIL2018 statute classification",
+    "sample_seed": 42,
+    "sample_strategy": "random",
+    "sample_size": 276,
+    "notes": [
+      "Evaluator-only reruns from saved result files should match exactly.",
+      "End-to-end retraining and hosted LLM reruns may differ because of GPU/package/model-server changes."
+    ]
+  },
+  "gtr_checkpoint": {
+    "source": "output/cail2018_gtr_v2_only/full/hybrid_gtr_v2_report.json",
+    "test_metrics": {
+      "exact_match": 0.6118493909191584,
+      "micro_f1": 0.7492519614467135,
+      "macro_f1": 0.6055095945022366
+    }
+  },
+  "gpt54_rerank_276": {
+    "source": "output/cail2018_gtr_v2_only/full/gpt54_gtr_v2_rerank_276/metrics_gpt54_rerank_276.json",
+    "rows": [
+      {
+        "condition": "raw_pool_gtr_rerank",
+        "model": "gpt-5.4",
+        "k": 5,
+        "n": 276,
+        "exact_match": 0.7427536231884058,
+        "micro_f1": 0.7987012987012987,
+        "macro_f1": 0.3781722478176506,
+        "parse_ok_rate": 1.0
+      },
+      {
+        "condition": "raw_pool_gtr_rerank_score_prompt",
+        "model": "gpt-5.4",
+        "k": 5,
+        "n": 276,
+        "exact_match": 0.7608695652173914,
+        "micro_f1": 0.803921568627451,
+        "macro_f1": 0.3773177668402187,
+        "parse_ok_rate": 1.0
+      }
+    ]
+  },
+  "qwen3_8b_lora_full": {
+    "source": "output/cail2018_gtr_v2_only/full/qwen3_8b_lora_sft/full/summary_metrics.json",
+    "rows": [
+      {
+        "condition": "raw_pool_gtr_rerank",
+        "model": "Qwen/Qwen3-8B",
+        "k": 5,
+        "n": 276,
+        "exact_match": 0.7391304347826086,
+        "micro_f1": 0.7919254658385093,
+        "macro_f1": 0.3798632680262382,
+        "parse_ok_rate": 0.9927536231884058
+      },
+      {
+        "condition": "raw_pool_gtr_rerank_score_prompt",
+        "model": "Qwen/Qwen3-8B",
+        "k": 5,
+        "n": 276,
+        "exact_match": 0.75,
+        "micro_f1": 0.7919876733436055,
+        "macro_f1": 0.3901935907720725,
+        "parse_ok_rate": 0.9927536231884058
+      }
+    ]
+  },
+  "qwen3_8b_lora_smoke": {
+    "source": "output/cail2018_gtr_v2_only/full/qwen3_8b_lora_sft/smoke/summary_metrics.json",
+    "rows": [
+      {
+        "condition": "raw_pool_gtr_rerank",
+        "model": "Qwen/Qwen3-8B",
+        "k": 5,
+        "n": 276,
+        "exact_match": 0.7355072463768116,
+        "micro_f1": 0.7744,
+        "macro_f1": 0.3702399430334263,
+        "parse_ok_rate": 0.9927536231884058
+      },
+      {
+        "condition": "raw_pool_gtr_rerank_score_prompt",
+        "model": "Qwen/Qwen3-8B",
+        "k": 5,
+        "n": 276,
+        "exact_match": 0.7355072463768116,
+        "micro_f1": 0.7898089171974523,
+        "macro_f1": 0.3784866614994007,
+        "parse_ok_rate": 0.9927536231884058
+      }
+    ]
+  }
+}
+

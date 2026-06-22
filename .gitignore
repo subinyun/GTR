@@ -1,0 +1,25 @@
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Local environments
+.venv/
+venv/
+env/
+.env
+.env.*
+
+# Large local data/cache/checkpoint outputs that should not be committed.
+final_all_data/*
+!final_all_data/cail2018_statute_classification/
+!final_all_data/cail2018_statute_classification/train.jsonl
+output/**/cache/
+output/**/*.npz
+output/**/*.npy
+output/**/*.safetensors
+output/**/*.bin
+output/**/*.zip
+
+# Keep the small released checkpoint and selected result artifacts.
+!output/cail2018_gtr_v2_only/full/hybrid_gtr_v2_best.pt
+

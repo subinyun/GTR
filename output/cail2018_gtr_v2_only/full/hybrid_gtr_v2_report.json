@@ -1,0 +1,1918 @@
+{
+  "meta": {
+    "pipeline": "cail2018_hybrid_gtr_v2_only",
+    "dataset": "cail2018_statute_classification",
+    "legal_system": "chinese_criminal_law",
+    "model_name": "BAAI/bge-m3",
+    "encoder": "BAAI/bge-m3",
+    "n_train": 154592,
+    "n_valid": 17131,
+    "n_test": 32508,
+    "n_statutes": 183,
+    "n_axes": 20,
+    "axis_dim": 20,
+    "num_statutes": 183,
+    "sample_strategy": "random",
+    "best_epoch": 26,
+    "checkpoint": "output/cail2018_gtr_v2_only/full/hybrid_gtr_v2_best.pt",
+    "embedding_cache": "output/cail2018_gtr_v2_only/full/cache/bge_m3_cail_embeddings_random_trfull_vafull_tefull_seed42.npz"
+  },
+  "valid_metrics": {
+    "micro_f1": 0.7742731549317499,
+    "macro_f1": 0.6367680515076418,
+    "exact_match": 0.643336641176814,
+    "precision_micro": 0.7820938928126299,
+    "recall_micro": 0.7666072792059048,
+    "gold_label_cardinality": 1.1467515230178833,
+    "pred_label_cardinality": 1.1240441305236122
+  },
+  "test_metrics": {
+    "micro_f1": 0.7492519614467135,
+    "macro_f1": 0.6055095945022366,
+    "exact_match": 0.6118493909191584,
+    "precision_micro": 0.7516876936697654,
+    "recall_micro": 0.7468319634954231,
+    "gold_label_cardinality": 1.1190783977508545,
+    "pred_label_cardinality": 1.1118493909191585
+  },
+  "component_metrics": {
+    "raw_head_on_z": {
+      "threshold": 0.05686130523681987,
+      "valid_metrics": {
+        "micro_f1": 0.4594085858279191,
+        "macro_f1": 0.36803172545193624,
+        "exact_match": 0.17360340902457533,
+        "precision_micro": 0.3016746411483254,
+        "recall_micro": 0.9628404174090099,
+        "gold_label_cardinality": 1.1467515230178833,
+        "pred_label_cardinality": 3.6600315218025803
+      },
+      "test_metrics": {
+        "micro_f1": 0.4399320176551164,
+        "macro_f1": 0.35624799164168136,
+        "exact_match": 0.16562077027193306,
+        "precision_micro": 0.28593096967248927,
+        "recall_micro": 0.9534621622364551,
+        "gold_label_cardinality": 1.1190783977508545,
+        "pred_label_cardinality": 3.731666051433493
+      }
+    },
+    "raw_plus_field": {
+      "threshold": 0.0,
+      "valid_metrics": {
+        "micro_f1": 0.7636648632249583,
+        "macro_f1": 0.6240664925361602,
+        "exact_match": 0.6220886112894752,
+        "precision_micro": 0.7586016374503993,
+        "recall_micro": 0.7687961313311276,
+        "gold_label_cardinality": 1.1467515230178833,
+        "pred_label_cardinality": 1.162162162162162
+      },
+      "test_metrics": {
+        "micro_f1": 0.7415754686314877,
+        "macro_f1": 0.6005156579557832,
+        "exact_match": 0.5943460071367048,
+        "precision_micro": 0.7309427816196299,
+        "recall_micro": 0.7525220594298909,
+        "gold_label_cardinality": 1.1190783977508545,
+        "pred_label_cardinality": 1.152116402116402
+      }
+    },
+    "raw_head_on_z_prime": {
+      "threshold": 0.0,
+      "valid_metrics": {
+        "micro_f1": 0.4734731840977363,
+        "macro_f1": 0.3739296617446999,
+        "exact_match": 0.23582978226606735,
+        "precision_micro": 0.3143567661392616,
+        "recall_micro": 0.9587681343853398,
+        "gold_label_cardinality": 1.1467515230178833,
+        "pred_label_cardinality": 3.497519117389528
+      },
+      "test_metrics": {
+        "micro_f1": 0.4505609983747691,
+        "macro_f1": 0.35917735357670294,
+        "exact_match": 0.22474467823305033,
+        "precision_micro": 0.29542925618419924,
+        "recall_micro": 0.948761648203634,
+        "gold_label_cardinality": 1.1190783977508545,
+        "pred_label_cardinality": 3.5938845822566754
+      }
+    },
+    "full_hybrid": {
+      "threshold": 0.0,
+      "valid_metrics": {
+        "micro_f1": 0.7742731549317499,
+        "macro_f1": 0.6367680515076418,
+        "exact_match": 0.643336641176814,
+        "precision_micro": 0.7820938928126299,
+        "recall_micro": 0.7666072792059048,
+        "gold_label_cardinality": 1.1467515230178833,
+        "pred_label_cardinality": 1.1240441305236122
+      },
+      "test_metrics": {
+        "micro_f1": 0.7492519614467135,
+        "macro_f1": 0.6055095945022366,
+        "exact_match": 0.6118493909191584,
+        "precision_micro": 0.7516876936697654,
+        "recall_micro": 0.7468319634954231,
+        "gold_label_cardinality": 1.1190783977508545,
+        "pred_label_cardinality": 1.1118493909191585
+      }
+    }
+  },
+  "axis_metrics": {
+    "mean_auc": 0.9691377155853733,
+    "per_axis": [
+      {
+        "axis_id": "personal_violence_injury",
+        "auc": 0.9926178293139486,
+        "ap": 0.960952144345212,
+        "n_labeled": 32508,
+        "positive": 4427,
+        "negative": 28081
+      },
+      {
+        "axis_id": "violence_coercion_robbery",
+        "auc": 0.9815738761788999,
+        "ap": 0.8684455925207911,
+        "n_labeled": 32508,
+        "positive": 2094,
+        "negative": 30414
+      },
+      {
+        "axis_id": "property_secret_or_illegal_taking",
+        "auc": 0.9733172645938998,
+        "ap": 0.8895378618356385,
+        "n_labeled": 32508,
+        "positive": 5285,
+        "negative": 27223
+      },
+      {
+        "axis_id": "deception_fraud",
+        "auc": 0.979873840206503,
+        "ap": 0.9283897321190696,
+        "n_labeled": 32508,
+        "positive": 4541,
+        "negative": 27967
+      },
+      {
+        "axis_id": "public_safety_danger",
+        "auc": 0.9879109749577822,
+        "ap": 0.909301395439582,
+        "n_labeled": 32508,
+        "positive": 2016,
+        "negative": 30492
+      },
+      {
+        "axis_id": "traffic_driving",
+        "auc": 0.994334376015761,
+        "ap": 0.9496276703116442,
+        "n_labeled": 32508,
+        "positive": 1247,
+        "negative": 31261
+      },
+      {
+        "axis_id": "drugs",
+        "auc": 0.9674012975616719,
+        "ap": 0.9081662720874661,
+        "n_labeled": 32508,
+        "positive": 4516,
+        "negative": 27992
+      },
+      {
+        "axis_id": "official_corruption_bribery",
+        "auc": 0.9915199178621549,
+        "ap": 0.934250699631272,
+        "n_labeled": 32508,
+        "positive": 3111,
+        "negative": 29397
+      },
+      {
+        "axis_id": "documents_seals_identity",
+        "auc": 0.9200540309209271,
+        "ap": 0.7559153995869746,
+        "n_labeled": 32508,
+        "positive": 4022,
+        "negative": 28486
+      },
+      {
+        "axis_id": "tax_invoice_economic_order",
+        "auc": 0.9309247835201031,
+        "ap": 0.7818675678843067,
+        "n_labeled": 32508,
+        "positive": 5114,
+        "negative": 27394
+      },
+      {
+        "axis_id": "food_drug_product_safety",
+        "auc": 0.9499989581144794,
+        "ap": 0.8481381227411905,
+        "n_labeled": 32508,
+        "positive": 4772,
+        "negative": 27736
+      },
+      {
+        "axis_id": "environment_resources_forestry",
+        "auc": 0.9958703233705289,
+        "ap": 0.9814815192722169,
+        "n_labeled": 32508,
+        "positive": 2347,
+        "negative": 30161
+      },
+      {
+        "axis_id": "guns_weapons_explosives",
+        "auc": 0.98883696214564,
+        "ap": 0.9399165751598754,
+        "n_labeled": 32508,
+        "positive": 1010,
+        "negative": 31498
+      },
+      {
+        "axis_id": "sexual_offense",
+        "auc": 0.9899694066406726,
+        "ap": 0.9236207083608646,
+        "n_labeled": 32508,
+        "positive": 1025,
+        "negative": 31483
+      },
+      {
+        "axis_id": "prostitution_exploitation",
+        "auc": 0.9934518512355034,
+        "ap": 0.9433954701656134,
+        "n_labeled": 32508,
+        "positive": 1091,
+        "negative": 31417
+      },
+      {
+        "axis_id": "public_order_gambling_disruption",
+        "auc": 0.9786525904799734,
+        "ap": 0.8645468105607197,
+        "n_labeled": 32508,
+        "positive": 2309,
+        "negative": 30199
+      },
+      {
+        "axis_id": "obstruction_official_judicial",
+        "auc": 0.9939069674554598,
+        "ap": 0.9399943836897102,
+        "n_labeled": 32508,
+        "positive": 726,
+        "negative": 31782
+      },
+      {
+        "axis_id": "conceal_harbor_criminal_proceeds",
+        "auc": 0.899309214706389,
+        "ap": 0.6584642873503779,
+        "n_labeled": 32508,
+        "positive": 3962,
+        "negative": 28546
+      },
+      {
+        "axis_id": "labor_employment_obligation",
+        "auc": 0.9489426344251455,
+        "ap": 0.6874405812187316,
+        "n_labeled": 32508,
+        "positive": 1892,
+        "negative": 30616
+      },
+      {
+        "axis_id": "joint_group_crime",
+        "auc": 0.9242872120020241,
+        "ap": 0.7464461510807026,
+        "n_labeled": 32508,
+        "positive": 5099,
+        "negative": 27409
+      }
+    ]
+  },
+  "retrieval": {
+    "k": 10,
+    "macro_precision_at_k": 0.7344262277493712,
+    "macro_recall_at_k": 0.20210852434532972,
+    "macro_ndcg_at_k": 0.784590413364181,
+    "per_statute": [
+      {
+        "statute": "中华人民共和国刑法 第114条",
+        "positives": 560,
+        "precision_at_k": 1.0,
+        "recall_at_k": 0.01785714365541935,
+        "ndcg_at_k": 1.0
+      },
+      {
+        "statute": "中华人民共和国刑法 第115条",
+        "positives": 426,
+        "precision_at_k": 1.0,
+        "recall_at_k": 0.023474179208278656,
+        "ndcg_at_k": 1.0
+      },
+      {
+        "statute": "中华人民共和国刑法 第116条",
+        "positives": 4,
+        "precision_at_k": 0.10000000149011612,
+        "recall_at_k": 0.25,
+        "ndcg_at_k": 0.16812753627111746
+      },
+      {
+        "statute": "中华人民共和国刑法 第117条",
+        "positives": 10,
+        "precision_at_k": 0.4000000059604645,
+        "recall_at_k": 0.4000000059604645,
+        "ndcg_at_k": 0.3971921948634017
+      },
+      {
+        "statute": "中华人民共和国刑法 第118条",
+        "positives": 140,
+        "precision_at_k": 0.8999999761581421,
+        "recall_at_k": 0.06428571790456772,
+        "ndcg_at_k": 0.88995411685096
+      },
+      {
+        "statute": "中华人民共和国刑法 第119条",
+        "positives": 10,
+        "precision_at_k": 0.0,
+        "recall_at_k": 0.0,
+        "ndcg_at_k": 0.0
+      },
+      {
+        "statute": "中华人民共和国刑法 第122条",
+        "positives": 5,
+        "precision_at_k": 0.30000001192092896,
+        "recall_at_k": 0.6000000238418579,
+        "ndcg_at_k": 0.36491893837355766
+      },
+      {
+        "statute": "中华人民共和国刑法 第124条",
+        "positives": 117,
+        "precision_at_k": 1.0,
+        "recall_at_k": 0.08547008782625198,
+        "ndcg_at_k": 1.0
+      },
+      {
+        "statute": "中华人民共和国刑法 第125条",
+        "positives": 387,
+        "precision_at_k": 1.0,
+        "recall_at_k": 0.0258397925645113,
+        "ndcg_at_k": 1.0
+      },
+      {
+        "statute": "中华人民共和国刑法 第127条",
+        "positives": 12,
+        "precision_at_k": 0.800000011920929,
+        "recall_at_k": 0.6666666865348816,
+        "ndcg_at_k": 0.7917063341896683
+      },
+      {
+        "statute": "中华人民共和国刑法 第128条",
+        "positives": 415,
+        "precision_at_k": 1.0,
+        "recall_at_k": 0.024096384644508362,
+        "ndcg_at_k": 1.0
+      },
+      {
+        "statute": "中华人民共和国刑法 第130条",
+        "positives": 25,
+        "precision_at_k": 0.10000000149011612,
+        "recall_at_k": 0.03999999910593033,
+        "ndcg_at_k": 0.06625422345438904
+      },
+      {
+        "statute": "中华人民共和国刑法 第132条",
+        "positives": 18,
+        "precision_at_k": 0.5,
+        "recall_at_k": 0.2777777910232544,
+        "ndcg_at_k": 0.6083169141195839
+      },
+      {
+        "statute": "中华人民共和国刑法 第133条",
+        "positives": 912,
+        "precision_at_k": 1.0,
+        "recall_at_k": 0.010964912362396717,
+        "ndcg_at_k": 1.0
+      },
+      {
+        "statute": "中华人民共和国刑法 第134条",
+        "positives": 402,
+        "precision_at_k": 1.0,
+        "recall_at_k": 0.024875622242689133,
+        "ndcg_at_k": 1.0
+      },
+      {
+        "statute": "中华人民共和国刑法 第135条",
+        "positives": 63,
+        "precision_at_k": 0.4000000059604645,
+        "recall_at_k": 0.0634920671582222,
+        "ndcg_at_k": 0.5473983622993503
+      },
+      {
+        "statute": "中华人民共和国刑法 第136条",
+        "positives": 9,
+        "precision_at_k": 0.30000001192092896,
+        "recall_at_k": 0.3333333432674408,
+        "ndcg_at_k": 0.443496354740707
+      },
+      {
+        "statute": "中华人民共和国刑法 第140条",
+        "positives": 193,
+        "precision_at_k": 1.0,
+        "recall_at_k": 0.05181347206234932,
+        "ndcg_at_k": 1.0
+      },
+      {
+        "statute": "中华人民共和国刑法 第141条",
+        "positives": 363,
+        "precision_at_k": 1.0,
+        "recall_at_k": 0.027548208832740784,
+        "ndcg_at_k": 1.0
+      },
+      {
+        "statute": "中华人民共和国刑法 第143条",
+        "positives": 357,
+        "precision_at_k": 1.0,
+        "recall_at_k": 0.028011204674839973,
+        "ndcg_at_k": 1.0
+      },
+      {
+        "statute": "中华人民共和国刑法 第144条",
+        "positives": 359,
+        "precision_at_k": 1.0,
+        "recall_at_k": 0.027855154126882553,
+        "ndcg_at_k": 1.0
+      },
+      {
+        "statute": "中华人民共和国刑法 第147条",
+        "positives": 8,
+        "precision_at_k": 0.5,
+        "recall_at_k": 0.625,
+        "ndcg_at_k": 0.699114405707918
+      },
+      {
+        "statute": "中华人民共和国刑法 第149条",
+        "positives": 4,
+        "precision_at_k": 0.20000000298023224,
+        "recall_at_k": 0.5,
+        "ndcg_at_k": 0.5585075862632192
+      },
+      {
+        "statute": "中华人民共和国刑法 第150条",
+        "positives": 56,
+        "precision_at_k": 0.8999999761581421,
+        "recall_at_k": 0.1607142835855484,
+        "ndcg_at_k": 0.8611375561264456
+      },
+      {
+        "statute": "中华人民共和国刑法 第151条",
+        "positives": 47,
+        "precision_at_k": 1.0,
+        "recall_at_k": 0.21276596188545227,
+        "ndcg_at_k": 1.0
+      },
+      {
+        "statute": "中华人民共和国刑法 第152条",
+        "positives": 8,
+        "precision_at_k": 0.30000001192092896,
+        "recall_at_k": 0.375,
+        "ndcg_at_k": 0.4968460141484392
+      },
+      {
+        "statute": "中华人民共和国刑法 第153条",
+        "positives": 143,
+        "precision_at_k": 1.0,
+        "recall_at_k": 0.0699300691485405,
+        "ndcg_at_k": 1.0
+      },
+      {
+        "statute": "中华人民共和国刑法 第155条",
+        "positives": 4,
+        "precision_at_k": 0.10000000149011612,
+        "recall_at_k": 0.25,
+        "ndcg_at_k": 0.123151194370365
+      },
+      {
+        "statute": "中华人民共和国刑法 第156条",
+        "positives": 16,
+        "precision_at_k": 0.8999999761581421,
+        "recall_at_k": 0.5625,
+        "ndcg_at_k": 0.9337457765456111
+      },
+      {
+        "statute": "中华人民共和国刑法 第158条",
+        "positives": 26,
+        "precision_at_k": 0.8999999761581421,
+        "recall_at_k": 0.3461538553237915,
+        "ndcg_at_k": 0.9363792118010483
+      },
+      {
+        "statute": "中华人民共和国刑法 第159条",
+        "positives": 6,
+        "precision_at_k": 0.4000000059604645,
+        "recall_at_k": 0.6666666865348816,
+        "ndcg_at_k": 0.7751482523375255
+      },
+      {
+        "statute": "中华人民共和国刑法 第161条",
+        "positives": 5,
+        "precision_at_k": 0.30000001192092896,
+        "recall_at_k": 0.6000000238418579,
+        "ndcg_at_k": 0.7227265726449519
+      },
+      {
+        "statute": "中华人民共和国刑法 第162条",
+        "positives": 20,
+        "precision_at_k": 1.0,
+        "recall_at_k": 0.5,
+        "ndcg_at_k": 1.0
+      },
+      {
+        "statute": "中华人民共和国刑法 第163条",
+        "positives": 368,
+        "precision_at_k": 0.8999999761581421,
+        "recall_at_k": 0.02445652149617672,
+        "ndcg_at_k": 0.9052116356304495
+      },
+      {
+        "statute": "中华人民共和国刑法 第164条",
+        "positives": 55,
+        "precision_at_k": 0.4000000059604645,
+        "recall_at_k": 0.072727270424366,
+        "ndcg_at_k": 0.5541432109622959
+      },
+      {
+        "statute": "中华人民共和国刑法 第168条",
+        "positives": 14,
+        "precision_at_k": 0.6000000238418579,
+        "recall_at_k": 0.4285714328289032,
+        "ndcg_at_k": 0.67175898907361
+      },
+      {
+        "statute": "中华人民共和国刑法 第170条",
+        "positives": 5,
+        "precision_at_k": 0.30000001192092896,
+        "recall_at_k": 0.6000000238418579,
+        "ndcg_at_k": 0.42159648284864404
+      },
+      {
+        "statute": "中华人民共和国刑法 第171条",
+        "positives": 37,
+        "precision_at_k": 0.800000011920929,
+        "recall_at_k": 0.21621622145175934,
+        "ndcg_at_k": 0.7510916729774055
+      },
+      {
+        "statute": "中华人民共和国刑法 第172条",
+        "positives": 68,
+        "precision_at_k": 0.8999999761581421,
+        "recall_at_k": 0.13235294818878174,
+        "ndcg_at_k": 0.88995411685096
+      },
+      {
+        "statute": "中华人民共和国刑法 第175条",
+        "positives": 364,
+        "precision_at_k": 1.0,
+        "recall_at_k": 0.02747252769768238,
+        "ndcg_at_k": 1.0
+      },
+      {
+        "statute": "中华人民共和国刑法 第176条",
+        "positives": 370,
+        "precision_at_k": 1.0,
+        "recall_at_k": 0.027027027681469917,
+        "ndcg_at_k": 1.0
+      },
+      {
+        "statute": "中华人民共和国刑法 第177条",
+        "positives": 212,
+        "precision_at_k": 0.8999999761581421,
+        "recall_at_k": 0.04245283082127571,
+        "ndcg_at_k": 0.9216017310213247
+      },
+      {
+        "statute": "中华人民共和国刑法 第184条",
+        "positives": 6,
+        "precision_at_k": 0.30000001192092896,
+        "recall_at_k": 0.5,
+        "ndcg_at_k": 0.38724877043467315
+      },
+      {
+        "statute": "中华人民共和国刑法 第185条",
+        "positives": 12,
+        "precision_at_k": 0.10000000149011612,
+        "recall_at_k": 0.0833333358168602,
+        "ndcg_at_k": 0.06362078819895173
+      },
+      {
+        "statute": "中华人民共和国刑法 第186条",
+        "positives": 44,
+        "precision_at_k": 1.0,
+        "recall_at_k": 0.22727273404598236,
+        "ndcg_at_k": 1.0
+      },
+      {
+        "statute": "中华人民共和国刑法 第191条",
+        "positives": 4,
+        "precision_at_k": 0.0,
+        "recall_at_k": 0.0,
+        "ndcg_at_k": 0.0
+      },
+      {
+        "statute": "中华人民共和国刑法 第192条",
+        "positives": 122,
+        "precision_at_k": 0.8999999761581421,
+        "recall_at_k": 0.07377049326896667,
+        "ndcg_at_k": 0.9337457765456111
+      },
+      {
+        "statute": "中华人民共和国刑法 第193条",
+        "positives": 41,
+        "precision_at_k": 0.20000000298023224,
+        "recall_at_k": 0.04878048598766327,
+        "ndcg_at_k": 0.20483424751859092
+      },
+      {
+        "statute": "中华人民共和国刑法 第194条",
+        "positives": 43,
+        "precision_at_k": 0.8999999761581421,
+        "recall_at_k": 0.20930232107639313,
+        "ndcg_at_k": 0.9337457765456111
+      },
+      {
+        "statute": "中华人民共和国刑法 第196条",
+        "positives": 406,
+        "precision_at_k": 0.8999999761581421,
+        "recall_at_k": 0.02216748706996441,
+        "ndcg_at_k": 0.77990823370192
+      },
+      {
+        "statute": "中华人民共和国刑法 第198条",
+        "positives": 54,
+        "precision_at_k": 1.0,
+        "recall_at_k": 0.18518517911434174,
+        "ndcg_at_k": 1.0
+      },
+      {
+        "statute": "中华人民共和国刑法 第199条",
+        "positives": 3,
+        "precision_at_k": 0.10000000149011612,
+        "recall_at_k": 0.3333333432674408,
+        "ndcg_at_k": 0.23463936301137822
+      },
+      {
+        "statute": "中华人民共和国刑法 第200条",
+        "positives": 6,
+        "precision_at_k": 0.20000000298023224,
+        "recall_at_k": 0.3333333432674408,
+        "ndcg_at_k": 0.286381299268402
+      },
+      {
+        "statute": "中华人民共和国刑法 第201条",
+        "positives": 27,
+        "precision_at_k": 1.0,
+        "recall_at_k": 0.37037035822868347,
+        "ndcg_at_k": 1.0
+      },
+      {
+        "statute": "中华人民共和国刑法 第205条",
+        "positives": 489,
+        "precision_at_k": 1.0,
+        "recall_at_k": 0.020449897274374962,
+        "ndcg_at_k": 1.0
+      },
+      {
+        "statute": "中华人民共和国刑法 第209条",
+        "positives": 44,
+        "precision_at_k": 0.8999999761581421,
+        "recall_at_k": 0.20454545319080353,
+        "ndcg_at_k": 0.9363792118010483
+      },
+      {
+        "statute": "中华人民共和国刑法 第210条",
+        "positives": 90,
+        "precision_at_k": 1.0,
+        "recall_at_k": 0.1111111119389534,
+        "ndcg_at_k": 1.0
+      },
+      {
+        "statute": "中华人民共和国刑法 第211条",
+        "positives": 12,
+        "precision_at_k": 0.4000000059604645,
+        "recall_at_k": 0.3333333432674408,
+        "ndcg_at_k": 0.5473983622993503
+      },
+      {
+        "statute": "中华人民共和国刑法 第212条",
+        "positives": 4,
+        "precision_at_k": 0.0,
+        "recall_at_k": 0.0,
+        "ndcg_at_k": 0.0
+      },
+      {
+        "statute": "中华人民共和国刑法 第213条",
+        "positives": 358,
+        "precision_at_k": 1.0,
+        "recall_at_k": 0.02793296054005623,
+        "ndcg_at_k": 1.0
+      },
+      {
+        "statute": "中华人民共和国刑法 第214条",
+        "positives": 360,
+        "precision_at_k": 1.0,
+        "recall_at_k": 0.02777777798473835,
+        "ndcg_at_k": 1.0
+      },
+      {
+        "statute": "中华人民共和国刑法 第215条",
+        "positives": 18,
+        "precision_at_k": 0.8999999761581421,
+        "recall_at_k": 0.5,
+        "ndcg_at_k": 0.9216017310213247
+      },
+      {
+        "statute": "中华人民共和国刑法 第217条",
+        "positives": 68,
+        "precision_at_k": 0.8999999761581421,
+        "recall_at_k": 0.13235294818878174,
+        "ndcg_at_k": 0.9305687780632229
+      },
+      {
+        "statute": "中华人民共和国刑法 第220条",
+        "positives": 20,
+        "precision_at_k": 0.4000000059604645,
+        "recall_at_k": 0.20000000298023224,
+        "ndcg_at_k": 0.5541432109622959
+      },
+      {
+        "statute": "中华人民共和国刑法 第223条",
+        "positives": 31,
+        "precision_at_k": 1.0,
+        "recall_at_k": 0.32258063554763794,
+        "ndcg_at_k": 1.0
+      },
+      {
+        "statute": "中华人民共和国刑法 第224条",
+        "positives": 542,
+        "precision_at_k": 1.0,
+        "recall_at_k": 0.018450183793902397,
+        "ndcg_at_k": 1.0
+      },
+      {
+        "statute": "中华人民共和国刑法 第225条",
+        "positives": 367,
+        "precision_at_k": 1.0,
+        "recall_at_k": 0.0272479560226202,
+        "ndcg_at_k": 1.0
+      },
+      {
+        "statute": "中华人民共和国刑法 第226条",
+        "positives": 47,
+        "precision_at_k": 0.800000011920929,
+        "recall_at_k": 0.1702127605676651,
+        "ndcg_at_k": 0.8521705090845474
+      },
+      {
+        "statute": "中华人民共和国刑法 第227条",
+        "positives": 12,
+        "precision_at_k": 0.6000000238418579,
+        "recall_at_k": 0.5,
+        "ndcg_at_k": 0.7116179486056783
+      },
+      {
+        "statute": "中华人民共和国刑法 第228条",
+        "positives": 61,
+        "precision_at_k": 1.0,
+        "recall_at_k": 0.16393442451953888,
+        "ndcg_at_k": 1.0
+      },
+      {
+        "statute": "中华人民共和国刑法 第231条",
+        "positives": 53,
+        "precision_at_k": 0.30000001192092896,
+        "recall_at_k": 0.056603774428367615,
+        "ndcg_at_k": 0.4323181322709948
+      },
+      {
+        "statute": "中华人民共和国刑法 第232条",
+        "positives": 397,
+        "precision_at_k": 1.0,
+        "recall_at_k": 0.02518891729414463,
+        "ndcg_at_k": 1.0
+      },
+      {
+        "statute": "中华人民共和国刑法 第233条",
+        "positives": 367,
+        "precision_at_k": 0.699999988079071,
+        "recall_at_k": 0.019073570147156715,
+        "ndcg_at_k": 0.7218018303820491
+      },
+      {
+        "statute": "中华人民共和国刑法 第234条",
+        "positives": 1069,
+        "precision_at_k": 0.6000000238418579,
+        "recall_at_k": 0.005612722132354975,
+        "ndcg_at_k": 0.4362115423097745
+      },
+      {
+        "statute": "中华人民共和国刑法 第235条",
+        "positives": 164,
+        "precision_at_k": 0.800000011920929,
+        "recall_at_k": 0.04878048598766327,
+        "ndcg_at_k": 0.826813366651774
+      },
+      {
+        "statute": "中华人民共和国刑法 第236条",
+        "positives": 393,
+        "precision_at_k": 1.0,
+        "recall_at_k": 0.02544529177248478,
+        "ndcg_at_k": 1.0
+      },
+      {
+        "statute": "中华人民共和国刑法 第237条",
+        "positives": 267,
+        "precision_at_k": 1.0,
+        "recall_at_k": 0.03745318204164505,
+        "ndcg_at_k": 1.0
+      },
+      {
+        "statute": "中华人民共和国刑法 第238条",
+        "positives": 353,
+        "precision_at_k": 1.0,
+        "recall_at_k": 0.028328612446784973,
+        "ndcg_at_k": 1.0
+      },
+      {
+        "statute": "中华人民共和国刑法 第239条",
+        "positives": 114,
+        "precision_at_k": 0.8999999761581421,
+        "recall_at_k": 0.07894736528396606,
+        "ndcg_at_k": 0.88995411685096
+      },
+      {
+        "statute": "中华人民共和国刑法 第240条",
+        "positives": 107,
+        "precision_at_k": 1.0,
+        "recall_at_k": 0.09345794469118118,
+        "ndcg_at_k": 1.0
+      },
+      {
+        "statute": "中华人民共和国刑法 第241条",
+        "positives": 12,
+        "precision_at_k": 0.20000000298023224,
+        "recall_at_k": 0.1666666716337204,
+        "ndcg_at_k": 0.15139734109601005
+      },
+      {
+        "statute": "中华人民共和国刑法 第243条",
+        "positives": 45,
+        "precision_at_k": 0.8999999761581421,
+        "recall_at_k": 0.20000000298023224,
+        "ndcg_at_k": 0.9305687780632229
+      },
+      {
+        "statute": "中华人民共和国刑法 第244条",
+        "positives": 8,
+        "precision_at_k": 0.4000000059604645,
+        "recall_at_k": 0.5,
+        "ndcg_at_k": 0.6233173655322679
+      },
+      {
+        "statute": "中华人民共和国刑法 第245条",
+        "positives": 228,
+        "precision_at_k": 1.0,
+        "recall_at_k": 0.04385964944958687,
+        "ndcg_at_k": 1.0
+      },
+      {
+        "statute": "中华人民共和国刑法 第246条",
+        "positives": 24,
+        "precision_at_k": 0.20000000298023224,
+        "recall_at_k": 0.0833333358168602,
+        "ndcg_at_k": 0.3052348839397012
+      },
+      {
+        "statute": "中华人民共和国刑法 第248条",
+        "positives": 6,
+        "precision_at_k": 0.4000000059604645,
+        "recall_at_k": 0.6666666865348816,
+        "ndcg_at_k": 0.7012899792965542
+      },
+      {
+        "statute": "中华人民共和国刑法 第253条",
+        "positives": 45,
+        "precision_at_k": 1.0,
+        "recall_at_k": 0.2222222238779068,
+        "ndcg_at_k": 1.0
+      },
+      {
+        "statute": "中华人民共和国刑法 第258条",
+        "positives": 104,
+        "precision_at_k": 1.0,
+        "recall_at_k": 0.09615384787321091,
+        "ndcg_at_k": 1.0
+      },
+      {
+        "statute": "中华人民共和国刑法 第260条",
+        "positives": 9,
+        "precision_at_k": 0.20000000298023224,
+        "recall_at_k": 0.2222222238779068,
+        "ndcg_at_k": 0.3029889503327762
+      },
+      {
+        "statute": "中华人民共和国刑法 第261条",
+        "positives": 22,
+        "precision_at_k": 1.0,
+        "recall_at_k": 0.4545454680919647,
+        "ndcg_at_k": 1.0
+      },
+      {
+        "statute": "中华人民共和国刑法 第262条",
+        "positives": 25,
+        "precision_at_k": 0.699999988079071,
+        "recall_at_k": 0.2800000011920929,
+        "ndcg_at_k": 0.7600791051976192
+      },
+      {
+        "statute": "中华人民共和国刑法 第263条",
+        "positives": 682,
+        "precision_at_k": 0.8999999761581421,
+        "recall_at_k": 0.013196481391787529,
+        "ndcg_at_k": 0.92663607790064
+      },
+      {
+        "statute": "中华人民共和国刑法 第264条",
+        "positives": 1768,
+        "precision_at_k": 0.800000011920929,
+        "recall_at_k": 0.004524887073785067,
+        "ndcg_at_k": 0.8630152897016883
+      },
+      {
+        "statute": "中华人民共和国刑法 第266条",
+        "positives": 717,
+        "precision_at_k": 1.0,
+        "recall_at_k": 0.013947001658380032,
+        "ndcg_at_k": 1.0
+      },
+      {
+        "statute": "中华人民共和国刑法 第267条",
+        "positives": 415,
+        "precision_at_k": 0.800000011920929,
+        "recall_at_k": 0.01927710883319378,
+        "ndcg_at_k": 0.8263333286520084
+      },
+      {
+        "statute": "中华人民共和国刑法 第268条",
+        "positives": 4,
+        "precision_at_k": 0.20000000298023224,
+        "recall_at_k": 0.5,
+        "ndcg_at_k": 0.44149241373678083
+      },
+      {
+        "statute": "中华人民共和国刑法 第269条",
+        "positives": 377,
+        "precision_at_k": 0.8999999761581421,
+        "recall_at_k": 0.023872679099440575,
+        "ndcg_at_k": 0.8611375561264456
+      },
+      {
+        "statute": "中华人民共和国刑法 第270条",
+        "positives": 24,
+        "precision_at_k": 0.4000000059604645,
+        "recall_at_k": 0.1666666716337204,
+        "ndcg_at_k": 0.4847119890255186
+      },
+      {
+        "statute": "中华人民共和国刑法 第271条",
+        "positives": 396,
+        "precision_at_k": 1.0,
+        "recall_at_k": 0.02525252476334572,
+        "ndcg_at_k": 1.0
+      },
+      {
+        "statute": "中华人民共和国刑法 第272条",
+        "positives": 375,
+        "precision_at_k": 0.8999999761581421,
+        "recall_at_k": 0.024000000208616257,
+        "ndcg_at_k": 0.9216017310213247
+      },
+      {
+        "statute": "中华人民共和国刑法 第273条",
+        "positives": 7,
+        "precision_at_k": 0.20000000298023224,
+        "recall_at_k": 0.2857142984867096,
+        "ndcg_at_k": 0.2918104499436024
+      },
+      {
+        "statute": "中华人民共和国刑法 第274条",
+        "positives": 371,
+        "precision_at_k": 0.8999999761581421,
+        "recall_at_k": 0.02425876073539257,
+        "ndcg_at_k": 0.92663607790064
+      },
+      {
+        "statute": "中华人民共和国刑法 第275条",
+        "positives": 370,
+        "precision_at_k": 0.8999999761581421,
+        "recall_at_k": 0.02432432398200035,
+        "ndcg_at_k": 0.9363792118010483
+      },
+      {
+        "statute": "中华人民共和国刑法 第276条",
+        "positives": 465,
+        "precision_at_k": 1.0,
+        "recall_at_k": 0.02150537632405758,
+        "ndcg_at_k": 1.0
+      },
+      {
+        "statute": "中华人民共和国刑法 第277条",
+        "positives": 362,
+        "precision_at_k": 1.0,
+        "recall_at_k": 0.027624309062957764,
+        "ndcg_at_k": 1.0
+      },
+      {
+        "statute": "中华人民共和国刑法 第279条",
+        "positives": 180,
+        "precision_at_k": 1.0,
+        "recall_at_k": 0.0555555559694767,
+        "ndcg_at_k": 1.0
+      },
+      {
+        "statute": "中华人民共和国刑法 第280条",
+        "positives": 785,
+        "precision_at_k": 1.0,
+        "recall_at_k": 0.012738853693008423,
+        "ndcg_at_k": 1.0
+      },
+      {
+        "statute": "中华人民共和国刑法 第281条",
+        "positives": 8,
+        "precision_at_k": 0.699999988079071,
+        "recall_at_k": 0.875,
+        "ndcg_at_k": 0.9202054614375518
+      },
+      {
+        "statute": "中华人民共和国刑法 第282条",
+        "positives": 8,
+        "precision_at_k": 0.5,
+        "recall_at_k": 0.625,
+        "ndcg_at_k": 0.7099715643554525
+      },
+      {
+        "statute": "中华人民共和国刑法 第283条",
+        "positives": 17,
+        "precision_at_k": 1.0,
+        "recall_at_k": 0.5882353186607361,
+        "ndcg_at_k": 1.0
+      },
+      {
+        "statute": "中华人民共和国刑法 第285条",
+        "positives": 8,
+        "precision_at_k": 0.20000000298023224,
+        "recall_at_k": 0.25,
+        "ndcg_at_k": 0.20626588994627676
+      },
+      {
+        "statute": "中华人民共和国刑法 第286条",
+        "positives": 15,
+        "precision_at_k": 0.800000011920929,
+        "recall_at_k": 0.5333333611488342,
+        "ndcg_at_k": 0.8521705090845474
+      },
+      {
+        "statute": "中华人民共和国刑法 第288条",
+        "positives": 65,
+        "precision_at_k": 0.800000011920929,
+        "recall_at_k": 0.1230769231915474,
+        "ndcg_at_k": 0.823699893396571
+      },
+      {
+        "statute": "中华人民共和国刑法 第290条",
+        "positives": 63,
+        "precision_at_k": 0.800000011920929,
+        "recall_at_k": 0.1269841343164444,
+        "ndcg_at_k": 0.8572048559638626
+      },
+      {
+        "statute": "中华人民共和国刑法 第291条",
+        "positives": 54,
+        "precision_at_k": 1.0,
+        "recall_at_k": 0.18518517911434174,
+        "ndcg_at_k": 1.0
+      },
+      {
+        "statute": "中华人民共和国刑法 第292条",
+        "positives": 373,
+        "precision_at_k": 1.0,
+        "recall_at_k": 0.026809651404619217,
+        "ndcg_at_k": 1.0
+      },
+      {
+        "statute": "中华人民共和国刑法 第293条",
+        "positives": 534,
+        "precision_at_k": 0.5,
+        "recall_at_k": 0.009363295510411263,
+        "ndcg_at_k": 0.39842793454336195
+      },
+      {
+        "statute": "中华人民共和国刑法 第294条",
+        "positives": 18,
+        "precision_at_k": 0.8999999761581421,
+        "recall_at_k": 0.5,
+        "ndcg_at_k": 0.9305687780632229
+      },
+      {
+        "statute": "中华人民共和国刑法 第295条",
+        "positives": 8,
+        "precision_at_k": 0.5,
+        "recall_at_k": 0.625,
+        "ndcg_at_k": 0.7269547345639102
+      },
+      {
+        "statute": "中华人民共和国刑法 第302条",
+        "positives": 15,
+        "precision_at_k": 0.6000000238418579,
+        "recall_at_k": 0.4000000059604645,
+        "ndcg_at_k": 0.6830838076905166
+      },
+      {
+        "statute": "中华人民共和国刑法 第303条",
+        "positives": 647,
+        "precision_at_k": 0.8999999761581421,
+        "recall_at_k": 0.013910355046391487,
+        "ndcg_at_k": 0.9363792118010483
+      },
+      {
+        "statute": "中华人民共和国刑法 第305条",
+        "positives": 25,
+        "precision_at_k": 0.4000000059604645,
+        "recall_at_k": 0.1599999964237213,
+        "ndcg_at_k": 0.46582309483828666
+      },
+      {
+        "statute": "中华人民共和国刑法 第307条",
+        "positives": 78,
+        "precision_at_k": 0.5,
+        "recall_at_k": 0.06410256773233414,
+        "ndcg_at_k": 0.611019150498302
+      },
+      {
+        "statute": "中华人民共和国刑法 第308条",
+        "positives": 5,
+        "precision_at_k": 0.10000000149011612,
+        "recall_at_k": 0.20000000298023224,
+        "ndcg_at_k": 0.3391602052736161
+      },
+      {
+        "statute": "中华人民共和国刑法 第310条",
+        "positives": 353,
+        "precision_at_k": 1.0,
+        "recall_at_k": 0.028328612446784973,
+        "ndcg_at_k": 1.0
+      },
+      {
+        "statute": "中华人民共和国刑法 第312条",
+        "positives": 374,
+        "precision_at_k": 0.8999999761581421,
+        "recall_at_k": 0.024064170196652412,
+        "ndcg_at_k": 0.92663607790064
+      },
+      {
+        "statute": "中华人民共和国刑法 第313条",
+        "positives": 355,
+        "precision_at_k": 1.0,
+        "recall_at_k": 0.028169013559818268,
+        "ndcg_at_k": 1.0
+      },
+      {
+        "statute": "中华人民共和国刑法 第314条",
+        "positives": 68,
+        "precision_at_k": 1.0,
+        "recall_at_k": 0.14705882966518402,
+        "ndcg_at_k": 1.0
+      },
+      {
+        "statute": "中华人民共和国刑法 第315条",
+        "positives": 15,
+        "precision_at_k": 0.699999988079071,
+        "recall_at_k": 0.46666666865348816,
+        "ndcg_at_k": 0.7534494445524139
+      },
+      {
+        "statute": "中华人民共和国刑法 第316条",
+        "positives": 35,
+        "precision_at_k": 0.8999999761581421,
+        "recall_at_k": 0.2571428716182709,
+        "ndcg_at_k": 0.8611375561264456
+      },
+      {
+        "statute": "中华人民共和国刑法 第326条",
+        "positives": 4,
+        "precision_at_k": 0.4000000059604645,
+        "recall_at_k": 1.0,
+        "ndcg_at_k": 0.9828920819566879
+      },
+      {
+        "statute": "中华人民共和国刑法 第328条",
+        "positives": 54,
+        "precision_at_k": 1.0,
+        "recall_at_k": 0.18518517911434174,
+        "ndcg_at_k": 1.0
+      },
+      {
+        "statute": "中华人民共和国刑法 第333条",
+        "positives": 15,
+        "precision_at_k": 1.0,
+        "recall_at_k": 0.6666666865348816,
+        "ndcg_at_k": 1.0
+      },
+      {
+        "statute": "中华人民共和国刑法 第336条",
+        "positives": 375,
+        "precision_at_k": 1.0,
+        "recall_at_k": 0.02666666731238365,
+        "ndcg_at_k": 1.0
+      },
+      {
+        "statute": "中华人民共和国刑法 第338条",
+        "positives": 358,
+        "precision_at_k": 1.0,
+        "recall_at_k": 0.02793296054005623,
+        "ndcg_at_k": 1.0
+      },
+      {
+        "statute": "中华人民共和国刑法 第340条",
+        "positives": 136,
+        "precision_at_k": 1.0,
+        "recall_at_k": 0.07352941483259201,
+        "ndcg_at_k": 1.0
+      },
+      {
+        "statute": "中华人民共和国刑法 第341条",
+        "positives": 348,
+        "precision_at_k": 1.0,
+        "recall_at_k": 0.028735632076859474,
+        "ndcg_at_k": 1.0
+      },
+      {
+        "statute": "中华人民共和国刑法 第342条",
+        "positives": 385,
+        "precision_at_k": 1.0,
+        "recall_at_k": 0.025974025949835777,
+        "ndcg_at_k": 1.0
+      },
+      {
+        "statute": "中华人民共和国刑法 第343条",
+        "positives": 134,
+        "precision_at_k": 1.0,
+        "recall_at_k": 0.0746268630027771,
+        "ndcg_at_k": 1.0
+      },
+      {
+        "statute": "中华人民共和国刑法 第344条",
+        "positives": 358,
+        "precision_at_k": 1.0,
+        "recall_at_k": 0.02793296054005623,
+        "ndcg_at_k": 1.0
+      },
+      {
+        "statute": "中华人民共和国刑法 第345条",
+        "positives": 735,
+        "precision_at_k": 1.0,
+        "recall_at_k": 0.013605441898107529,
+        "ndcg_at_k": 1.0
+      },
+      {
+        "statute": "中华人民共和国刑法 第346条",
+        "positives": 38,
+        "precision_at_k": 0.6000000238418579,
+        "recall_at_k": 0.15789473056793213,
+        "ndcg_at_k": 0.6464018466408364
+      },
+      {
+        "statute": "中华人民共和国刑法 第347条",
+        "positives": 1654,
+        "precision_at_k": 0.8999999761581421,
+        "recall_at_k": 0.005441354122012854,
+        "ndcg_at_k": 0.9363792118010483
+      },
+      {
+        "statute": "中华人民共和国刑法 第348条",
+        "positives": 371,
+        "precision_at_k": 1.0,
+        "recall_at_k": 0.026954177767038345,
+        "ndcg_at_k": 1.0
+      },
+      {
+        "statute": "中华人民共和国刑法 第349条",
+        "positives": 24,
+        "precision_at_k": 0.699999988079071,
+        "recall_at_k": 0.2916666567325592,
+        "ndcg_at_k": 0.7778721720600673
+      },
+      {
+        "statute": "中华人民共和国刑法 第350条",
+        "positives": 38,
+        "precision_at_k": 1.0,
+        "recall_at_k": 0.2631579041481018,
+        "ndcg_at_k": 1.0
+      },
+      {
+        "statute": "中华人民共和国刑法 第351条",
+        "positives": 351,
+        "precision_at_k": 1.0,
+        "recall_at_k": 0.028490029275417328,
+        "ndcg_at_k": 1.0
+      },
+      {
+        "statute": "中华人民共和国刑法 第352条",
+        "positives": 5,
+        "precision_at_k": 0.4000000059604645,
+        "recall_at_k": 0.800000011920929,
+        "ndcg_at_k": 0.8687949224876582
+      },
+      {
+        "statute": "中华人民共和国刑法 第353条",
+        "positives": 28,
+        "precision_at_k": 1.0,
+        "recall_at_k": 0.3571428656578064,
+        "ndcg_at_k": 1.0
+      },
+      {
+        "statute": "中华人民共和国刑法 第354条",
+        "positives": 340,
+        "precision_at_k": 0.8999999761581421,
+        "recall_at_k": 0.026470588520169258,
+        "ndcg_at_k": 0.9052116356304495
+      },
+      {
+        "statute": "中华人民共和国刑法 第356条",
+        "positives": 395,
+        "precision_at_k": 0.800000011920929,
+        "recall_at_k": 0.020253164693713188,
+        "ndcg_at_k": 0.8572048559638626
+      },
+      {
+        "statute": "中华人民共和国刑法 第357条",
+        "positives": 93,
+        "precision_at_k": 0.0,
+        "recall_at_k": 0.0,
+        "ndcg_at_k": 0.0
+      },
+      {
+        "statute": "中华人民共和国刑法 第358条",
+        "positives": 113,
+        "precision_at_k": 1.0,
+        "recall_at_k": 0.08849557489156723,
+        "ndcg_at_k": 1.0
+      },
+      {
+        "statute": "中华人民共和国刑法 第359条",
+        "positives": 360,
+        "precision_at_k": 1.0,
+        "recall_at_k": 0.02777777798473835,
+        "ndcg_at_k": 1.0
+      },
+      {
+        "statute": "中华人民共和国刑法 第360条",
+        "positives": 13,
+        "precision_at_k": 1.0,
+        "recall_at_k": 0.7692307829856873,
+        "ndcg_at_k": 1.0
+      },
+      {
+        "statute": "中华人民共和国刑法 第361条",
+        "positives": 12,
+        "precision_at_k": 0.30000001192092896,
+        "recall_at_k": 0.25,
+        "ndcg_at_k": 0.29062463495159
+      },
+      {
+        "statute": "中华人民共和国刑法 第363条",
+        "positives": 365,
+        "precision_at_k": 1.0,
+        "recall_at_k": 0.027397260069847107,
+        "ndcg_at_k": 1.0
+      },
+      {
+        "statute": "中华人民共和国刑法 第364条",
+        "positives": 159,
+        "precision_at_k": 1.0,
+        "recall_at_k": 0.0628930851817131,
+        "ndcg_at_k": 1.0
+      },
+      {
+        "statute": "中华人民共和国刑法 第367条",
+        "positives": 13,
+        "precision_at_k": 0.20000000298023224,
+        "recall_at_k": 0.1538461595773697,
+        "ndcg_at_k": 0.29849003527675555
+      },
+      {
+        "statute": "中华人民共和国刑法 第369条",
+        "positives": 5,
+        "precision_at_k": 0.5,
+        "recall_at_k": 1.0,
+        "ndcg_at_k": 0.9896062251871525
+      },
+      {
+        "statute": "中华人民共和国刑法 第372条",
+        "positives": 40,
+        "precision_at_k": 1.0,
+        "recall_at_k": 0.25,
+        "ndcg_at_k": 1.0
+      },
+      {
+        "statute": "中华人民共和国刑法 第375条",
+        "positives": 18,
+        "precision_at_k": 0.699999988079071,
+        "recall_at_k": 0.3888888955116272,
+        "ndcg_at_k": 0.6726934039987302
+      },
+      {
+        "statute": "中华人民共和国刑法 第382条",
+        "positives": 422,
+        "precision_at_k": 0.8999999761581421,
+        "recall_at_k": 0.02132701501250267,
+        "ndcg_at_k": 0.88995411685096
+      },
+      {
+        "statute": "中华人民共和国刑法 第383条",
+        "positives": 928,
+        "precision_at_k": 0.8999999761581421,
+        "recall_at_k": 0.009698275476694107,
+        "ndcg_at_k": 0.9305687780632229
+      },
+      {
+        "statute": "中华人民共和国刑法 第384条",
+        "positives": 357,
+        "precision_at_k": 0.8999999761581421,
+        "recall_at_k": 0.02521008439362049,
+        "ndcg_at_k": 0.9363792118010483
+      },
+      {
+        "statute": "中华人民共和国刑法 第385条",
+        "positives": 647,
+        "precision_at_k": 1.0,
+        "recall_at_k": 0.015455950982868671,
+        "ndcg_at_k": 1.0
+      },
+      {
+        "statute": "中华人民共和国刑法 第386条",
+        "positives": 618,
+        "precision_at_k": 1.0,
+        "recall_at_k": 0.016181230545043945,
+        "ndcg_at_k": 1.0
+      },
+      {
+        "statute": "中华人民共和国刑法 第387条",
+        "positives": 32,
+        "precision_at_k": 0.699999988079071,
+        "recall_at_k": 0.21875,
+        "ndcg_at_k": 0.793584067764911
+      },
+      {
+        "statute": "中华人民共和国刑法 第388条",
+        "positives": 38,
+        "precision_at_k": 0.4000000059604645,
+        "recall_at_k": 0.10526315867900848,
+        "ndcg_at_k": 0.5473983622993503
+      },
+      {
+        "statute": "中华人民共和国刑法 第389条",
+        "positives": 369,
+        "precision_at_k": 0.800000011920929,
+        "recall_at_k": 0.02168021723628044,
+        "ndcg_at_k": 0.8486026589039901
+      },
+      {
+        "statute": "中华人民共和国刑法 第390条",
+        "positives": 394,
+        "precision_at_k": 0.699999988079071,
+        "recall_at_k": 0.017766498029232025,
+        "ndcg_at_k": 0.7728378251807521
+      },
+      {
+        "statute": "中华人民共和国刑法 第391条",
+        "positives": 25,
+        "precision_at_k": 0.4000000059604645,
+        "recall_at_k": 0.1599999964237213,
+        "ndcg_at_k": 0.4505655760587973
+      },
+      {
+        "statute": "中华人民共和国刑法 第392条",
+        "positives": 34,
+        "precision_at_k": 0.5,
+        "recall_at_k": 0.14705882966518402,
+        "ndcg_at_k": 0.5680035776621611
+      },
+      {
+        "statute": "中华人民共和国刑法 第393条",
+        "positives": 211,
+        "precision_at_k": 1.0,
+        "recall_at_k": 0.04739336669445038,
+        "ndcg_at_k": 1.0
+      },
+      {
+        "statute": "中华人民共和国刑法 第395条",
+        "positives": 3,
+        "precision_at_k": 0.10000000149011612,
+        "recall_at_k": 0.3333333432674408,
+        "ndcg_at_k": 0.46927872602275644
+      },
+      {
+        "statute": "中华人民共和国刑法 第396条",
+        "positives": 27,
+        "precision_at_k": 0.699999988079071,
+        "recall_at_k": 0.25925925374031067,
+        "ndcg_at_k": 0.7564477297898766
+      },
+      {
+        "statute": "中华人民共和国刑法 第397条",
+        "positives": 686,
+        "precision_at_k": 1.0,
+        "recall_at_k": 0.014577259309589863,
+        "ndcg_at_k": 1.0
+      },
+      {
+        "statute": "中华人民共和国刑法 第399条",
+        "positives": 24,
+        "precision_at_k": 0.30000001192092896,
+        "recall_at_k": 0.125,
+        "ndcg_at_k": 0.2876263497141273
+      },
+      {
+        "statute": "中华人民共和国刑法 第402条",
+        "positives": 6,
+        "precision_at_k": 0.4000000059604645,
+        "recall_at_k": 0.6666666865348816,
+        "ndcg_at_k": 0.6625602459390022
+      },
+      {
+        "statute": "中华人民共和国刑法 第404条",
+        "positives": 4,
+        "precision_at_k": 0.10000000149011612,
+        "recall_at_k": 0.25,
+        "ndcg_at_k": 0.16812753627111746
+      },
+      {
+        "statute": "中华人民共和国刑法 第413条",
+        "positives": 17,
+        "precision_at_k": 0.8999999761581421,
+        "recall_at_k": 0.529411792755127,
+        "ndcg_at_k": 0.9305687780632229
+      },
+      {
+        "statute": "中华人民共和国刑法 第417条",
+        "positives": 27,
+        "precision_at_k": 1.0,
+        "recall_at_k": 0.37037035822868347,
+        "ndcg_at_k": 1.0
+      },
+      {
+        "statute": "中华人民共和国刑法 第418条",
+        "positives": 8,
+        "precision_at_k": 0.800000011920929,
+        "recall_at_k": 1.0,
+        "ndcg_at_k": 1.0
+      }
+    ]
+  },
+  "training_history": [
+    {
+      "epoch": 0,
+      "stage": "raw_warm_start",
+      "train_loss": null,
+      "valid_micro_f1": 0.4594085858279191,
+      "valid_exact_match": 0.17360340902457533,
+      "valid_threshold": 0.05686130523681987,
+      "mean_residual_norm": 0.0
+    },
+    {
+      "epoch": 1,
+      "stage": "field",
+      "train_loss": 0.05737080405904165,
+      "valid_micro_f1": 0.7169885177453027,
+      "valid_exact_match": 0.5074426478314167,
+      "valid_threshold": 0.0,
+      "mean_residual_norm": 0.0
+    },
+    {
+      "epoch": 2,
+      "stage": "field",
+      "train_loss": 0.03827289117820906,
+      "valid_micro_f1": 0.7461510748168608,
+      "valid_exact_match": 0.5746307862938532,
+      "valid_threshold": 0.0,
+      "mean_residual_norm": 0.0
+    },
+    {
+      "epoch": 3,
+      "stage": "field",
+      "train_loss": 0.03543302963259599,
+      "valid_micro_f1": 0.7541926916834703,
+      "valid_exact_match": 0.5929017570486252,
+      "valid_threshold": 0.0,
+      "mean_residual_norm": 0.0
+    },
+    {
+      "epoch": 4,
+      "stage": "field",
+      "train_loss": 0.033995389079502385,
+      "valid_micro_f1": 0.75800395256917,
+      "valid_exact_match": 0.602299924114179,
+      "valid_threshold": 0.0,
+      "mean_residual_norm": 0.0
+    },
+    {
+      "epoch": 5,
+      "stage": "field",
+      "train_loss": 0.03303784742606002,
+      "valid_micro_f1": 0.7612063986338866,
+      "valid_exact_match": 0.6107641118440255,
+      "valid_threshold": 0.0,
+      "mean_residual_norm": 0.0
+    },
+    {
+      "epoch": 6,
+      "stage": "field",
+      "train_loss": 0.03232488036001508,
+      "valid_micro_f1": 0.7619023742071351,
+      "valid_exact_match": 0.6126320705154399,
+      "valid_threshold": 0.0,
+      "mean_residual_norm": 0.0
+    },
+    {
+      "epoch": 7,
+      "stage": "field",
+      "train_loss": 0.03171643355417232,
+      "valid_micro_f1": 0.763558913765562,
+      "valid_exact_match": 0.6178273305703111,
+      "valid_threshold": 0.0,
+      "mean_residual_norm": 0.0
+    },
+    {
+      "epoch": 8,
+      "stage": "field",
+      "train_loss": 0.031220869005454198,
+      "valid_micro_f1": 0.7636920912471108,
+      "valid_exact_match": 0.6177689568618294,
+      "valid_threshold": 0.0,
+      "mean_residual_norm": 0.0
+    },
+    {
+      "epoch": 9,
+      "stage": "field",
+      "train_loss": 0.030777133148570626,
+      "valid_micro_f1": 0.7659152205994606,
+      "valid_exact_match": 0.6242484385032981,
+      "valid_threshold": 0.0,
+      "mean_residual_norm": 0.0
+    },
+    {
+      "epoch": 10,
+      "stage": "field",
+      "train_loss": 0.03043634273629907,
+      "valid_micro_f1": 0.7660518864314686,
+      "valid_exact_match": 0.625240791547487,
+      "valid_threshold": 0.0,
+      "mean_residual_norm": 0.0
+    },
+    {
+      "epoch": 11,
+      "stage": "residual",
+      "train_loss": 0.02982374593856072,
+      "valid_micro_f1": 0.7680078457687046,
+      "valid_exact_match": 0.6334714844434067,
+      "valid_threshold": 0.0,
+      "mean_residual_norm": 0.03525244817137718
+    },
+    {
+      "epoch": 12,
+      "stage": "residual",
+      "train_loss": 0.029572705917109716,
+      "valid_micro_f1": 0.7688755124280007,
+      "valid_exact_match": 0.6362150487420466,
+      "valid_threshold": 0.0,
+      "mean_residual_norm": 0.05585622787475586
+    },
+    {
+      "epoch": 13,
+      "stage": "residual",
+      "train_loss": 0.029449334944789577,
+      "valid_micro_f1": 0.7687521066141202,
+      "valid_exact_match": 0.6360983013250832,
+      "valid_threshold": 0.0,
+      "mean_residual_norm": 0.06553155928850174
+    },
+    {
+      "epoch": 14,
+      "stage": "residual",
+      "train_loss": 0.029336891170985847,
+      "valid_micro_f1": 0.769518466573165,
+      "valid_exact_match": 0.6375576440371257,
+      "valid_threshold": 0.0,
+      "mean_residual_norm": 0.07484712451696396
+    },
+    {
+      "epoch": 15,
+      "stage": "residual",
+      "train_loss": 0.029233350487894667,
+      "valid_micro_f1": 0.7710077519379845,
+      "valid_exact_match": 0.638841865623723,
+      "valid_threshold": 0.0,
+      "mean_residual_norm": 0.07983401417732239
+    },
+    {
+      "epoch": 16,
+      "stage": "residual",
+      "train_loss": 0.029131101876102537,
+      "valid_micro_f1": 0.7711204778774793,
+      "valid_exact_match": 0.6389586130406865,
+      "valid_threshold": 0.0,
+      "mean_residual_norm": 0.08536695688962936
+    },
+    {
+      "epoch": 17,
+      "stage": "residual",
+      "train_loss": 0.029038066412969833,
+      "valid_micro_f1": 0.7701727417211641,
+      "valid_exact_match": 0.6393088552915767,
+      "valid_threshold": 0.0,
+      "mean_residual_norm": 0.09051918238401413
+    },
+    {
+      "epoch": 18,
+      "stage": "residual",
+      "train_loss": 0.028977556242021602,
+      "valid_micro_f1": 0.7714582252205501,
+      "valid_exact_match": 0.640593076878174,
+      "valid_threshold": 0.0,
+      "mean_residual_norm": 0.09316980838775635
+    },
+    {
+      "epoch": 19,
+      "stage": "residual",
+      "train_loss": 0.028876288198798106,
+      "valid_micro_f1": 0.771246238455951,
+      "valid_exact_match": 0.6411184402545094,
+      "valid_threshold": 0.0,
+      "mean_residual_norm": 0.09579766541719437
+    },
+    {
+      "epoch": 20,
+      "stage": "residual",
+      "train_loss": 0.028816043371519703,
+      "valid_micro_f1": 0.771430051276739,
+      "valid_exact_match": 0.6402428346272838,
+      "valid_threshold": 0.0,
+      "mean_residual_norm": 0.10138019919395447
+    },
+    {
+      "epoch": 21,
+      "stage": "residual",
+      "train_loss": 0.028726442766357337,
+      "valid_micro_f1": 0.7714005775577558,
+      "valid_exact_match": 0.6401844609188022,
+      "valid_threshold": 0.0,
+      "mean_residual_norm": 0.10167250782251358
+    },
+    {
+      "epoch": 22,
+      "stage": "residual",
+      "train_loss": 0.028655502470271873,
+      "valid_micro_f1": 0.772397781503934,
+      "valid_exact_match": 0.6403595820442473,
+      "valid_threshold": 0.0,
+      "mean_residual_norm": 0.10144511610269547
+    },
+    {
+      "epoch": 23,
+      "stage": "residual",
+      "train_loss": 0.02860204178981779,
+      "valid_micro_f1": 0.7730735347463337,
+      "valid_exact_match": 0.64216916700718,
+      "valid_threshold": 0.0,
+      "mean_residual_norm": 0.1087578684091568
+    },
+    {
+      "epoch": 24,
+      "stage": "residual",
+      "train_loss": 0.028530314288700356,
+      "valid_micro_f1": 0.7730648792733107,
+      "valid_exact_match": 0.6425194092580702,
+      "valid_threshold": 0.0,
+      "mean_residual_norm": 0.1110529974102974
+    },
+    {
+      "epoch": 25,
+      "stage": "residual",
+      "train_loss": 0.028464111129426404,
+      "valid_micro_f1": 0.7733195181971247,
+      "valid_exact_match": 0.6431615200513688,
+      "valid_threshold": 0.0,
+      "mean_residual_norm": 0.1079307347536087
+    },
+    {
+      "epoch": 26,
+      "stage": "residual",
+      "train_loss": 0.02841354398340579,
+      "valid_micro_f1": 0.7742731549317499,
+      "valid_exact_match": 0.643336641176814,
+      "valid_threshold": 0.0,
+      "mean_residual_norm": 0.10766132920980453
+    },
+    {
+      "epoch": 27,
+      "stage": "residual",
+      "train_loss": 0.02832753688485565,
+      "valid_micro_f1": 0.7725871226842855,
+      "valid_exact_match": 0.6423442881326251,
+      "valid_threshold": 0.0,
+      "mean_residual_norm": 0.11373355984687805
+    },
+    {
+      "epoch": 28,
+      "stage": "residual",
+      "train_loss": 0.02827434636504445,
+      "valid_micro_f1": 0.7740073690448585,
+      "valid_exact_match": 0.6428696515089604,
+      "valid_threshold": 0.0,
+      "mean_residual_norm": 0.11180505901575089
+    },
+    {
+      "epoch": 29,
+      "stage": "residual",
+      "train_loss": 0.028239056660750547,
+      "valid_micro_f1": 0.7734738465492867,
+      "valid_exact_match": 0.6428112778004786,
+      "valid_threshold": 0.0,
+      "mean_residual_norm": 0.1136300340294838
+    },
+    {
+      "epoch": 30,
+      "stage": "residual",
+      "train_loss": 0.028170815480885323,
+      "valid_micro_f1": 0.7731775724982631,
+      "valid_exact_match": 0.6424610355495884,
+      "valid_threshold": 0.0,
+      "mean_residual_norm": 0.11412949860095978
+    },
+    {
+      "epoch": 31,
+      "stage": "residual",
+      "train_loss": 0.028125545264388256,
+      "valid_micro_f1": 0.7737794504304789,
+      "valid_exact_match": 0.6434533885937773,
+      "valid_threshold": 0.0,
+      "mean_residual_norm": 0.11532718688249588
+    },
+    {
+      "epoch": 32,
+      "stage": "residual",
+      "train_loss": 0.028044800707354944,
+      "valid_micro_f1": 0.7734815237996313,
+      "valid_exact_match": 0.6445041153464479,
+      "valid_threshold": 0.0,
+      "mean_residual_norm": 0.11945294588804245
+    },
+    {
+      "epoch": 33,
+      "stage": "residual",
+      "train_loss": 0.02798003852614109,
+      "valid_micro_f1": 0.774216836405827,
+      "valid_exact_match": 0.643920378261631,
+      "valid_threshold": 0.0,
+      "mean_residual_norm": 0.11752935498952866
+    },
+    {
+      "epoch": 34,
+      "stage": "residual",
+      "train_loss": 0.027947691952291603,
+      "valid_micro_f1": 0.7742598684210527,
+      "valid_exact_match": 0.643511762302259,
+      "valid_threshold": 0.0,
+      "mean_residual_norm": 0.11797893792390823
+    }
+  ],
+  "raw_head_initialization": {
+    "enabled": true,
+    "frozen": true,
+    "raw_probe_metrics": {
+      "micro_f1": 0.43429171589864773,
+      "macro_f1": 0.35156736112016856,
+      "exact_match": 0.16045281161560232,
+      "precision_micro": 0.2810694460178996,
+      "recall_micro": 0.9547816047719838,
+      "best_C_from_valid_micro_f1": 4.0,
+      "valid_micro_f1_at_best_C": 0.4533623858153651,
+      "valid_macro_f1_at_best_C": 0.3630062858229255,
+      "valid_exact_match_at_best_C": 0.16741579592551514,
+      "valid_precision_micro_at_best_C": 0.29639021946714256,
+      "valid_recall_micro_at_best_C": 0.9638075846271316
+    },
+    "weight_shape": [
+      1024,
+      183
+    ]
+  },
+  "selected_threshold": 0.0,
+  "mean_test_residual_norm": 0.10683998465538025
+}

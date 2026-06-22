@@ -1,0 +1,18 @@
+# Minimal packages used by the GTR reproduction path.
+# Versions are intentionally not pinned because the original experiments were
+# run from the working research environment. For exact archival reproducibility,
+# record `pip freeze` from the execution machine before rerunning.
+
+numpy
+pandas
+scikit-learn
+torch
+sentence-transformers
+openai
+google-genai
+transformers
+peft
+accelerate
+bitsandbytes
+requests
+
