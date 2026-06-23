@@ -1,0 +1,35 @@
+{
+  "provenance": {
+    "git_commit": "fad136397202e651a3723b578dadbceed38d6c28",
+    "git_dirty": false,
+    "config_path": "configs/data/lbox.yaml",
+    "config_hash": "b0e6b6b517cbf23e6aa78ac963e4273ddd9ea972a6bac01dac1e5644108e61ee",
+    "seed": 42,
+    "timestamp": "2026-06-23T07:32:37.002554+00:00"
+  },
+  "config": "configs/data/lbox.yaml",
+  "num_axes": 20,
+  "axis_ids": [
+    "personal_violence_injury",
+    "violence_coercion_robbery",
+    "property_secret_or_illegal_taking",
+    "deception_fraud",
+    "public_safety_danger",
+    "traffic_driving",
+    "drugs",
+    "official_corruption_bribery",
+    "documents_seals_identity",
+    "tax_invoice_economic_order",
+    "food_drug_product_safety",
+    "environment_resources_forestry",
+    "guns_weapons_explosives",
+    "sexual_offense",
+    "prostitution_exploitation",
+    "public_order_gambling_disruption",
+    "obstruction_official_judicial",
+    "conceal_harbor_criminal_proceeds",
+    "labor_employment_obligation",
+    "joint_group_crime"
+  ],
+  "source": "cail_gtr_axis_schema.py"
+}

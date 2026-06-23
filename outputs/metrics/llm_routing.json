@@ -1,0 +1,50 @@
+{
+  "provenance": {
+    "git_commit": "fad136397202e651a3723b578dadbceed38d6c28",
+    "git_dirty": false,
+    "config_path": "configs/exp/llm_routing.yaml",
+    "config_hash": "79646b0a54f5fb77cead22a4c2f4c7b779d1915aff1c7742b651ea6e55552963",
+    "seed": 42,
+    "timestamp": "2026-06-23T07:32:37.306120+00:00"
+  },
+  "source": "artifacts/cail2018_gtr_v2_only/full/gpt54_gtr_v2_rerank_276/metrics_gpt54_rerank_276.json",
+  "report": {
+    "meta": {
+      "prompts": "artifacts/cail2018_gtr_v2_only/full/llm_prompts/gpt/prompts_276.jsonl",
+      "results": "artifacts/cail2018_gtr_v2_only/full/gpt54_gtr_v2_rerank_276/results_gpt54_rerank_276.jsonl",
+      "train_path": "final_all_data/cail2018_statute_classification/train.jsonl",
+      "n_result_rows": 552
+    },
+    "rows": [
+      {
+        "n": 276,
+        "exact_match": 0.7427536231884058,
+        "micro_f1": 0.7987012987012987,
+        "macro_f1": 0.3781722478176506,
+        "precision": 0.7834394904458599,
+        "recall": 0.8145695364238411,
+        "avg_pred_labels": 1.1376811594202898,
+        "invalid_pred_labels": 0,
+        "condition": "raw_pool_gtr_rerank",
+        "k": 5,
+        "parse_ok_rate": 1.0,
+        "model": "gpt-5.4"
+      },
+      {
+        "n": 276,
+        "exact_match": 0.7608695652173914,
+        "micro_f1": 0.803921568627451,
+        "macro_f1": 0.3773177668402187,
+        "precision": 0.7935483870967742,
+        "recall": 0.8145695364238411,
+        "avg_pred_labels": 1.1231884057971016,
+        "invalid_pred_labels": 0,
+        "condition": "raw_pool_gtr_rerank_score_prompt",
+        "k": 5,
+        "parse_ok_rate": 1.0,
+        "model": "gpt-5.4"
+      }
+    ]
+  },
+  "prediction_artifact": "artifacts/cail2018_gtr_v2_only/full/gpt54_gtr_v2_rerank_276/results_gpt54_rerank_276.jsonl"
+}
