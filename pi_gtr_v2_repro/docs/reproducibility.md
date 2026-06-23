@@ -8,7 +8,7 @@ All commands below should be run from the repository root.
 bash pi_gtr_v2_repro/scripts/00_check_environment.sh
 ```
 
-This checks source files, CAIL2018 split files, optional API keys, and core Python packages.
+This checks source files, available data files, optional API keys, and core Python packages.
 
 Recommended environment:
 
@@ -19,13 +19,23 @@ Recommended environment:
 - `google-genai` or compatible Gemini SDK if rerunning Gemini
 - `transformers`, `peft`, `accelerate`, `bitsandbytes` for Qwen LoRA
 
-The GitHub package intentionally excludes the full CAIL2018 split files and the embedding cache. It includes a small `train.jsonl` label-vocabulary placeholder so the saved-result evaluator can run without the full dataset. Full retraining requires replacing/adding the real local split files under `final_all_data/cail2018_statute_classification/`:
+The GitHub package includes the full `LBOX/statute_classification/` split files. It intentionally excludes the full CAIL2018 split files and the embedding cache. For CAIL, it includes a small `train.jsonl` label-vocabulary placeholder so the saved-result evaluator can run without the full dataset. Full CAIL retraining requires replacing/adding the real local split files under `final_all_data/cail2018_statute_classification/`:
 
 - `train.jsonl`
 - `valid.jsonl`
 - `test.jsonl`
 
 The BGE embedding cache under `output/cail2018_gtr_v2_only/full/cache/` can be regenerated.
+
+Included LBOX files:
+
+- `LBOX/statute_classification/train.jsonl`
+- `LBOX/statute_classification/valid.jsonl`
+- `LBOX/statute_classification/test.jsonl`
+- `LBOX/statute_classification/test2.jsonl`
+- `LBOX/statute_classification/plus_train.jsonl`
+- `LBOX/statute_classification/plus_valid.jsonl`
+- `LBOX/statute_classification/plus_test.jsonl`
 
 ## 1. Rebuild The GTR Checkpoint
 

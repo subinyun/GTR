@@ -31,6 +31,17 @@ Qwen LoRA decoder:
 
 ## Main Outputs
 
+Included datasets:
+
+- `LBOX/statute_classification/train.jsonl`
+- `LBOX/statute_classification/valid.jsonl`
+- `LBOX/statute_classification/test.jsonl`
+- `LBOX/statute_classification/test2.jsonl`
+- `LBOX/statute_classification/plus_train.jsonl`
+- `LBOX/statute_classification/plus_valid.jsonl`
+- `LBOX/statute_classification/plus_test.jsonl`
+- `final_all_data/cail2018_statute_classification/train.jsonl`: CAIL label-vocabulary placeholder for saved-result evaluation, not the full CAIL train split.
+
 GTR model:
 
 - `output/cail2018_gtr_v2_only/full/hybrid_gtr_v2_best.pt`

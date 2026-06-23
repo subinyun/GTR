@@ -36,6 +36,16 @@ optional_file "final_all_data/cail2018_statute_classification/valid.jsonl"
 optional_file "final_all_data/cail2018_statute_classification/test.jsonl"
 
 echo
+echo "[LBOX data included in this repository]"
+require_file "LBOX/statute_classification/train.jsonl"
+require_file "LBOX/statute_classification/valid.jsonl"
+require_file "LBOX/statute_classification/test.jsonl"
+require_file "LBOX/statute_classification/test2.jsonl"
+require_file "LBOX/statute_classification/plus_train.jsonl"
+require_file "LBOX/statute_classification/plus_valid.jsonl"
+require_file "LBOX/statute_classification/plus_test.jsonl"
+
+echo
 echo "[Core source files]"
 require_file "train_cail_hybrid_gtr_v2.py"
 require_file "build_cail_gtr_v2_llm_prompts.py"
