@@ -5,9 +5,9 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 REPO_ROOT="$(cd "${SCRIPT_DIR}/../.." && pwd)"
 cd "${REPO_ROOT}"
 
-PROMPTS="output/cail2018_gtr_v2_only/full/llm_prompts/gpt/prompts_276.jsonl"
-RESULTS="output/cail2018_gtr_v2_only/full/gpt54_gtr_v2_rerank_276/results_gpt54_rerank_276.jsonl"
-OUT_DIR="output/cail2018_gtr_v2_only/full/gpt54_gtr_v2_rerank_276/recomputed"
+PROMPTS="artifacts/cail2018_gtr_v2_only/full/llm_prompts/gpt/prompts_276.jsonl"
+RESULTS="artifacts/cail2018_gtr_v2_only/full/gpt54_gtr_v2_rerank_276/results_gpt54_rerank_276.jsonl"
+OUT_DIR="outputs/metrics/recomputed"
 
 mkdir -p "${OUT_DIR}"
 

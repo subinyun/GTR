@@ -15,9 +15,9 @@ from sklearn.preprocessing import MultiLabelBinarizer
 
 
 DEFAULT_TRAIN_PATH = Path("LBOX/statute_classification/train.jsonl")
-DEFAULT_GOLD_PATH = Path("output/full_gtr_fresh_20260528_1633/llm_decoder/gold.jsonl")
-DEFAULT_RESULTS = Path("output/full_gtr_fresh_20260528_1633/llm_decoder/results_dry_run.jsonl")
-DEFAULT_OUTPUT = Path("output/full_gtr_fresh_20260528_1633/llm_decoder/metrics_dry_run.json")
+DEFAULT_GOLD_PATH = Path("artifacts/full_gtr_fresh_20260528_1633/llm_decoder/gold.jsonl")
+DEFAULT_RESULTS = Path("artifacts/full_gtr_fresh_20260528_1633/llm_decoder/results_dry_run.jsonl")
+DEFAULT_OUTPUT = Path("artifacts/full_gtr_fresh_20260528_1633/llm_decoder/metrics_dry_run.json")
 
 
 def load_jsonl(path: Path) -> list[dict[str, Any]]:

@@ -54,8 +54,8 @@ warnings.filterwarnings("ignore", category=ConvergenceWarning)
 warnings.filterwarnings("ignore", message=r"Label not .* is present in all training examples\.", category=UserWarning)
 
 REPO_ROOT = Path(__file__).resolve().parent
-DEFAULT_OUTPUT_DIR = REPO_ROOT / "output/hybrid_gtr_v2"
-DEFAULT_EMB_CACHE = REPO_ROOT / "output/gtr_v2_experiments/bge_m3_lbox_embeddings.npz"
+DEFAULT_OUTPUT_DIR = REPO_ROOT / "artifacts/hybrid_gtr_v2"
+DEFAULT_EMB_CACHE = REPO_ROOT / "artifacts/gtr_v2_experiments/bge_m3_lbox_embeddings.npz"
 
 
 @dataclass

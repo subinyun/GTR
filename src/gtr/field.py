@@ -1,4 +1,4 @@
-"""Decision-field vocabulary for paper ablations."""
+"""Decision-field vocabulary for ablations."""
 
 from __future__ import annotations
 

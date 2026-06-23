@@ -1,15 +1,15 @@
 name: main_table
-description: Main paper table tying GTR checkpoint metrics and LLM routing metrics together.
+description: Main result table tying GTR checkpoint metrics and LLM routing metrics together.
 tables:
   - Table 1 Main Results
 scripts:
   build_axis_bank: scripts/01_build_axis_bank.py
   run_main: scripts/run_all_main_experiments.py
-  make_tables: scripts/make_paper_tables.py
+  make_tables: scripts/make_result_tables.py
 inputs:
-  gtr_checkpoint_report: output/cail2018_gtr_v2_only/full/hybrid_gtr_v2_report.json
-  gpt54_metrics: output/cail2018_gtr_v2_only/full/gpt54_gtr_v2_rerank_276/metrics_gpt54_rerank_276.json
-  qwen_full_metrics: output/cail2018_gtr_v2_only/full/qwen3_8b_lora_sft/full/summary_metrics.json
+  gtr_checkpoint_report: artifacts/cail2018_gtr_v2_only/full/hybrid_gtr_v2_report.json
+  gpt54_metrics: artifacts/cail2018_gtr_v2_only/full/gpt54_gtr_v2_rerank_276/metrics_gpt54_rerank_276.json
+  qwen_full_metrics: artifacts/cail2018_gtr_v2_only/full/qwen3_8b_lora_sft/full/summary_metrics.json
 outputs:
   metrics: outputs/metrics/main_table.json
-  table_markdown: outputs/metrics/paper_tables.md
+  table_markdown: outputs/metrics/result_tables.md

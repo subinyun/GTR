@@ -2,21 +2,21 @@
 
 Run commands from the repository root.
 
-## Paper Artifact Reproduction
+## Artifact Reproduction
 
-These are the primary paper-facing commands:
+These are the primary review-facing commands:
 
 ```bash
 python scripts/01_build_axis_bank.py --config configs/data/lbox.yaml
 python scripts/run_all_main_experiments.py --config configs/exp/main_table.yaml
-python scripts/make_paper_tables.py --input outputs/metrics
+python scripts/make_result_tables.py --input outputs/metrics
 ```
 
 Outputs:
 
 - `outputs/metrics/axis_bank_summary.json`
 - `outputs/metrics/main_table.json`
-- `outputs/metrics/paper_tables.md`
+- `outputs/metrics/result_tables.md`
 
 Each generated metrics JSON stores the git commit, dirty status, config path, config hash, seed, and timestamp under `provenance`.
 
@@ -112,6 +112,6 @@ Included:
 Excluded:
 
 - Full CAIL2018 split files.
-- BGE embedding cache under `output/cail2018_gtr_v2_only/full/cache/`.
+- BGE embedding cache under `artifacts/cail2018_gtr_v2_only/full/cache/`.
 - Large training caches and generated adapter checkpoints.
 

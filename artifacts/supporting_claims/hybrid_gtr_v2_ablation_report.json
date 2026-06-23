@@ -1,6 +1,6 @@
 {
   "meta": {
-    "checkpoint": "output/hybrid_gtr_v2_improved/hybrid_gtr_v2_best.pt",
+    "checkpoint": "artifacts/hybrid_gtr_v2_improved/hybrid_gtr_v2_best.pt",
     "retrieval_k": 10,
     "mean_valid_residual_norm": 0.1346084475517273,
     "mean_test_residual_norm": 0.133933424949646

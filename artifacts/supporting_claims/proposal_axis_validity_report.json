@@ -144,8 +144,8 @@
       "mean_brier": 0.08361544646322727
     }
   ],
-  "label_counts_csv": "/home/sbyoon/patrol-law-llm/output/proposal_axis_validity/proposal_axis_label_counts.csv",
-  "axis_validity_csv": "/home/sbyoon/patrol-law-llm/output/proposal_axis_validity/proposal_axis_validity.csv",
-  "calibration_curve_csv": "/home/sbyoon/patrol-law-llm/output/proposal_axis_validity/proposal_axis_calibration_curve.csv",
-  "counterfactual_sensitivity_csv": "/home/sbyoon/patrol-law-llm/output/proposal_axis_validity/proposal_axis_counterfactual_sensitivity.csv"
+  "label_counts_csv": "/home/sbyoon/patrol-law-llm/artifacts/proposal_axis_validity/proposal_axis_label_counts.csv",
+  "axis_validity_csv": "/home/sbyoon/patrol-law-llm/artifacts/proposal_axis_validity/proposal_axis_validity.csv",
+  "calibration_curve_csv": "/home/sbyoon/patrol-law-llm/artifacts/proposal_axis_validity/proposal_axis_calibration_curve.csv",
+  "counterfactual_sensitivity_csv": "/home/sbyoon/patrol-law-llm/artifacts/proposal_axis_validity/proposal_axis_counterfactual_sensitivity.csv"
 }

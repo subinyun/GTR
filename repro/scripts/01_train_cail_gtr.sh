@@ -9,7 +9,7 @@ DEVICE="${DEVICE:-cuda}"
 ENCODER_DEVICE="${ENCODER_DEVICE:-${DEVICE}}"
 EPOCHS="${EPOCHS:-50}"
 FIELD_PRETRAIN_EPOCHS="${FIELD_PRETRAIN_EPOCHS:-10}"
-OUTPUT_DIR="${OUTPUT_DIR:-output/cail2018_gtr_v2_only/full}"
+OUTPUT_DIR="${OUTPUT_DIR:-artifacts/cail2018_gtr_v2_only/full}"
 EMBED_CACHE="${EMBED_CACHE:-${OUTPUT_DIR}/cache/bge_m3_cail_embeddings_random_trfull_vafull_tefull_seed42.npz}"
 
 mkdir -p "${OUTPUT_DIR}/cache"

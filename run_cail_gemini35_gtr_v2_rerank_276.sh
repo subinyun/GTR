@@ -18,8 +18,8 @@ if [[ -z "${GOOGLE_API_KEY}" ]]; then
 fi
 
 MODEL="${MODEL:-gemini-3.5-flash}"
-PROMPTS="output/cail2018_gtr_v2_only/full/llm_prompts/gemini/prompts_276.jsonl"
-OUT_DIR="output/cail2018_gtr_v2_only/full/gemini35_gtr_v2_all4_276"
+PROMPTS="artifacts/cail2018_gtr_v2_only/full/llm_prompts/gemini/prompts_276.jsonl"
+OUT_DIR="artifacts/cail2018_gtr_v2_only/full/gemini35_gtr_v2_all4_276"
 RESULTS="${OUT_DIR}/results_gemini35_all4_276.jsonl"
 METRICS_JSON="${OUT_DIR}/metrics_gemini35_all4_276.json"
 METRICS_CSV="${OUT_DIR}/metrics_gemini35_all4_276.csv"

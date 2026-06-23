@@ -13,7 +13,7 @@ sys.path.insert(0, str(REPO_ROOT))
 from src.gtr.provenance import build_provenance
 
 
-src = Path("output/supporting_claims/hybrid_gtr_v2_ablation_report.json")
+src = Path("artifacts/supporting_claims/hybrid_gtr_v2_ablation_report.json")
 dst = Path("outputs/metrics/ablation.json")
 dst.parent.mkdir(parents=True, exist_ok=True)
 payload = {

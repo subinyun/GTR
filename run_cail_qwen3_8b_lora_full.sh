@@ -4,8 +4,8 @@ set -euo pipefail
 MODEL_NAME="${MODEL_NAME:-Qwen/Qwen3-8B}"
 PYTHON_BIN="${PYTHON_BIN:-python}"
 GPU="${GPU:-7}"
-DATA_DIR="output/cail2018_gtr_v2_only/full/qwen3_8b_lora_sft/data_full"
-OUT_ROOT="output/cail2018_gtr_v2_only/full/qwen3_8b_lora_sft/full"
+DATA_DIR="artifacts/cail2018_gtr_v2_only/full/qwen3_8b_lora_sft/data_full"
+OUT_ROOT="artifacts/cail2018_gtr_v2_only/full/qwen3_8b_lora_sft/full"
 TRAIN_PATH="final_all_data/cail2018_statute_classification/train.jsonl"
 CONDITIONS_STR="${CONDITIONS_STR:-raw_pool_gtr_rerank raw_pool_gtr_rerank_score_prompt}"
 read -r -a CONDITIONS <<< "${CONDITIONS_STR}"
@@ -86,7 +86,7 @@ import csv
 import json
 from pathlib import Path
 
-root = Path("output/cail2018_gtr_v2_only/full/qwen3_8b_lora_sft/full")
+root = Path("artifacts/cail2018_gtr_v2_only/full/qwen3_8b_lora_sft/full")
 rows = []
 for metrics_path in sorted(root.glob("*_eval/metrics.json")):
     payload = json.loads(metrics_path.read_text(encoding="utf-8"))

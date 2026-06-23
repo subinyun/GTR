@@ -332,13 +332,13 @@ def build_rows(args: argparse.Namespace) -> dict[str, Any]:
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--test-path", type=Path, default=DEFAULT_TEST_PATH)
-    parser.add_argument("--checkpoint", type=Path, default=Path("output/cail2018_gtr_v2_only/full/hybrid_gtr_v2_best.pt"))
+    parser.add_argument("--checkpoint", type=Path, default=Path("artifacts/cail2018_gtr_v2_only/full/hybrid_gtr_v2_best.pt"))
     parser.add_argument(
         "--embedding-cache",
         type=Path,
-        default=Path("output/cail2018_gtr_v2_only/full/cache/bge_m3_cail_embeddings_random_trfull_vafull_tefull_seed42.npz"),
+        default=Path("artifacts/cail2018_gtr_v2_only/full/cache/bge_m3_cail_embeddings_random_trfull_vafull_tefull_seed42.npz"),
     )
-    parser.add_argument("--output-dir", type=Path, default=Path("output/cail2018_gtr_v2_only/full/llm_prompts"))
+    parser.add_argument("--output-dir", type=Path, default=Path("artifacts/cail2018_gtr_v2_only/full/llm_prompts"))
     parser.add_argument("--max-rows", type=int, default=276, help="Cases to sample; <=0 means all test cases.")
     parser.add_argument("--k", type=int, default=5)
     parser.add_argument("--raw-pool-k", type=int, default=20)

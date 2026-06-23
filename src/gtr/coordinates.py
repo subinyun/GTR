@@ -1,4 +1,4 @@
-"""Coordinate helpers for GTR paper experiments."""
+"""Coordinate helpers for GTR experiments."""
 
 from __future__ import annotations
 

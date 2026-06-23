@@ -17,7 +17,7 @@ DEFAULT_DATA_DIR = Path("final_all_data/cail2018_statute_classification")
 DEFAULT_TRAIN_PATH = DEFAULT_DATA_DIR / "train.jsonl"
 DEFAULT_VALID_PATH = DEFAULT_DATA_DIR / "valid.jsonl"
 DEFAULT_TEST_PATH = DEFAULT_DATA_DIR / "test.jsonl"
-DEFAULT_OUTPUT_DIR = Path("output/cail2018_gtr_v2_only/axis_labels")
+DEFAULT_OUTPUT_DIR = Path("artifacts/cail2018_gtr_v2_only/axis_labels")
 
 
 def load_jsonl(path: Path, *, limit: int | None = None) -> List[Dict[str, Any]]:

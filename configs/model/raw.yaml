@@ -5,4 +5,4 @@ inputs:
   - z
 outputs:
   - statute_scores
-paper_role: raw-only baseline for hybrid-superiority and suppression comparisons
+result_role: raw-only baseline for hybrid-superiority and suppression comparisons

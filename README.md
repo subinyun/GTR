@@ -1,13 +1,13 @@
 # GTR
 
-This repository is organized as a paper-facing reproducibility package. The code is arranged by paper claim/table, so a reviewer can see which script produces which result.
+This repository is organized as a review-facing reproducibility package. The code is arranged by claim/table, so a reviewer can see which script produces which result.
 
-## Reproduce Paper Artifacts
+## Reproduce Artifacts
 
 ```bash
 python scripts/01_build_axis_bank.py --config configs/data/lbox.yaml
 python scripts/run_all_main_experiments.py --config configs/exp/main_table.yaml
-python scripts/make_paper_tables.py --input outputs/metrics
+python scripts/make_result_tables.py --input outputs/metrics
 ```
 
 The commands above write normalized outputs under:
@@ -17,12 +17,12 @@ The commands above write normalized outputs under:
 - `outputs/logs/`
 - `outputs/configs/`
 
-## Paper Claim Map
+## Claim Map
 
-| Claim | Paper role | Script/artifact |
+| Claim | Role | Script/artifact |
 | --- | --- | --- |
-| Axis validity | Figure 2 / method validation | `scripts/01_build_axis_bank.py`, `output/supporting_claims/proposal_axis_validity_report.json` |
-| Coordinate calibration | coordinate sanity | `output/supporting_claims/coordinate_calibration_report.json` |
+| Axis validity | Figure 2 / method validation | `scripts/01_build_axis_bank.py`, `artifacts/supporting_claims/proposal_axis_validity_report.json` |
+| Coordinate calibration | coordinate sanity | `artifacts/supporting_claims/coordinate_calibration_report.json` |
 | Hybrid superiority | Table 1 main results | `scripts/run_all_main_experiments.py` |
 | Interaction necessity | Table 2 ablation | `scripts/05_ablation.py` |
 | Threshold vs GTR | Table 3 threshold comparison | `scripts/06_threshold_vs_gtr.py` |
@@ -30,18 +30,18 @@ The commands above write normalized outputs under:
 | Hard-negative margin | Figure 3 hard negatives | `scripts/08_hard_negative_margin.py` |
 | LLM routing | Table 4 LLM routing | `scripts/09_llm_routing_export.py` |
 
-See `docs/paper_claims.md` for the detailed claim-by-claim evidence map.
+See `docs/claims.md` for the detailed claim-by-claim evidence map.
 
-## Paper Table Outputs
+## Result Table Outputs
 
-| Paper item | Output file |
+| Item | Output file |
 | --- | --- |
 | Table 1 Main results | `outputs/metrics/main_table.json` |
 | Table 2 Ablation | `outputs/metrics/ablation.json` |
 | Table 3 Threshold vs GTR | `outputs/metrics/threshold_vs_gtr.json` |
 | Table 4 LLM routing | `outputs/metrics/llm_routing.json` |
 | Figure 3 Hard-negative margin | `outputs/metrics/hard_negative.json` |
-| Rendered compact tables | `outputs/metrics/paper_tables.md` |
+| Rendered compact tables | `outputs/metrics/result_tables.md` |
 
 Every generated metrics JSON includes provenance:
 
@@ -76,9 +76,9 @@ Saved GPT-5.4 result on the 276-case CAIL sample:
 ## Repository Layout
 
 ```text
-configs/      YAML configs for data, model variants, and paper experiments
-src/gtr/      paper-facing GTR interfaces and helper utilities
-scripts/      paper table/claim wrappers
+configs/      YAML configs for data, model variants, and experiments
+src/gtr/      review-facing GTR interfaces and helper utilities
+scripts/      result table/claim wrappers
 repro/        low-level reproduction scripts and expected metrics
 experiments/  named experiment buckets
 outputs/      normalized metrics, predictions, figures, logs, configs
@@ -97,7 +97,7 @@ Committed:
 - `tests/`
 - `docs/`
 - small `outputs/metrics/*.json`
-- `outputs/metrics/paper_tables.md`
+- `outputs/metrics/result_tables.md`
 
 Ignored or kept out of Git:
 

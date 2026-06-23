@@ -1,4 +1,4 @@
-"""Small metric helpers used by tests and paper table scripts."""
+"""Small metric helpers used by tests and result table scripts."""
 
 from __future__ import annotations
 

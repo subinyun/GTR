@@ -1,7 +1,7 @@
 """Training entrypoint vocabulary.
 
 The included reproducibility package delegates actual training to the legacy
-scripts at the repository root. This module records the paper-facing entrypoint
+scripts at the repository root. This module records the review-facing entrypoint
 names used by configs and docs.
 """
 

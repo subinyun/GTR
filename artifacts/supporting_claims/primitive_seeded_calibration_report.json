@@ -2802,7 +2802,7 @@
     }
   ],
   "axis_source": "/home/sbyoon/patrol-law-llm/gtr_final/axis_grid_primitive_seeded/primitive_seeded/governance_axes_primitive_seeded.json",
-  "coordinate_dir": "/home/sbyoon/patrol-law-llm/output/gtr_v2_final_primitive_seeded/lbox/coordinates",
+  "coordinate_dir": "/home/sbyoon/patrol-law-llm/artifacts/gtr_v2_final_primitive_seeded/lbox/coordinates",
   "coordinate_method": "ridge_lam1.0",
   "fit_split": "train",
   "q_shape": {

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Render compact markdown paper tables from normalized metrics."""
+"""Render compact markdown result tables from normalized metrics."""
 
 from __future__ import annotations
 
@@ -17,7 +17,7 @@ def fmt(value: object) -> str:
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--input", default="outputs/metrics")
-    parser.add_argument("--output", default="outputs/metrics/paper_tables.md")
+    parser.add_argument("--output", default="outputs/metrics/result_tables.md")
     return parser.parse_args()
 
 
@@ -27,7 +27,7 @@ def main() -> None:
     payload = json.loads(metrics_path.read_text(encoding="utf-8"))
     main = payload["tables"]["main_results"]
 
-    lines: list[str] = ["# Paper Tables", ""]
+    lines: list[str] = ["# Result Tables", ""]
     lines.extend(
         [
             "## Table 1. Main Results",

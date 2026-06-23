@@ -12,8 +12,8 @@ if [[ -z "${OPENAI_API_KEY}" ]]; then
   exit 1
 fi
 
-PROMPTS="output/cail2018_gtr_v2_only/full/llm_prompts/gpt/prompts_276.jsonl"
-OUT_DIR="output/cail2018_gtr_v2_only/full/gpt54_gtr_v2_rerank_276"
+PROMPTS="artifacts/cail2018_gtr_v2_only/full/llm_prompts/gpt/prompts_276.jsonl"
+OUT_DIR="artifacts/cail2018_gtr_v2_only/full/gpt54_gtr_v2_rerank_276"
 RESULTS="${OUT_DIR}/results_gpt54_rerank_276.jsonl"
 METRICS_JSON="${OUT_DIR}/metrics_gpt54_rerank_276.json"
 METRICS_CSV="${OUT_DIR}/metrics_gpt54_rerank_276.csv"

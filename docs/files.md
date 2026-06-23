@@ -27,7 +27,7 @@ Qwen LoRA:
 - `run_qwen_completion_eval.py`: runs Qwen adapter predictions.
 - `evaluate_qwen_completion_results.py`: evaluates Qwen outputs.
 
-## Paper-Facing Structure
+## Result-Facing Structure
 
 - `configs/data/lbox.yaml`: included LBOX split paths.
 - `configs/model/raw.yaml`: raw-only baseline model config.
@@ -37,8 +37,8 @@ Qwen LoRA:
 - `configs/exp/threshold_vs_gtr.yaml`: threshold-vs-GTR comparison.
 - `configs/exp/llm_routing.yaml`: LLM routing condition map.
 - `src/gtr/`: small stable interfaces for models, coordinates, metrics, and routing condition names.
-- `scripts/`: paper table/claim wrappers.
-- `experiments/`: named experiment buckets matching paper sections.
+- `scripts/`: result table/claim wrappers.
+- `experiments/`: named experiment buckets matching result sections.
 - `outputs/`: normalized metrics, predictions, figures, logs, and copied configs.
 
 ## Reproduction Helpers
@@ -56,35 +56,35 @@ Qwen LoRA:
 
 CAIL GTR:
 
-- `output/cail2018_gtr_v2_only/full/hybrid_gtr_v2_best.pt`: trained checkpoint included for prompt rebuilding.
-- `output/cail2018_gtr_v2_only/full/hybrid_gtr_v2_report.json`: checkpoint report.
+- `artifacts/cail2018_gtr_v2_only/full/hybrid_gtr_v2_best.pt`: trained checkpoint included for prompt rebuilding.
+- `artifacts/cail2018_gtr_v2_only/full/hybrid_gtr_v2_report.json`: checkpoint report.
 
 LLM routing:
 
-- `output/cail2018_gtr_v2_only/full/llm_prompts/`: saved prompt artifacts.
-- `output/cail2018_gtr_v2_only/full/gpt54_gtr_v2_rerank_276/`: saved GPT-5.4 results and metrics.
+- `artifacts/cail2018_gtr_v2_only/full/llm_prompts/`: saved prompt artifacts.
+- `artifacts/cail2018_gtr_v2_only/full/gpt54_gtr_v2_rerank_276/`: saved GPT-5.4 results and metrics.
 
 Qwen LoRA:
 
-- `output/cail2018_gtr_v2_only/full/qwen3_8b_lora_sft/full/summary_metrics.json`
-- `output/cail2018_gtr_v2_only/full/qwen3_8b_lora_sft/smoke/summary_metrics.json`
+- `artifacts/cail2018_gtr_v2_only/full/qwen3_8b_lora_sft/full/summary_metrics.json`
+- `artifacts/cail2018_gtr_v2_only/full/qwen3_8b_lora_sft/smoke/summary_metrics.json`
 
-Paper-claim support:
+Result-claim support:
 
-- `output/supporting_claims/proposal_axis_validity_report.json`
-- `output/supporting_claims/coordinate_calibration_report.json`
-- `output/supporting_claims/primitive_seeded_calibration_report.json`
-- `output/supporting_claims/hybrid_gtr_v2_ablation_report.json`
-- `output/supporting_claims/hybrid_gtr_v2_mechanism_report.json`
-- `output/supporting_claims/hard_negative_margin_report.json`
-- `output/supporting_claims/threshold_vs_gtr_report.json`
+- `artifacts/supporting_claims/proposal_axis_validity_report.json`
+- `artifacts/supporting_claims/coordinate_calibration_report.json`
+- `artifacts/supporting_claims/primitive_seeded_calibration_report.json`
+- `artifacts/supporting_claims/hybrid_gtr_v2_ablation_report.json`
+- `artifacts/supporting_claims/hybrid_gtr_v2_mechanism_report.json`
+- `artifacts/supporting_claims/hard_negative_margin_report.json`
+- `artifacts/supporting_claims/threshold_vs_gtr_report.json`
 
 ## Output Policy
 
-Commit small paper artifacts:
+Commit small review artifacts:
 
 - `outputs/metrics/*.json`
-- `outputs/metrics/paper_tables.md`
+- `outputs/metrics/result_tables.md`
 
 Do not commit generated large or sensitive artifacts:
 

@@ -11,7 +11,7 @@
     ]
   },
   "gtr_checkpoint": {
-    "source": "output/cail2018_gtr_v2_only/full/hybrid_gtr_v2_report.json",
+    "source": "artifacts/cail2018_gtr_v2_only/full/hybrid_gtr_v2_report.json",
     "test_metrics": {
       "exact_match": 0.6118493909191584,
       "micro_f1": 0.7492519614467135,
@@ -19,7 +19,7 @@
     }
   },
   "gpt54_rerank_276": {
-    "source": "output/cail2018_gtr_v2_only/full/gpt54_gtr_v2_rerank_276/metrics_gpt54_rerank_276.json",
+    "source": "artifacts/cail2018_gtr_v2_only/full/gpt54_gtr_v2_rerank_276/metrics_gpt54_rerank_276.json",
     "rows": [
       {
         "condition": "raw_pool_gtr_rerank",
@@ -44,7 +44,7 @@
     ]
   },
   "qwen3_8b_lora_full": {
-    "source": "output/cail2018_gtr_v2_only/full/qwen3_8b_lora_sft/full/summary_metrics.json",
+    "source": "artifacts/cail2018_gtr_v2_only/full/qwen3_8b_lora_sft/full/summary_metrics.json",
     "rows": [
       {
         "condition": "raw_pool_gtr_rerank",
@@ -69,7 +69,7 @@
     ]
   },
   "qwen3_8b_lora_smoke": {
-    "source": "output/cail2018_gtr_v2_only/full/qwen3_8b_lora_sft/smoke/summary_metrics.json",
+    "source": "artifacts/cail2018_gtr_v2_only/full/qwen3_8b_lora_sft/smoke/summary_metrics.json",
     "rows": [
       {
         "condition": "raw_pool_gtr_rerank",

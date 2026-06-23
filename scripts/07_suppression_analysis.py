@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Export suppression analysis for the paper mechanism claim."""
+"""Export suppression analysis for the result mechanism claim."""
 
 from __future__ import annotations
 
@@ -13,7 +13,7 @@ sys.path.insert(0, str(REPO_ROOT))
 from src.gtr.provenance import build_provenance
 
 
-src = Path("output/supporting_claims/hybrid_gtr_v2_mechanism_report.json")
+src = Path("artifacts/supporting_claims/hybrid_gtr_v2_mechanism_report.json")
 dst = Path("outputs/metrics/suppression.json")
 dst.parent.mkdir(parents=True, exist_ok=True)
 payload = {

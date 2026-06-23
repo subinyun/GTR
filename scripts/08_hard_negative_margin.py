@@ -13,7 +13,7 @@ sys.path.insert(0, str(REPO_ROOT))
 from src.gtr.provenance import build_provenance
 
 
-src = Path("output/supporting_claims/hard_negative_margin_report.json")
+src = Path("artifacts/supporting_claims/hard_negative_margin_report.json")
 dst = Path("outputs/metrics/hard_negative.json")
 dst.parent.mkdir(parents=True, exist_ok=True)
 payload = {

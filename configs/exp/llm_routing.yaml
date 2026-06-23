@@ -9,9 +9,9 @@ conditions:
   raw_pool_gtr_rerank: best router
   raw_pool_gtr_rerank_score_prompt: strongest setting
 inputs:
-  prompts: output/cail2018_gtr_v2_only/full/llm_prompts/gpt/prompts_276.jsonl
-  saved_results: output/cail2018_gtr_v2_only/full/gpt54_gtr_v2_rerank_276/results_gpt54_rerank_276.jsonl
-  saved_metrics: output/cail2018_gtr_v2_only/full/gpt54_gtr_v2_rerank_276/metrics_gpt54_rerank_276.json
+  prompts: artifacts/cail2018_gtr_v2_only/full/llm_prompts/gpt/prompts_276.jsonl
+  saved_results: artifacts/cail2018_gtr_v2_only/full/gpt54_gtr_v2_rerank_276/results_gpt54_rerank_276.jsonl
+  saved_metrics: artifacts/cail2018_gtr_v2_only/full/gpt54_gtr_v2_rerank_276/metrics_gpt54_rerank_276.json
 outputs:
   metrics: outputs/metrics/llm_routing.json
-  predictions_reference: output/cail2018_gtr_v2_only/full/gpt54_gtr_v2_rerank_276/results_gpt54_rerank_276.jsonl
+  predictions_reference: artifacts/cail2018_gtr_v2_only/full/gpt54_gtr_v2_rerank_276/results_gpt54_rerank_276.jsonl

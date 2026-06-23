@@ -102,11 +102,11 @@ def run(args: argparse.Namespace) -> Dict[str, Any]:
 
 def parse_args() -> argparse.Namespace:
     p = argparse.ArgumentParser(description=__doc__)
-    p.add_argument("--prompts", type=Path, default=Path("output/hybrid_gtr_v2_improved/llm_candidate_routing/llm_candidate_routing_prompts.jsonl"))
-    p.add_argument("--results", type=Path, default=Path("output/hybrid_gtr_v2_improved/llm_candidate_routing/results_openai_gpt54_k5.jsonl"))
+    p.add_argument("--prompts", type=Path, default=Path("artifacts/hybrid_gtr_v2_improved/llm_candidate_routing/llm_candidate_routing_prompts.jsonl"))
+    p.add_argument("--results", type=Path, default=Path("artifacts/hybrid_gtr_v2_improved/llm_candidate_routing/results_openai_gpt54_k5.jsonl"))
     p.add_argument("--train-path", type=Path, default=Path("LBOX/statute_classification/train.jsonl"))
-    p.add_argument("--output-json", type=Path, default=Path("output/hybrid_gtr_v2_improved/llm_candidate_routing/actual_llm_candidate_routing_metrics.json"))
-    p.add_argument("--output-csv", type=Path, default=Path("output/hybrid_gtr_v2_improved/llm_candidate_routing/actual_llm_candidate_routing_metrics.csv"))
+    p.add_argument("--output-json", type=Path, default=Path("artifacts/hybrid_gtr_v2_improved/llm_candidate_routing/actual_llm_candidate_routing_metrics.json"))
+    p.add_argument("--output-csv", type=Path, default=Path("artifacts/hybrid_gtr_v2_improved/llm_candidate_routing/actual_llm_candidate_routing_metrics.csv"))
     p.add_argument("--k-values", type=int, nargs="*", default=None)
     p.add_argument("--conditions", nargs="*", default=None)
     return p.parse_args()

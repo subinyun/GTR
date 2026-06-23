@@ -118,8 +118,8 @@ def selected_rows(rows: Sequence[Mapping[str, Any]], conditions: set[str] | None
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--prompts", type=Path, default=Path("output/hybrid_gtr_v2_improved/gpt54_gtr_evidence_comparison/prompts_60.jsonl"))
-    parser.add_argument("--results", type=Path, default=Path("output/hybrid_gtr_v2_improved/gpt54_gtr_evidence_comparison/results_gpt54_60.jsonl"))
+    parser.add_argument("--prompts", type=Path, default=Path("artifacts/hybrid_gtr_v2_improved/gpt54_gtr_evidence_comparison/prompts_60.jsonl"))
+    parser.add_argument("--results", type=Path, default=Path("artifacts/hybrid_gtr_v2_improved/gpt54_gtr_evidence_comparison/results_gpt54_60.jsonl"))
     parser.add_argument("--model", default="gpt-5.4")
     parser.add_argument("--api-key-env", default="OPENAI_API_KEY")
     parser.add_argument("--max-rows", type=int, default=None, help="Maximum new prompt rows to call after resume skips.")

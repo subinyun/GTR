@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build a paper-facing axis-bank summary."""
+"""Build a review-facing axis-bank summary."""
 
 from __future__ import annotations
 

@@ -1,4 +1,4 @@
-"""Provenance helpers for reproducible paper artifacts."""
+"""Provenance helpers for reproducible review artifacts."""
 
 from __future__ import annotations
 

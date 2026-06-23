@@ -7,7 +7,7 @@ components:
   residual: z_prime = z + B h(q)
   decision_field: F_g(q)
   hybrid_score: w^T z_prime + F_g(q)
-paper_role:
+result_role:
   - hybrid superiority
   - interaction necessity
   - selective suppression

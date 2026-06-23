@@ -57,7 +57,7 @@ DEFAULT_DATA_DIR = REPO_ROOT / "final_all_data/cail2018_statute_classification"
 DEFAULT_TRAIN_PATH = DEFAULT_DATA_DIR / "train.jsonl"
 DEFAULT_VALID_PATH = DEFAULT_DATA_DIR / "valid.jsonl"
 DEFAULT_TEST_PATH = DEFAULT_DATA_DIR / "test.jsonl"
-DEFAULT_OUTPUT_DIR = REPO_ROOT / "output/cail2018_gtr_v2_only"
+DEFAULT_OUTPUT_DIR = REPO_ROOT / "artifacts/cail2018_gtr_v2_only"
 
 
 @dataclass

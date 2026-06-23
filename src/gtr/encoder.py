@@ -1,4 +1,4 @@
-"""Encoder interface placeholder for paper-facing organization."""
+"""Encoder interface placeholder for review-facing organization."""
 
 from __future__ import annotations
 

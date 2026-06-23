@@ -9,9 +9,9 @@ scripts:
   suppression: scripts/07_suppression_analysis.py
   hard_negative: scripts/08_hard_negative_margin.py
 inputs:
-  ablation_report: output/supporting_claims/hybrid_gtr_v2_ablation_report.json
-  mechanism_report: output/supporting_claims/hybrid_gtr_v2_mechanism_report.json
-  hard_negative_report: output/supporting_claims/hard_negative_margin_report.json
+  ablation_report: artifacts/supporting_claims/hybrid_gtr_v2_ablation_report.json
+  mechanism_report: artifacts/supporting_claims/hybrid_gtr_v2_mechanism_report.json
+  hard_negative_report: artifacts/supporting_claims/hard_negative_margin_report.json
 outputs:
   ablation_metrics: outputs/metrics/ablation.json
   suppression_metrics: outputs/metrics/suppression.json

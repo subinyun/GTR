@@ -1,8 +1,8 @@
-"""Paper-facing GTR interfaces.
+"""Result-facing GTR interfaces.
 
 The current reproducibility scripts reuse the original experiment files at the
 repository root. This package documents the stable interfaces used to organize
-the paper experiments.
+the experiments.
 """
 
 from .model import (

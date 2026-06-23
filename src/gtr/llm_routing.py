@@ -1,4 +1,4 @@
-"""LLM routing condition names used in the paper."""
+"""LLM routing condition names used in the result."""
 
 from __future__ import annotations
 

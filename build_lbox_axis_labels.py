@@ -16,7 +16,7 @@ from gtr_axis_schema import get_axis_ids, get_axis_schema, get_statute_to_axes_m
 DEFAULT_TRAIN_PATH = Path("/home/sbyoon/patrol-law-llm/LBOX/statute_classification/train.jsonl")
 DEFAULT_VALID_PATH = Path("/home/sbyoon/patrol-law-llm/LBOX/statute_classification/valid.jsonl")
 DEFAULT_TEST_PATH = Path("/home/sbyoon/patrol-law-llm/LBOX/statute_classification/test.jsonl")
-DEFAULT_OUTPUT_DIR = Path("output/full_gtr/axis_labels")
+DEFAULT_OUTPUT_DIR = Path("artifacts/full_gtr/axis_labels")
 
 
 def load_jsonl(path: Path) -> List[Dict[str, Any]]:

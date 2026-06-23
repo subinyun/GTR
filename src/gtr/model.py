@@ -1,4 +1,4 @@
-"""Model interfaces used by the paper-facing experiment wrappers.
+"""Model interfaces used by the review-facing experiment wrappers.
 
 These lightweight classes make the model taxonomy explicit without changing the
 legacy training scripts that produced the included artifacts.
@@ -14,7 +14,7 @@ Vector = Mapping[str, float]
 
 
 class BaseGTRModel(Protocol):
-    """Common interface for paper ablations."""
+    """Common interface for ablations."""
 
     name: str
 
@@ -63,7 +63,7 @@ class ResidualGTRModel:
 
     def score(self, z: Vector, q: Vector | None = None) -> Vector:
         # The trained residual operator lives in the legacy checkpoint. This
-        # interface keeps the paper ablation taxonomy explicit.
+        # interface keeps the result ablation taxonomy explicit.
         return dict(z)
 
 

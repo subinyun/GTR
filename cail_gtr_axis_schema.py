@@ -247,4 +247,4 @@ def save_axis_schema(path: str | Path) -> None:
 
 
 if __name__ == "__main__":
-    save_axis_schema(Path("output/cail2018_gtr_v2_only/axis_schema.json"))
+    save_axis_schema(Path("artifacts/cail2018_gtr_v2_only/axis_schema.json"))

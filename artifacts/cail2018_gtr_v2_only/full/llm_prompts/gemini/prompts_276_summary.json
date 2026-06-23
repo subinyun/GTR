@@ -295,8 +295,8 @@
     32287,
     32424
   ],
-  "source_checkpoint": "output/cail2018_gtr_v2_only/full/hybrid_gtr_v2_best.pt",
-  "source_embedding_cache": "output/cail2018_gtr_v2_only/full/cache/bge_m3_cail_embeddings_random_trfull_vafull_tefull_seed42.npz",
+  "source_checkpoint": "artifacts/cail2018_gtr_v2_only/full/hybrid_gtr_v2_best.pt",
+  "source_embedding_cache": "artifacts/cail2018_gtr_v2_only/full/cache/bge_m3_cail_embeddings_random_trfull_vafull_tefull_seed42.npz",
   "checkpoint_args_subset": {
     "model_name": "BAAI/bge-m3",
     "max_train_samples": null,

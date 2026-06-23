@@ -1,7 +1,7 @@
 {
   "meta": {
     "experiment": "hard_negative_pair_margin",
-    "checkpoint": "output/hybrid_gtr_v2_improved/hybrid_gtr_v2_best.pt",
+    "checkpoint": "artifacts/hybrid_gtr_v2_improved/hybrid_gtr_v2_best.pt",
     "claim": "GTR improves legal hard-negative distinctions by increasing true-vs-confuser margins and reducing confuser false positives.",
     "thresholds": {
       "raw_head_on_z": {

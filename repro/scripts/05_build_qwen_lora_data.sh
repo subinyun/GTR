@@ -6,9 +6,9 @@ REPO_ROOT="$(cd "${SCRIPT_DIR}/../.." && pwd)"
 cd "${REPO_ROOT}"
 
 DEVICE="${DEVICE:-cpu}"
-CHECKPOINT="${CHECKPOINT:-output/cail2018_gtr_v2_only/full/hybrid_gtr_v2_best.pt}"
-EMBED_CACHE="${EMBED_CACHE:-output/cail2018_gtr_v2_only/full/cache/bge_m3_cail_embeddings_random_trfull_vafull_tefull_seed42.npz}"
-OUTPUT_DIR="${OUTPUT_DIR:-output/cail2018_gtr_v2_only/full/qwen3_8b_lora_sft/data_full}"
+CHECKPOINT="${CHECKPOINT:-artifacts/cail2018_gtr_v2_only/full/hybrid_gtr_v2_best.pt}"
+EMBED_CACHE="${EMBED_CACHE:-artifacts/cail2018_gtr_v2_only/full/cache/bge_m3_cail_embeddings_random_trfull_vafull_tefull_seed42.npz}"
+OUTPUT_DIR="${OUTPUT_DIR:-artifacts/cail2018_gtr_v2_only/full/qwen3_8b_lora_sft/data_full}"
 
 python build_cail_qwen_lora_sft_data.py \
   --train-path final_all_data/cail2018_statute_classification/train.jsonl \

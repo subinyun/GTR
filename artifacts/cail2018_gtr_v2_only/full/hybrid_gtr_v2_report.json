@@ -14,8 +14,8 @@
     "num_statutes": 183,
     "sample_strategy": "random",
     "best_epoch": 26,
-    "checkpoint": "output/cail2018_gtr_v2_only/full/hybrid_gtr_v2_best.pt",
-    "embedding_cache": "output/cail2018_gtr_v2_only/full/cache/bge_m3_cail_embeddings_random_trfull_vafull_tefull_seed42.npz"
+    "checkpoint": "artifacts/cail2018_gtr_v2_only/full/hybrid_gtr_v2_best.pt",
+    "embedding_cache": "artifacts/cail2018_gtr_v2_only/full/cache/bge_m3_cail_embeddings_random_trfull_vafull_tefull_seed42.npz"
   },
   "valid_metrics": {
     "micro_f1": 0.7742731549317499,

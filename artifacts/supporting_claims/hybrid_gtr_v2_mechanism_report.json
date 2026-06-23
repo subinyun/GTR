@@ -1,6 +1,6 @@
 {
   "meta": {
-    "checkpoint": "output/hybrid_gtr_v2_improved/hybrid_gtr_v2_best.pt",
+    "checkpoint": "artifacts/hybrid_gtr_v2_improved/hybrid_gtr_v2_best.pt",
     "thresholds": {
       "raw_head_on_z": 0.0,
       "raw_plus_field_no_residual": 0.0,
