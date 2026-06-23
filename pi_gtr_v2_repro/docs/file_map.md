@@ -56,6 +56,15 @@ Qwen3-8B LoRA artifacts:
 - `output/cail2018_gtr_v2_only/full/qwen3_8b_lora_sft/full/summary_metrics.json`
 - `output/cail2018_gtr_v2_only/full/qwen3_8b_lora_sft/smoke/summary_metrics.json`
 
+Supporting claim artifacts:
+
+- `output/supporting_claims/proposal_axis_validity_report.json`: axis validity.
+- `output/supporting_claims/coordinate_calibration_report.json`: coordinate calibration.
+- `output/supporting_claims/primitive_seeded_calibration_report.json`: primitive-seeded coordinate calibration.
+- `output/supporting_claims/hybrid_gtr_v2_ablation_report.json`: hybrid superiority and interaction necessity.
+- `output/supporting_claims/hybrid_gtr_v2_mechanism_report.json`: selective false-positive suppression.
+- `output/supporting_claims/hard_negative_margin_report.json`: hard-negative margin improvement.
+
 ## Descriptor And Axis Exploration
 
 The `gtr_final/` folder contains the later descriptor and axis-construction work. It is useful for explaining the broader GTR design, but it is not the shortest path for rerunning the final CAIL2018 reranking metrics.

@@ -4,11 +4,15 @@ This folder is a PI-facing guide for reviewing and rerunning the GTR experiments
 
 ## What To Review First
 
-1. Read `docs/file_map.md` to see which source files are part of the final GTR path.
-2. Read `docs/reproducibility.md` for the exact rerun order.
-3. Compare rerun metrics against `results/expected_metrics.json`.
+1. Read `docs/claim_map.md` for the seven-claim paper narrative.
+2. Read `docs/results_summary.md` for the compact result numbers.
+3. Read `docs/file_map.md` to see which source files are part of the final GTR path.
+4. Read `docs/reproducibility.md` for the exact rerun order.
+5. Compare rerun metrics against `results/expected_metrics.json`.
 
-The main experiment path is CAIL2018 statute classification with GTR reranking, followed by LLM or LoRA decoding:
+The paper story is organized around axis validity, coordinate calibration, hybrid superiority, interaction necessity, selective suppression, hard-negative margin improvement, and LLM routing improvement.
+
+The main reproducible experiment path is CAIL2018 statute classification with GTR reranking, followed by LLM or LoRA decoding:
 
 - GTR checkpoint: `output/cail2018_gtr_v2_only/full/hybrid_gtr_v2_best.pt`
 - GTR report: `output/cail2018_gtr_v2_only/full/hybrid_gtr_v2_report.json`

@@ -1,0 +1,1829 @@
+{
+  "meta": {
+    "experiment": "coordinate_calibration_raw_vs_zscore_vs_sigmoid",
+    "schema": "extended",
+    "n_axes": 43,
+    "n_statutes": 169,
+    "claim": "raw coordinates are not judgment scores; calibrated q is better interpreted as legal criterion satisfaction"
+  },
+  "axis_probe_fit": [
+    {
+      "axis_index": 0,
+      "status": "fit",
+      "positive": 882,
+      "negative": 1326
+    },
+    {
+      "axis_index": 1,
+      "status": "fit",
+      "positive": 460,
+      "negative": 1748
+    },
+    {
+      "axis_index": 2,
+      "status": "fit",
+      "positive": 273,
+      "negative": 1935
+    },
+    {
+      "axis_index": 3,
+      "status": "fit",
+      "positive": 214,
+      "negative": 1994
+    },
+    {
+      "axis_index": 4,
+      "status": "fit",
+      "positive": 155,
+      "negative": 2053
+    },
+    {
+      "axis_index": 5,
+      "status": "fit",
+      "positive": 399,
+      "negative": 1809
+    },
+    {
+      "axis_index": 6,
+      "status": "fit",
+      "positive": 391,
+      "negative": 1817
+    },
+    {
+      "axis_index": 7,
+      "status": "fit",
+      "positive": 371,
+      "negative": 1837
+    },
+    {
+      "axis_index": 8,
+      "status": "fit",
+      "positive": 342,
+      "negative": 1866
+    },
+    {
+      "axis_index": 9,
+      "status": "fit",
+      "positive": 405,
+      "negative": 1803
+    },
+    {
+      "axis_index": 10,
+      "status": "fit",
+      "positive": 166,
+      "negative": 2042
+    },
+    {
+      "axis_index": 11,
+      "status": "fit",
+      "positive": 319,
+      "negative": 1889
+    },
+    {
+      "axis_index": 12,
+      "status": "fit",
+      "positive": 395,
+      "negative": 1813
+    },
+    {
+      "axis_index": 13,
+      "status": "fit",
+      "positive": 641,
+      "negative": 1567
+    },
+    {
+      "axis_index": 14,
+      "status": "fit",
+      "positive": 398,
+      "negative": 1810
+    },
+    {
+      "axis_index": 15,
+      "status": "fit",
+      "positive": 451,
+      "negative": 1757
+    },
+    {
+      "axis_index": 16,
+      "status": "fit",
+      "positive": 299,
+      "negative": 1909
+    },
+    {
+      "axis_index": 17,
+      "status": "fit",
+      "positive": 113,
+      "negative": 2095
+    },
+    {
+      "axis_index": 18,
+      "status": "fit",
+      "positive": 23,
+      "negative": 2185
+    },
+    {
+      "axis_index": 19,
+      "status": "fit",
+      "positive": 314,
+      "negative": 1894
+    },
+    {
+      "axis_index": 20,
+      "status": "fit",
+      "positive": 73,
+      "negative": 2135
+    },
+    {
+      "axis_index": 21,
+      "status": "fit",
+      "positive": 263,
+      "negative": 1945
+    },
+    {
+      "axis_index": 22,
+      "status": "fit",
+      "positive": 411,
+      "negative": 1797
+    },
+    {
+      "axis_index": 23,
+      "status": "fit",
+      "positive": 99,
+      "negative": 2109
+    },
+    {
+      "axis_index": 24,
+      "status": "fit",
+      "positive": 196,
+      "negative": 2012
+    },
+    {
+      "axis_index": 25,
+      "status": "fit",
+      "positive": 64,
+      "negative": 2144
+    },
+    {
+      "axis_index": 26,
+      "status": "fit",
+      "positive": 574,
+      "negative": 1634
+    },
+    {
+      "axis_index": 27,
+      "status": "fit",
+      "positive": 353,
+      "negative": 1855
+    },
+    {
+      "axis_index": 28,
+      "status": "fit",
+      "positive": 167,
+      "negative": 2041
+    },
+    {
+      "axis_index": 29,
+      "status": "fit",
+      "positive": 240,
+      "negative": 1968
+    },
+    {
+      "axis_index": 30,
+      "status": "fit",
+      "positive": 62,
+      "negative": 2146
+    },
+    {
+      "axis_index": 31,
+      "status": "fit",
+      "positive": 691,
+      "negative": 1517
+    },
+    {
+      "axis_index": 32,
+      "status": "fit",
+      "positive": 524,
+      "negative": 1684
+    },
+    {
+      "axis_index": 33,
+      "status": "fit",
+      "positive": 488,
+      "negative": 1720
+    },
+    {
+      "axis_index": 34,
+      "status": "fit",
+      "positive": 392,
+      "negative": 1816
+    },
+    {
+      "axis_index": 35,
+      "status": "fit",
+      "positive": 311,
+      "negative": 1897
+    },
+    {
+      "axis_index": 36,
+      "status": "fit",
+      "positive": 367,
+      "negative": 1841
+    },
+    {
+      "axis_index": 37,
+      "status": "fit",
+      "positive": 149,
+      "negative": 2059
+    },
+    {
+      "axis_index": 38,
+      "status": "fit",
+      "positive": 248,
+      "negative": 1960
+    },
+    {
+      "axis_index": 39,
+      "status": "fit",
+      "positive": 231,
+      "negative": 1977
+    },
+    {
+      "axis_index": 40,
+      "status": "fit",
+      "positive": 406,
+      "negative": 1802
+    },
+    {
+      "axis_index": 41,
+      "status": "fit",
+      "positive": 110,
+      "negative": 2098
+    },
+    {
+      "axis_index": 42,
+      "status": "fit",
+      "positive": 54,
+      "negative": 2154
+    }
+  ],
+  "platt_calibration": [
+    {
+      "axis_index": 0,
+      "status": "fit",
+      "alpha": 2.0164157364418225,
+      "tau": -0.07168881340593534
+    },
+    {
+      "axis_index": 1,
+      "status": "fit",
+      "alpha": 2.2340011211399387,
+      "tau": 0.018299936698367443
+    },
+    {
+      "axis_index": 2,
+      "status": "fit",
+      "alpha": 2.4917878417056967,
+      "tau": -0.12529182271075803
+    },
+    {
+      "axis_index": 3,
+      "status": "fit",
+      "alpha": 2.1748114519604194,
+      "tau": -0.1579116747952872
+    },
+    {
+      "axis_index": 4,
+      "status": "fit",
+      "alpha": 2.2976929083577784,
+      "tau": -0.23692199031026062
+    },
+    {
+      "axis_index": 5,
+      "status": "fit",
+      "alpha": 1.8350195405147527,
+      "tau": -0.05602007908198976
+    },
+    {
+      "axis_index": 6,
+      "status": "fit",
+      "alpha": 1.7984354014173591,
+      "tau": -0.0680082638173176
+    },
+    {
+      "axis_index": 7,
+      "status": "fit",
+      "alpha": 2.0380528950483856,
+      "tau": 0.011369291537442183
+    },
+    {
+      "axis_index": 8,
+      "status": "fit",
+      "alpha": 2.1113687460043455,
+      "tau": -0.006986416075527438
+    },
+    {
+      "axis_index": 9,
+      "status": "fit",
+      "alpha": 2.2052134858974624,
+      "tau": 0.014197782757983595
+    },
+    {
+      "axis_index": 10,
+      "status": "fit",
+      "alpha": 2.7021546618531405,
+      "tau": 0.18807667031153266
+    },
+    {
+      "axis_index": 11,
+      "status": "fit",
+      "alpha": 2.1276284979041624,
+      "tau": 0.05176697018615274
+    },
+    {
+      "axis_index": 12,
+      "status": "fit",
+      "alpha": 2.526275619673136,
+      "tau": -0.04586146017209789
+    },
+    {
+      "axis_index": 13,
+      "status": "fit",
+      "alpha": 2.169337926841763,
+      "tau": -0.3358114186733828
+    },
+    {
+      "axis_index": 14,
+      "status": "fit",
+      "alpha": 2.0367442356867342,
+      "tau": 0.01623904183516515
+    },
+    {
+      "axis_index": 15,
+      "status": "fit",
+      "alpha": 1.479984388187252,
+      "tau": -0.034848146820864616
+    },
+    {
+      "axis_index": 16,
+      "status": "fit",
+      "alpha": 1.6661055339787165,
+      "tau": 0.04227694898954979
+    },
+    {
+      "axis_index": 17,
+      "status": "fit",
+      "alpha": 2.851861775136597,
+      "tau": -0.030585372225043216
+    },
+    {
+      "axis_index": 18,
+      "status": "fit",
+      "alpha": 5.225331205272873,
+      "tau": 0.6409196895722262
+    },
+    {
+      "axis_index": 19,
+      "status": "fit",
+      "alpha": 2.3556572036937142,
+      "tau": -0.16549129022023631
+    },
+    {
+      "axis_index": 20,
+      "status": "fit",
+      "alpha": 4.439171706930063,
+      "tau": 0.029797253477278064
+    },
+    {
+      "axis_index": 21,
+      "status": "fit",
+      "alpha": 2.09531396409104,
+      "tau": -0.03328529810058588
+    },
+    {
+      "axis_index": 22,
+      "status": "fit",
+      "alpha": 1.8056767893883852,
+      "tau": 0.11864442046619626
+    },
+    {
+      "axis_index": 23,
+      "status": "fit",
+      "alpha": 2.414449999297169,
+      "tau": 0.5207297231698693
+    },
+    {
+      "axis_index": 24,
+      "status": "fit",
+      "alpha": 2.3330015590425432,
+      "tau": -0.34366835165866044
+    },
+    {
+      "axis_index": 25,
+      "status": "fit",
+      "alpha": 2.0996260179723967,
+      "tau": 0.03789659389262296
+    },
+    {
+      "axis_index": 26,
+      "status": "fit",
+      "alpha": 1.7743114260521222,
+      "tau": -0.03631977103329889
+    },
+    {
+      "axis_index": 27,
+      "status": "fit",
+      "alpha": 1.9675184998548836,
+      "tau": 0.04218680502882196
+    },
+    {
+      "axis_index": 28,
+      "status": "fit",
+      "alpha": 2.44871105139322,
+      "tau": -0.1998093108365588
+    },
+    {
+      "axis_index": 29,
+      "status": "fit",
+      "alpha": 2.2325810686170984,
+      "tau": 0.14145484565783595
+    },
+    {
+      "axis_index": 30,
+      "status": "fit",
+      "alpha": 3.7335581011902894,
+      "tau": -0.10382653094444622
+    },
+    {
+      "axis_index": 31,
+      "status": "fit",
+      "alpha": 2.0053230125793937,
+      "tau": -0.02352947924437301
+    },
+    {
+      "axis_index": 32,
+      "status": "fit",
+      "alpha": 2.388573004924663,
+      "tau": 0.06704915741361876
+    },
+    {
+      "axis_index": 33,
+      "status": "fit",
+      "alpha": 1.432004308500827,
+      "tau": 0.061805929397383504
+    },
+    {
+      "axis_index": 34,
+      "status": "fit",
+      "alpha": 1.4534919437930636,
+      "tau": -0.0019910615674842897
+    },
+    {
+      "axis_index": 35,
+      "status": "fit",
+      "alpha": 2.344463945917796,
+      "tau": -0.09288398161495696
+    },
+    {
+      "axis_index": 36,
+      "status": "fit",
+      "alpha": 2.0226612717701213,
+      "tau": -0.029909310933309192
+    },
+    {
+      "axis_index": 37,
+      "status": "fit",
+      "alpha": 3.2202557907918954,
+      "tau": -0.8913800725596663
+    },
+    {
+      "axis_index": 38,
+      "status": "fit",
+      "alpha": 2.2908866654458615,
+      "tau": 0.11339138907927672
+    },
+    {
+      "axis_index": 39,
+      "status": "fit",
+      "alpha": 2.413993909654282,
+      "tau": 0.11276390077329397
+    },
+    {
+      "axis_index": 40,
+      "status": "fit",
+      "alpha": 1.7119918545402553,
+      "tau": -0.11322402853670335
+    },
+    {
+      "axis_index": 41,
+      "status": "fit",
+      "alpha": 1.6309413450387138,
+      "tau": -0.1241229654068914
+    },
+    {
+      "axis_index": 42,
+      "status": "fit",
+      "alpha": 1.9972172435430349,
+      "tau": 0.1460909490397682
+    }
+  ],
+  "axis_calibration": [
+    {
+      "representation": "raw_u",
+      "mean_auc": 0.9577012381207748,
+      "mean_ap": 0.8476082510899822,
+      "mean_ece": 0.12958837717032787,
+      "mean_brier": 0.06637944356906553,
+      "per_axis": [
+        {
+          "axis_id": "violence_or_threat",
+          "auc": 0.990881790881791,
+          "ap": 0.9886245314578098,
+          "ece": 0.0752065621883325,
+          "brier": 0.039937496185302734,
+          "mean_positive_score": 2.453381061553955,
+          "mean_negative_score": -2.2737035751342773
+        },
+        {
+          "axis_id": "injury_result",
+          "auc": 0.9744598765432099,
+          "ap": 0.9474940758757566,
+          "ece": 0.11037191754018051,
+          "brier": 0.0535455122590065,
+          "mean_positive_score": 1.8970719575881958,
+          "mean_negative_score": -2.1214842796325684
+        },
+        {
+          "axis_id": "official_victim",
+          "auc": 0.9765625,
+          "ap": 0.9208504545792005,
+          "ece": 0.1315891494623561,
+          "brier": 0.05273604020476341,
+          "mean_positive_score": 2.3199472427368164,
+          "mean_negative_score": -1.9415128231048584
+        },
+        {
+          "axis_id": "duty_execution",
+          "auc": 0.982,
+          "ap": 0.9029656714651244,
+          "ece": 0.10834627104518206,
+          "brier": 0.04466135427355766,
+          "mean_positive_score": 2.4987447261810303,
+          "mean_negative_score": -2.2546825408935547
+        },
+        {
+          "axis_id": "lawful_duty",
+          "auc": 0.9928322752406307,
+          "ap": 0.9526124245551488,
+          "ece": 0.09813793300502541,
+          "brier": 0.028455765917897224,
+          "mean_positive_score": 2.60275936126709,
+          "mean_negative_score": -2.5028741359710693
+        },
+        {
+          "axis_id": "property_taken",
+          "auc": 0.9691150442477876,
+          "ap": 0.9492824228018043,
+          "ece": 0.09818915582592667,
+          "brier": 0.04634048417210579,
+          "mean_positive_score": 2.2094037532806396,
+          "mean_negative_score": -2.295247793197632
+        },
+        {
+          "axis_id": "unlawful_gain_intent",
+          "auc": 0.9665359477124184,
+          "ap": 0.9385223106255954,
+          "ece": 0.09776675651538308,
+          "brier": 0.04675482213497162,
+          "mean_positive_score": 2.074800968170166,
+          "mean_negative_score": -2.188337564468384
+        },
+        {
+          "axis_id": "deception",
+          "auc": 0.9724007561436673,
+          "ap": 0.9344957824237486,
+          "ece": 0.10732663605038237,
+          "brier": 0.05107444152235985,
+          "mean_positive_score": 2.1701135635375977,
+          "mean_negative_score": -2.153588056564331
+        },
+        {
+          "axis_id": "entrustment_or_custody",
+          "auc": 0.9280185758513932,
+          "ap": 0.7537193868723162,
+          "ece": 0.18799969159147664,
+          "brier": 0.10990010201931,
+          "mean_positive_score": 1.426679253578186,
+          "mean_negative_score": -1.3035935163497925
+        },
+        {
+          "axis_id": "sexual_act",
+          "auc": 0.9816849816849816,
+          "ap": 0.9367641080531486,
+          "ece": 0.1538565024814528,
+          "brier": 0.07266394048929214,
+          "mean_positive_score": 2.2116878032684326,
+          "mean_negative_score": -1.8694050312042236
+        },
+        {
+          "axis_id": "inability_to_resist",
+          "auc": 0.9791112021298383,
+          "ap": 0.820407795471316,
+          "ece": 0.13524288136134113,
+          "brier": 0.0641685500741005,
+          "mean_positive_score": 2.2274391651153564,
+          "mean_negative_score": -2.4664499759674072
+        },
+        {
+          "axis_id": "joint_principal",
+          "auc": 0.7928935023455435,
+          "ap": 0.4674220690836435,
+          "ece": 0.2283120215263056,
+          "brier": 0.16818712651729584,
+          "mean_positive_score": 0.40918052196502686,
+          "mean_negative_score": -0.8036506772041321
+        },
+        {
+          "axis_id": "special_weapon_or_group",
+          "auc": 0.9285515190931897,
+          "ap": 0.776363698408664,
+          "ece": 0.19401843208765637,
+          "brier": 0.11790463328361511,
+          "mean_positive_score": 0.9577064514160156,
+          "mean_negative_score": -1.0344555377960205
+        },
+        {
+          "axis_id": "traffic_driving",
+          "auc": 0.9609485679088389,
+          "ap": 0.9423093512623613,
+          "ece": 0.10117911959093981,
+          "brier": 0.0698445737361908,
+          "mean_positive_score": 2.2042555809020996,
+          "mean_negative_score": -1.622154712677002
+        },
+        {
+          "axis_id": "intoxication",
+          "auc": 0.9842668344870987,
+          "ap": 0.9314559687796037,
+          "ece": 0.10070602485127209,
+          "brier": 0.05499989166855812,
+          "mean_positive_score": 2.4047493934631348,
+          "mean_negative_score": -2.1931746006011963
+        },
+        {
+          "axis_id": "disposal_act",
+          "auc": 0.9418732549285049,
+          "ap": 0.8688938216699926,
+          "ece": 0.12848088408455902,
+          "brier": 0.08929819613695145,
+          "mean_positive_score": 1.8669142723083496,
+          "mean_negative_score": -1.6653001308441162
+        },
+        {
+          "axis_id": "property_loss",
+          "auc": 0.9588374985864526,
+          "ap": 0.8948516022786842,
+          "ece": 0.10316870541757216,
+          "brier": 0.05769604817032814,
+          "mean_positive_score": 2.095200777053833,
+          "mean_negative_score": -2.4102935791015625
+        },
+        {
+          "axis_id": "theft_secret_taking",
+          "auc": 0.9081730769230769,
+          "ap": 0.7332348366771189,
+          "ece": 0.16485756427805492,
+          "brier": 0.06882625073194504,
+          "mean_positive_score": 1.3395169973373413,
+          "mean_negative_score": -1.8036085367202759
+        },
+        {
+          "axis_id": "robbery_force",
+          "auc": 0.9825367647058824,
+          "ap": 0.39880952380952384,
+          "ece": 0.14267686587096987,
+          "brier": 0.04344535991549492,
+          "mean_positive_score": 0.18806719779968262,
+          "mean_negative_score": -2.1476430892944336
+        },
+        {
+          "axis_id": "obstruction_result",
+          "auc": 0.9555339175592341,
+          "ap": 0.8840607297472228,
+          "ece": 0.1337754286663688,
+          "brier": 0.06309221684932709,
+          "mean_positive_score": 2.0874271392822266,
+          "mean_negative_score": -1.7667697668075562
+        },
+        {
+          "axis_id": "minor_victim",
+          "auc": 0.8933080808080809,
+          "ap": 0.6115070583665532,
+          "ece": 0.12157156966302705,
+          "brier": 0.048945069313049316,
+          "mean_positive_score": 1.0113240480422974,
+          "mean_negative_score": -2.1684226989746094
+        },
+        {
+          "axis_id": "camera_or_recording",
+          "auc": 0.9556864754098361,
+          "ap": 0.8387880737864405,
+          "ece": 0.1628242478321266,
+          "brier": 0.07710465043783188,
+          "mean_positive_score": 1.7442686557769775,
+          "mean_negative_score": -1.5954748392105103
+        },
+        {
+          "axis_id": "distribution_act",
+          "auc": 0.9697551169590644,
+          "ap": 0.847218839890483,
+          "ece": 0.10956256231967955,
+          "brier": 0.07137095183134079,
+          "mean_positive_score": 1.9272791147232056,
+          "mean_negative_score": -2.2111966609954834
+        },
+        {
+          "axis_id": "license_absence",
+          "auc": 0.9891781222579702,
+          "ap": 0.9430769230769229,
+          "ece": 0.0486081667629111,
+          "brier": 0.018291227519512177,
+          "mean_positive_score": 2.6185531616210938,
+          "mean_negative_score": -3.709550380706787
+        },
+        {
+          "axis_id": "accident_result",
+          "auc": 0.9383055507819212,
+          "ap": 0.8914282867161175,
+          "ece": 0.12392305266921935,
+          "brier": 0.04364274814724922,
+          "mean_positive_score": 2.6528453826904297,
+          "mean_negative_score": -2.147063732147217
+        },
+        {
+          "axis_id": "refusal_breath_test",
+          "auc": 0.994173949230129,
+          "ap": 0.883962488129155,
+          "ece": 0.09312985329956248,
+          "brier": 0.030929164960980415,
+          "mean_positive_score": 2.7419538497924805,
+          "mean_negative_score": -2.825186252593994
+        },
+        {
+          "axis_id": "business_duty",
+          "auc": 0.9679367731157231,
+          "ap": 0.9167662826815536,
+          "ece": 0.11593681123053684,
+          "brier": 0.07909413427114487,
+          "mean_positive_score": 1.587201714515686,
+          "mean_negative_score": -1.6524780988693237
+        },
+        {
+          "axis_id": "bodily_contact",
+          "auc": 0.9221848110737,
+          "ap": 0.804134567532655,
+          "ece": 0.19890298566146605,
+          "brier": 0.1122027263045311,
+          "mean_positive_score": 1.597534418106079,
+          "mean_negative_score": -1.4925508499145508
+        },
+        {
+          "axis_id": "sexual_coercion",
+          "auc": 0.9915891195418755,
+          "ap": 0.9377916172663814,
+          "ece": 0.10487374954897423,
+          "brier": 0.03234027698636055,
+          "mean_positive_score": 2.4363512992858887,
+          "mean_negative_score": -2.4669501781463623
+        },
+        {
+          "axis_id": "obscene_communication",
+          "auc": 0.9724942396313364,
+          "ap": 0.8075145268666281,
+          "ece": 0.1441914758415542,
+          "brier": 0.07224605977535248,
+          "mean_positive_score": 1.6735702753067017,
+          "mean_negative_score": -2.03515887260437
+        },
+        {
+          "axis_id": "child_abuse",
+          "auc": 0.9978757302177376,
+          "ap": 0.9480519480519478,
+          "ece": 0.11532916310850692,
+          "brier": 0.026592222973704338,
+          "mean_positive_score": 2.549443006515503,
+          "mean_negative_score": -2.3831188678741455
+        },
+        {
+          "axis_id": "false_statement",
+          "auc": 0.9569352551984877,
+          "ap": 0.9335835683136801,
+          "ece": 0.12677862053143157,
+          "brier": 0.07943189889192581,
+          "mean_positive_score": 1.4767885208129883,
+          "mean_negative_score": -1.5437253713607788
+        },
+        {
+          "axis_id": "reputation_harm",
+          "auc": 0.9708952863018032,
+          "ap": 0.8877723267831308,
+          "ece": 0.16250024369472393,
+          "brier": 0.08898425102233887,
+          "mean_positive_score": 1.5226112604141235,
+          "mean_negative_score": -1.4597917795181274
+        },
+        {
+          "axis_id": "document_forgery",
+          "auc": 0.9448850436593768,
+          "ap": 0.7790046330459102,
+          "ece": 0.11692233833119922,
+          "brier": 0.09308971464633942,
+          "mean_positive_score": 1.6848812103271484,
+          "mean_negative_score": -1.8423999547958374
+        },
+        {
+          "axis_id": "use_forged_document",
+          "auc": 0.9131631631631633,
+          "ap": 0.7997427188416883,
+          "ece": 0.15856301849303042,
+          "brier": 0.11137542873620987,
+          "mean_positive_score": 1.1689156293869019,
+          "mean_negative_score": -1.2477716207504272
+        },
+        {
+          "axis_id": "business_obstruction",
+          "auc": 0.9828615656789031,
+          "ap": 0.9188842652578983,
+          "ece": 0.1405371018563924,
+          "brier": 0.06039431318640709,
+          "mean_positive_score": 2.1667532920837402,
+          "mean_negative_score": -1.7607415914535522
+        },
+        {
+          "axis_id": "trespass_or_entry",
+          "auc": 0.8409022856572512,
+          "ap": 0.5287691754627275,
+          "ece": 0.23533443318328992,
+          "brier": 0.16078895330429077,
+          "mean_positive_score": 0.6045209765434265,
+          "mean_negative_score": -0.7415764927864075
+        },
+        {
+          "axis_id": "negligence",
+          "auc": 1.0,
+          "ap": 1.0,
+          "ece": 0.05363144313889569,
+          "brier": 0.0052734846249222755,
+          "mean_positive_score": 3.501034736633301,
+          "mean_negative_score": -3.1749179363250732
+        },
+        {
+          "axis_id": "property_damage",
+          "auc": 0.9525048060612914,
+          "ap": 0.8039793873442618,
+          "ece": 0.1453450214441704,
+          "brier": 0.08391453325748444,
+          "mean_positive_score": 1.0632328987121582,
+          "mean_negative_score": -1.7229405641555786
+        },
+        {
+          "axis_id": "public_indecency",
+          "auc": 0.972387566137566,
+          "ap": 0.8496347386957965,
+          "ece": 0.16082420962714197,
+          "brier": 0.07262320816516876,
+          "mean_positive_score": 1.7712124586105347,
+          "mean_negative_score": -1.899911642074585
+        },
+        {
+          "axis_id": "recidivism_or_prior_dui",
+          "auc": 0.9446251045247608,
+          "ap": 0.8812196333639475,
+          "ece": 0.1681044492060724,
+          "brier": 0.08550234884023666,
+          "mean_positive_score": 1.8648940324783325,
+          "mean_negative_score": -1.3610162734985352
+        },
+        {
+          "axis_id": "traffic_violation",
+          "auc": 0.9913154533844188,
+          "ap": 0.8721355524499541,
+          "ece": 0.08279503122026075,
+          "brier": 0.029304375872015953,
+          "mean_positive_score": 2.578930616378784,
+          "mean_negative_score": -2.721783399581909
+        },
+        {
+          "axis_id": "post_accident_duty",
+          "auc": 0.990971853425385,
+          "ap": 0.819047619047619,
+          "ece": 0.08090216621918522,
+          "brier": 0.02734152413904667,
+          "mean_positive_score": 2.207146406173706,
+          "mean_negative_score": -2.82352352142334
+        }
+      ]
+    },
+    {
+      "representation": "zscore_u",
+      "mean_auc": 0.9577012381207748,
+      "mean_ap": 0.8476082510899822,
+      "mean_ece": 0.36570423543065556,
+      "mean_brier": 0.1953745175932729,
+      "per_axis": [
+        {
+          "axis_id": "violence_or_threat",
+          "auc": 0.990881790881791,
+          "ap": 0.9886245314578098,
+          "ece": 0.2554744734712269,
+          "brier": 0.10227911174297333,
+          "mean_positive_score": 1.1093590259552002,
+          "mean_negative_score": -0.7208689451217651
+        },
+        {
+          "axis_id": "injury_result",
+          "auc": 0.9744598765432099,
+          "ap": 0.9474940758757566,
+          "ece": 0.3169046591400453,
+          "brier": 0.14951267838478088,
+          "mean_positive_score": 1.5196138620376587,
+          "mean_negative_score": -0.4280463755130768
+        },
+        {
+          "axis_id": "official_victim",
+          "auc": 0.9765625,
+          "ap": 0.9208504545792005,
+          "ece": 0.38028126990800537,
+          "brier": 0.19056034088134766,
+          "mean_positive_score": 2.1587142944335938,
+          "mean_negative_score": -0.2552565634250641
+        },
+        {
+          "axis_id": "duty_execution",
+          "auc": 0.982,
+          "ap": 0.9029656714651244,
+          "ece": 0.39543267342167493,
+          "brier": 0.20193694531917572,
+          "mean_positive_score": 2.418919086456299,
+          "mean_negative_score": -0.21003352105617523
+        },
+        {
+          "axis_id": "lawful_duty",
+          "auc": 0.9928322752406307,
+          "ap": 0.9526124245551488,
+          "ece": 0.4230900182645174,
+          "brier": 0.21180644631385803,
+          "mean_positive_score": 2.824073076248169,
+          "mean_negative_score": -0.18445755541324615
+        },
+        {
+          "axis_id": "property_taken",
+          "auc": 0.9691150442477876,
+          "ap": 0.9492824228018043,
+          "ece": 0.3441361068896409,
+          "brier": 0.1609869748353958,
+          "mean_positive_score": 1.7120156288146973,
+          "mean_negative_score": -0.3616390824317932
+        },
+        {
+          "axis_id": "unlawful_gain_intent",
+          "auc": 0.9665359477124184,
+          "ap": 0.9385223106255954,
+          "ece": 0.3334857350134331,
+          "brier": 0.15806734561920166,
+          "mean_positive_score": 1.6944507360458374,
+          "mean_negative_score": -0.37299323081970215
+        },
+        {
+          "axis_id": "deception",
+          "auc": 0.9724007561436673,
+          "ap": 0.9344957824237486,
+          "ece": 0.34760022071946034,
+          "brier": 0.16889581084251404,
+          "mean_positive_score": 1.755422830581665,
+          "mean_negative_score": -0.327016144990921
+        },
+        {
+          "axis_id": "entrustment_or_custody",
+          "auc": 0.9280185758513932,
+          "ap": 0.7537193868723162,
+          "ece": 0.3625781704415229,
+          "brier": 0.20866869390010834,
+          "mean_positive_score": 1.551900863647461,
+          "mean_negative_score": -0.20863938331604004
+        },
+        {
+          "axis_id": "sexual_act",
+          "auc": 0.9816849816849816,
+          "ap": 0.9367641080531486,
+          "ece": 0.34810149585963157,
+          "brier": 0.18112891912460327,
+          "mean_positive_score": 1.7613188028335571,
+          "mean_negative_score": -0.31907570362091064
+        },
+        {
+          "axis_id": "inability_to_resist",
+          "auc": 0.9791112021298383,
+          "ap": 0.820407795471316,
+          "ece": 0.4281309701070405,
+          "brier": 0.2337803989648819,
+          "mean_positive_score": 2.205921173095703,
+          "mean_negative_score": -0.14340735971927643
+        },
+        {
+          "axis_id": "joint_principal",
+          "auc": 0.7928935023455435,
+          "ap": 0.4674220690836435,
+          "ece": 0.3538338754164136,
+          "brier": 0.24161921441555023,
+          "mean_positive_score": 0.8947190642356873,
+          "mean_negative_score": -0.13420426845550537
+        },
+        {
+          "axis_id": "special_weapon_or_group",
+          "auc": 0.9285515190931897,
+          "ap": 0.776363698408664,
+          "ece": 0.3280774962184006,
+          "brier": 0.19568948447704315,
+          "mean_positive_score": 1.3091915845870972,
+          "mean_negative_score": -0.25665077567100525
+        },
+        {
+          "axis_id": "traffic_driving",
+          "auc": 0.9609485679088389,
+          "ap": 0.9423093512623613,
+          "ece": 0.2559867718702425,
+          "brier": 0.1308334320783615,
+          "mean_positive_score": 1.2694473266601562,
+          "mean_negative_score": -0.5214980244636536
+        },
+        {
+          "axis_id": "intoxication",
+          "auc": 0.9842668344870987,
+          "ap": 0.9314559687796037,
+          "ece": 0.3214845114482054,
+          "brier": 0.16182245314121246,
+          "mean_positive_score": 1.7869963645935059,
+          "mean_negative_score": -0.36264172196388245
+        },
+        {
+          "axis_id": "disposal_act",
+          "auc": 0.9418732549285049,
+          "ap": 0.8688938216699926,
+          "ece": 0.3089021430418327,
+          "brier": 0.1717904955148697,
+          "mean_positive_score": 1.4743716716766357,
+          "mean_negative_score": -0.3347412943840027
+        },
+        {
+          "axis_id": "property_loss",
+          "auc": 0.9588374985864526,
+          "ap": 0.8948516022786842,
+          "ece": 0.3669022398535162,
+          "brier": 0.1905648559331894,
+          "mean_positive_score": 1.8431003093719482,
+          "mean_negative_score": -0.25336122512817383
+        },
+        {
+          "axis_id": "theft_secret_taking",
+          "auc": 0.9081730769230769,
+          "ap": 0.7332348366771189,
+          "ece": 0.43967442541126756,
+          "brier": 0.24727337062358856,
+          "mean_positive_score": 2.1135849952697754,
+          "mean_negative_score": -0.0984121635556221
+        },
+        {
+          "axis_id": "robbery_force",
+          "auc": 0.9825367647058824,
+          "ap": 0.39880952380952384,
+          "ece": 0.48173836640257767,
+          "brier": 0.2787882387638092,
+          "mean_positive_score": 1.8280842304229736,
+          "mean_negative_score": -0.05045127868652344
+        },
+        {
+          "axis_id": "obstruction_result",
+          "auc": 0.9555339175592341,
+          "ap": 0.8840607297472228,
+          "ece": 0.34949708122935524,
+          "brier": 0.1799275428056717,
+          "mean_positive_score": 1.8740267753601074,
+          "mean_negative_score": -0.2991649806499481
+        },
+        {
+          "axis_id": "minor_victim",
+          "auc": 0.8933080808080809,
+          "ap": 0.6115070583665532,
+          "ece": 0.4460347453537195,
+          "brier": 0.24871473014354706,
+          "mean_positive_score": 2.2912862300872803,
+          "mean_negative_score": -0.10366912186145782
+        },
+        {
+          "axis_id": "camera_or_recording",
+          "auc": 0.9556864754098361,
+          "ap": 0.8387880737864405,
+          "ece": 0.37160815670411446,
+          "brier": 0.19375653564929962,
+          "mean_positive_score": 1.906303882598877,
+          "mean_negative_score": -0.275724321603775
+        },
+        {
+          "axis_id": "distribution_act",
+          "auc": 0.9697551169590644,
+          "ap": 0.847218839890483,
+          "ece": 0.3146323652371116,
+          "brier": 0.1722690910100937,
+          "mean_positive_score": 1.5802850723266602,
+          "mean_negative_score": -0.3500654697418213
+        },
+        {
+          "axis_id": "license_absence",
+          "auc": 0.9891781222579702,
+          "ap": 0.9430769230769229,
+          "ece": 0.4308968090006839,
+          "brier": 0.21737605333328247,
+          "mean_positive_score": 3.257575750350952,
+          "mean_negative_score": -0.17014853656291962
+        },
+        {
+          "axis_id": "accident_result",
+          "auc": 0.9383055507819212,
+          "ap": 0.8914282867161175,
+          "ece": 0.4094014005479065,
+          "brier": 0.20626337826251984,
+          "mean_positive_score": 2.45817494392395,
+          "mean_negative_score": -0.2143029421567917
+        },
+        {
+          "axis_id": "refusal_breath_test",
+          "auc": 0.994173949230129,
+          "ap": 0.883962488129155,
+          "ece": 0.46215975117208297,
+          "brier": 0.2509682774543762,
+          "mean_positive_score": 3.4934911727905273,
+          "mean_negative_score": -0.06400968879461288
+        },
+        {
+          "axis_id": "business_duty",
+          "auc": 0.9679367731157231,
+          "ap": 0.9167662826815536,
+          "ece": 0.2483538927213437,
+          "brier": 0.14346098899841309,
+          "mean_positive_score": 1.250902533531189,
+          "mean_negative_score": -0.4608500599861145
+        },
+        {
+          "axis_id": "bodily_contact",
+          "auc": 0.9221848110737,
+          "ap": 0.804134567532655,
+          "ece": 0.37616556068288454,
+          "brier": 0.21371512115001678,
+          "mean_positive_score": 1.57916259765625,
+          "mean_negative_score": -0.22541740536689758
+        },
+        {
+          "axis_id": "sexual_coercion",
+          "auc": 0.9915891195418755,
+          "ap": 0.9377916172663814,
+          "ece": 0.40545150644375366,
+          "brier": 0.20663930475711823,
+          "mean_positive_score": 2.6136770248413086,
+          "mean_negative_score": -0.21892157196998596
+        },
+        {
+          "axis_id": "obscene_communication",
+          "auc": 0.9724942396313364,
+          "ap": 0.8075145268666281,
+          "ece": 0.383992311531219,
+          "brier": 0.20494645833969116,
+          "mean_positive_score": 1.840873122215271,
+          "mean_negative_score": -0.25097358226776123
+        },
+        {
+          "axis_id": "child_abuse",
+          "auc": 0.9978757302177376,
+          "ap": 0.9480519480519478,
+          "ece": 0.4756736894664557,
+          "brier": 0.26286664605140686,
+          "mean_positive_score": 3.6824822425842285,
+          "mean_negative_score": -0.04678671807050705
+        },
+        {
+          "axis_id": "false_statement",
+          "auc": 0.9569352551984877,
+          "ap": 0.9335835683136801,
+          "ece": 0.2569249352791171,
+          "brier": 0.13440267741680145,
+          "mean_positive_score": 1.1032077074050903,
+          "mean_negative_score": -0.5211896300315857
+        },
+        {
+          "axis_id": "reputation_harm",
+          "auc": 0.9708952863018032,
+          "ap": 0.8877723267831308,
+          "ece": 0.3092595694343681,
+          "brier": 0.16740591824054718,
+          "mean_positive_score": 1.3708791732788086,
+          "mean_negative_score": -0.36995771527290344
+        },
+        {
+          "axis_id": "document_forgery",
+          "auc": 0.9448850436593768,
+          "ap": 0.7790046330459102,
+          "ece": 0.2850567253198528,
+          "brier": 0.17020456492900848,
+          "mean_positive_score": 1.371813416481018,
+          "mean_negative_score": -0.34908589720726013
+        },
+        {
+          "axis_id": "use_forged_document",
+          "auc": 0.9131631631631633,
+          "ap": 0.7997427188416883,
+          "ece": 0.3024016524246637,
+          "brier": 0.18465866148471832,
+          "mean_positive_score": 1.331802487373352,
+          "mean_negative_score": -0.2956545650959015
+        },
+        {
+          "axis_id": "business_obstruction",
+          "auc": 0.9828615656789031,
+          "ap": 0.9188842652578983,
+          "ece": 0.35663560200212663,
+          "brier": 0.18028585612773895,
+          "mean_positive_score": 1.9641735553741455,
+          "mean_negative_score": -0.2913689911365509
+        },
+        {
+          "axis_id": "trespass_or_entry",
+          "auc": 0.8409022856572512,
+          "ap": 0.5287691754627275,
+          "ece": 0.3419519381368182,
+          "brier": 0.22318653762340546,
+          "mean_positive_score": 1.0338530540466309,
+          "mean_negative_score": -0.19200438261032104
+        },
+        {
+          "axis_id": "negligence",
+          "auc": 1.0,
+          "ap": 1.0,
+          "ece": 0.4179452396389367,
+          "brier": 0.19660866260528564,
+          "mean_positive_score": 3.3816146850585938,
+          "mean_negative_score": -0.23323862254619598
+        },
+        {
+          "axis_id": "property_damage",
+          "auc": 0.9525048060612914,
+          "ap": 0.8039793873442618,
+          "ece": 0.36198789877412113,
+          "brier": 0.20642952620983124,
+          "mean_positive_score": 1.5150789022445679,
+          "mean_negative_score": -0.2427178919315338
+        },
+        {
+          "axis_id": "public_indecency",
+          "auc": 0.972387566137566,
+          "ap": 0.8496347386957965,
+          "ece": 0.41068640713026555,
+          "brier": 0.2198001593351364,
+          "mean_positive_score": 1.9888697862625122,
+          "mean_negative_score": -0.18310408294200897
+        },
+        {
+          "axis_id": "recidivism_or_prior_dui",
+          "auc": 0.9446251045247608,
+          "ap": 0.8812196333639475,
+          "ece": 0.33243521958913497,
+          "brier": 0.1731976568698883,
+          "mean_positive_score": 1.6816039085388184,
+          "mean_negative_score": -0.3298157751560211
+        },
+        {
+          "axis_id": "traffic_violation",
+          "auc": 0.9913154533844188,
+          "ap": 0.8721355524499541,
+          "ece": 0.429358466055946,
+          "brier": 0.21901744604110718,
+          "mean_positive_score": 2.9520981311798096,
+          "mean_negative_score": -0.15862730145454407
+        },
+        {
+          "axis_id": "post_accident_duty",
+          "auc": 0.990971853425385,
+          "ap": 0.819047619047619,
+          "ece": 0.4549555767435527,
+          "brier": 0.23899725079536438,
+          "mean_positive_score": 3.5768115520477295,
+          "mean_negative_score": -0.10259676724672318
+        }
+      ]
+    },
+    {
+      "representation": "sigmoid_q",
+      "mean_auc": 0.9577012381207748,
+      "mean_ap": 0.8476082510899822,
+      "mean_ece": 0.0720037279209666,
+      "mean_brier": 0.060446859445682795,
+      "per_axis": [
+        {
+          "axis_id": "violence_or_threat",
+          "auc": 0.990881790881791,
+          "ap": 0.9886245314578098,
+          "ece": 0.01809454096508199,
+          "brier": 0.033239029347896576,
+          "mean_positive_score": 0.9159811735153198,
+          "mean_negative_score": 0.05933622270822525
+        },
+        {
+          "axis_id": "injury_result",
+          "auc": 0.9744598765432099,
+          "ap": 0.9474940758757566,
+          "ece": 0.037233916313751884,
+          "brier": 0.045277953147888184,
+          "mean_positive_score": 0.8629606366157532,
+          "mean_negative_score": 0.0708969309926033
+        },
+        {
+          "axis_id": "official_victim",
+          "auc": 0.9765625,
+          "ap": 0.9208504545792005,
+          "ece": 0.062255401994385146,
+          "brier": 0.048492174595594406,
+          "mean_positive_score": 0.8842296600341797,
+          "mean_negative_score": 0.0856030285358429
+        },
+        {
+          "axis_id": "duty_execution",
+          "auc": 0.982,
+          "ap": 0.9029656714651244,
+          "ece": 0.05931592220440507,
+          "brier": 0.04442932456731796,
+          "mean_positive_score": 0.8960068225860596,
+          "mean_negative_score": 0.07630006968975067
+        },
+        {
+          "axis_id": "lawful_duty",
+          "auc": 0.9928322752406307,
+          "ap": 0.9526124245551488,
+          "ece": 0.045923665780034185,
+          "brier": 0.025299817323684692,
+          "mean_positive_score": 0.9313304424285889,
+          "mean_negative_score": 0.0520799495279789
+        },
+        {
+          "axis_id": "property_taken",
+          "auc": 0.9691150442477876,
+          "ap": 0.9492824228018043,
+          "ece": 0.04821512482021057,
+          "brier": 0.04246450960636139,
+          "mean_positive_score": 0.9005439281463623,
+          "mean_negative_score": 0.08088576793670654
+        },
+        {
+          "axis_id": "unlawful_gain_intent",
+          "auc": 0.9665359477124184,
+          "ap": 0.9385223106255954,
+          "ece": 0.041586734233019146,
+          "brier": 0.04081200063228607,
+          "mean_positive_score": 0.8827157020568848,
+          "mean_negative_score": 0.07759750634431839
+        },
+        {
+          "axis_id": "deception",
+          "auc": 0.9724007561436673,
+          "ap": 0.9344957824237486,
+          "ece": 0.04751707719422985,
+          "brier": 0.042633362114429474,
+          "mean_positive_score": 0.8737396597862244,
+          "mean_negative_score": 0.0797852873802185
+        },
+        {
+          "axis_id": "entrustment_or_custody",
+          "auc": 0.9280185758513932,
+          "ap": 0.7537193868723162,
+          "ece": 0.13360107347936087,
+          "brier": 0.10915272682905197,
+          "mean_positive_score": 0.7826577425003052,
+          "mean_negative_score": 0.1896340548992157
+        },
+        {
+          "axis_id": "sexual_act",
+          "auc": 0.9816849816849816,
+          "ap": 0.9367641080531486,
+          "ece": 0.09815493742665411,
+          "brier": 0.06541427969932556,
+          "mean_positive_score": 0.9327571392059326,
+          "mean_negative_score": 0.12784171104431152
+        },
+        {
+          "axis_id": "inability_to_resist",
+          "auc": 0.9791112021298383,
+          "ap": 0.820407795471316,
+          "ece": 0.07106362942579215,
+          "brier": 0.05793193355202675,
+          "mean_positive_score": 0.8855526447296143,
+          "mean_negative_score": 0.08477845042943954
+        },
+        {
+          "axis_id": "joint_principal",
+          "auc": 0.7928935023455435,
+          "ap": 0.4674220690836435,
+          "ece": 0.1664145891217218,
+          "brier": 0.16625909507274628,
+          "mean_positive_score": 0.5978244543075562,
+          "mean_negative_score": 0.2713475227355957
+        },
+        {
+          "axis_id": "special_weapon_or_group",
+          "auc": 0.9285515190931897,
+          "ap": 0.776363698408664,
+          "ece": 0.12240217957119257,
+          "brier": 0.10617364197969437,
+          "mean_positive_score": 0.7785764932632446,
+          "mean_negative_score": 0.19296903908252716
+        },
+        {
+          "axis_id": "traffic_driving",
+          "auc": 0.9609485679088389,
+          "ap": 0.9423093512623613,
+          "ece": 0.04203198565359133,
+          "brier": 0.06353925913572311,
+          "mean_positive_score": 0.8499528169631958,
+          "mean_negative_score": 0.12751233577728271
+        },
+        {
+          "axis_id": "intoxication",
+          "auc": 0.9842668344870987,
+          "ap": 0.9314559687796037,
+          "ece": 0.05905539581579143,
+          "brier": 0.0504877045750618,
+          "mean_positive_score": 0.9179189205169678,
+          "mean_negative_score": 0.08952101320028305
+        },
+        {
+          "axis_id": "disposal_act",
+          "auc": 0.9418732549285049,
+          "ap": 0.8688938216699926,
+          "ece": 0.10858589919634919,
+          "brier": 0.09091804176568985,
+          "mean_positive_score": 0.8336413502693176,
+          "mean_negative_score": 0.16386687755584717
+        },
+        {
+          "axis_id": "property_loss",
+          "auc": 0.9588374985864526,
+          "ap": 0.8948516022786842,
+          "ece": 0.0717061851443588,
+          "brier": 0.05259191244840622,
+          "mean_positive_score": 0.8864497542381287,
+          "mean_negative_score": 0.0961538702249527
+        },
+        {
+          "axis_id": "theft_secret_taking",
+          "auc": 0.9081730769230769,
+          "ap": 0.7332348366771189,
+          "ece": 0.06528638092045119,
+          "brier": 0.05894774943590164,
+          "mean_positive_score": 0.7092987298965454,
+          "mean_negative_score": 0.08704268932342529
+        },
+        {
+          "axis_id": "robbery_force",
+          "auc": 0.9825367647058824,
+          "ap": 0.39880952380952384,
+          "ece": 0.01558809941617664,
+          "brier": 0.014724226668477058,
+          "mean_positive_score": 0.17946630716323853,
+          "mean_negative_score": 0.006891483440995216
+        },
+        {
+          "axis_id": "obstruction_result",
+          "auc": 0.9555339175592341,
+          "ap": 0.8840607297472228,
+          "ece": 0.0641232448346589,
+          "brier": 0.05831361934542656,
+          "mean_positive_score": 0.8411166071891785,
+          "mean_negative_score": 0.10082054883241653
+        },
+        {
+          "axis_id": "minor_victim",
+          "auc": 0.8933080808080809,
+          "ap": 0.6115070583665532,
+          "ece": 0.04861161058458189,
+          "brier": 0.04192468896508217,
+          "mean_positive_score": 0.5656954050064087,
+          "mean_negative_score": 0.03842396289110184
+        },
+        {
+          "axis_id": "camera_or_recording",
+          "auc": 0.9556864754098361,
+          "ap": 0.8387880737864405,
+          "ece": 0.0967836790225482,
+          "brier": 0.07265570759773254,
+          "mean_positive_score": 0.8137452006340027,
+          "mean_negative_score": 0.12509018182754517
+        },
+        {
+          "axis_id": "distribution_act",
+          "auc": 0.9697551169590644,
+          "ap": 0.847218839890483,
+          "ece": 0.07713756480834624,
+          "brier": 0.0660790428519249,
+          "mean_positive_score": 0.8871468901634216,
+          "mean_negative_score": 0.11087962985038757
+        },
+        {
+          "axis_id": "license_absence",
+          "auc": 0.9891781222579702,
+          "ap": 0.9430769230769229,
+          "ece": 0.018145080196900646,
+          "brier": 0.013383444398641586,
+          "mean_positive_score": 0.9170114994049072,
+          "mean_negative_score": 0.016729556024074554
+        },
+        {
+          "axis_id": "accident_result",
+          "auc": 0.9383055507819212,
+          "ap": 0.8914282867161175,
+          "ece": 0.0726910973764092,
+          "brier": 0.04720683768391609,
+          "mean_positive_score": 0.8654336333274841,
+          "mean_negative_score": 0.09108199179172516
+        },
+        {
+          "axis_id": "refusal_breath_test",
+          "auc": 0.994173949230129,
+          "ap": 0.883962488129155,
+          "ece": 0.04537362841200893,
+          "brier": 0.02823665179312229,
+          "mean_positive_score": 0.951892614364624,
+          "mean_negative_score": 0.046524811536073685
+        },
+        {
+          "axis_id": "business_duty",
+          "auc": 0.9679367731157231,
+          "ap": 0.9167662826815536,
+          "ece": 0.07082818962795578,
+          "brier": 0.07241304218769073,
+          "mean_positive_score": 0.8528993129730225,
+          "mean_negative_score": 0.14751671254634857
+        },
+        {
+          "axis_id": "bodily_contact",
+          "auc": 0.9221848110737,
+          "ap": 0.804134567532655,
+          "ece": 0.14613027510273716,
+          "brier": 0.11414983868598938,
+          "mean_positive_score": 0.817249596118927,
+          "mean_negative_score": 0.19079309701919556
+        },
+        {
+          "axis_id": "sexual_coercion",
+          "auc": 0.9915891195418755,
+          "ap": 0.9377916172663814,
+          "ece": 0.046211602638705045,
+          "brier": 0.02751433290541172,
+          "mean_positive_score": 0.9119147658348083,
+          "mean_negative_score": 0.05512796342372894
+        },
+        {
+          "axis_id": "obscene_communication",
+          "auc": 0.9724942396313364,
+          "ap": 0.8075145268666281,
+          "ece": 0.08833196668116294,
+          "brier": 0.06524934619665146,
+          "mean_positive_score": 0.8903184533119202,
+          "mean_negative_score": 0.10554110258817673
+        },
+        {
+          "axis_id": "child_abuse",
+          "auc": 0.9978757302177376,
+          "ap": 0.9480519480519478,
+          "ece": 0.025266000974005547,
+          "brier": 0.015273201279342175,
+          "mean_positive_score": 0.9523380994796753,
+          "mean_negative_score": 0.027163753286004066
+        },
+        {
+          "axis_id": "false_statement",
+          "auc": 0.9569352551984877,
+          "ap": 0.9335835683136801,
+          "ece": 0.06321348391635262,
+          "brier": 0.06481506675481796,
+          "mean_positive_score": 0.8445755243301392,
+          "mean_negative_score": 0.12392284721136093
+        },
+        {
+          "axis_id": "reputation_harm",
+          "auc": 0.9708952863018032,
+          "ap": 0.8877723267831308,
+          "ece": 0.08730023621541004,
+          "brier": 0.07433672994375229,
+          "mean_positive_score": 0.8790100812911987,
+          "mean_negative_score": 0.1427168846130371
+        },
+        {
+          "axis_id": "document_forgery",
+          "auc": 0.9448850436593768,
+          "ap": 0.7790046330459102,
+          "ece": 0.09260670439866574,
+          "brier": 0.09195001423358917,
+          "mean_positive_score": 0.8322508335113525,
+          "mean_negative_score": 0.1603705734014511
+        },
+        {
+          "axis_id": "use_forged_document",
+          "auc": 0.9131631631631633,
+          "ap": 0.7997427188416883,
+          "ece": 0.12022912390935032,
+          "brier": 0.10696474462747574,
+          "mean_positive_score": 0.7577909827232361,
+          "mean_negative_score": 0.2083897590637207
+        },
+        {
+          "axis_id": "business_obstruction",
+          "auc": 0.9828615656789031,
+          "ap": 0.9188842652578983,
+          "ece": 0.0680253024118534,
+          "brier": 0.05261868238449097,
+          "mean_positive_score": 0.8797821402549744,
+          "mean_negative_score": 0.09658855944871902
+        },
+        {
+          "axis_id": "trespass_or_entry",
+          "auc": 0.8409022856572512,
+          "ap": 0.5287691754627275,
+          "ece": 0.19036616097487835,
+          "brier": 0.16285943984985352,
+          "mean_positive_score": 0.6677901744842529,
+          "mean_negative_score": 0.28680720925331116
+        },
+        {
+          "axis_id": "negligence",
+          "auc": 1.0,
+          "ap": 1.0,
+          "ece": 0.015227647940290795,
+          "brier": 0.0035321759060025215,
+          "mean_positive_score": 0.9999976754188538,
+          "mean_negative_score": 0.016289878636598587
+        },
+        {
+          "axis_id": "property_damage",
+          "auc": 0.9525048060612914,
+          "ap": 0.8039793873442618,
+          "ece": 0.06636544918992382,
+          "brier": 0.0647193118929863,
+          "mean_positive_score": 0.7587647438049316,
+          "mean_negative_score": 0.11398562788963318
+        },
+        {
+          "axis_id": "public_indecency",
+          "auc": 0.972387566137566,
+          "ap": 0.8496347386957965,
+          "ece": 0.08552844048329239,
+          "brier": 0.06603077799081802,
+          "mean_positive_score": 0.8881353735923767,
+          "mean_negative_score": 0.10432778298854828
+        },
+        {
+          "axis_id": "recidivism_or_prior_dui",
+          "auc": 0.9446251045247608,
+          "ap": 0.8812196333639475,
+          "ece": 0.11832614844340991,
+          "brier": 0.07862494885921478,
+          "mean_positive_score": 0.8401439189910889,
+          "mean_negative_score": 0.17542032897472382
+        },
+        {
+          "axis_id": "traffic_violation",
+          "auc": 0.9913154533844188,
+          "ap": 0.8721355524499541,
+          "ece": 0.04417898474882046,
+          "brier": 0.025490084663033485,
+          "mean_positive_score": 0.8943933248519897,
+          "mean_negative_score": 0.052787356078624725
+        },
+        {
+          "axis_id": "post_accident_duty",
+          "auc": 0.990971853425385,
+          "ap": 0.819047619047619,
+          "ece": 0.031125939032737762,
+          "brier": 0.026084482669830322,
+          "mean_positive_score": 0.8597807884216309,
+          "mean_negative_score": 0.03558473289012909
+        }
+      ]
+    }
+  ],
+  "downstream_coordinate_only": {
+    "raw_u": {
+      "additive": {
+        "threshold": -0.14009761479999927,
+        "valid": {
+          "micro_f1": 0.13730355665839536,
+          "macro_f1": 0.27450308697713655,
+          "exact_match": 0.0,
+          "precision_micro": 0.07413361914969632,
+          "recall_micro": 0.9284116331096197
+        },
+        "test": {
+          "micro_f1": 0.13825037208533156,
+          "macro_f1": 0.3016547188204919,
+          "exact_match": 0.0,
+          "precision_micro": 0.07469621157969979,
+          "recall_micro": 0.926829268292683
+        }
+      },
+      "pairwise": {
+        "threshold": -4.041005267130459,
+        "valid": {
+          "micro_f1": 0.13631100082712985,
+          "macro_f1": 0.2797591835750658,
+          "exact_match": 0.0,
+          "precision_micro": 0.0735977134690961,
+          "recall_micro": 0.9217002237136466
+        },
+        "test": {
+          "micro_f1": 0.1355764473033152,
+          "macro_f1": 0.28959818891884015,
+          "exact_match": 0.0,
+          "precision_micro": 0.07323592302209551,
+          "recall_micro": 0.9113082039911308
+        }
+      }
+    },
+    "zscore_u": {
+      "additive": {
+        "threshold": 0.0,
+        "valid": {
+          "micro_f1": 0.13720663055965862,
+          "macro_f1": 0.2724445566315772,
+          "exact_match": 0.0,
+          "precision_micro": 0.07403471484236628,
+          "recall_micro": 0.9351230425055929
+        },
+        "test": {
+          "micro_f1": 0.13755745239658568,
+          "macro_f1": 0.2885125319034246,
+          "exact_match": 0.0,
+          "precision_micro": 0.07427761035277433,
+          "recall_micro": 0.9290465631929047
+        }
+      },
+      "pairwise": {
+        "threshold": -2.0019303449504577,
+        "valid": {
+          "micro_f1": 0.13928866832092637,
+          "macro_f1": 0.2735256845156289,
+          "exact_match": 0.0,
+          "precision_micro": 0.07520543051089675,
+          "recall_micro": 0.941834451901566
+        },
+        "test": {
+          "micro_f1": 0.13611525086934922,
+          "macro_f1": 0.2918429161345965,
+          "exact_match": 0.0,
+          "precision_micro": 0.07355046528274875,
+          "recall_micro": 0.9113082039911308
+        }
+      }
+    },
+    "sigmoid_q": {
+      "additive": {
+        "threshold": 0.8187189103864797,
+        "valid": {
+          "micro_f1": 0.5971014492753624,
+          "macro_f1": 0.25636883969476504,
+          "exact_match": 0.2536231884057971,
+          "precision_micro": 0.4415862808145766,
+          "recall_micro": 0.9217002237136466
+        },
+        "test": {
+          "micro_f1": 0.5829072315558802,
+          "macro_f1": 0.26100872982522416,
+          "exact_match": 0.25,
+          "precision_micro": 0.434640522875817,
+          "recall_micro": 0.88470066518847
+        }
+      },
+      "pairwise": {
+        "threshold": 0.0,
+        "valid": {
+          "micro_f1": 0.13549007046764894,
+          "macro_f1": 0.26104108867115744,
+          "exact_match": 0.0,
+          "precision_micro": 0.07296877695359669,
+          "recall_micro": 0.9463087248322147
+        },
+        "test": {
+          "micro_f1": 0.13316261203585147,
+          "macro_f1": 0.26854066348121036,
+          "exact_match": 0.0,
+          "precision_micro": 0.07176125582197689,
+          "recall_micro": 0.9223946784922394
+        }
+      }
+    }
+  }
+}

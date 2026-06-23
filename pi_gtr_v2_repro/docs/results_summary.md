@@ -2,6 +2,26 @@
 
 This summary records the representative metrics already produced in the repository. Use `results/expected_metrics.json` as the machine-readable comparison target.
 
+## Claim-Level Summary
+
+- Axis validity: primitive legal axes are defined in `cail_gtr_axis_schema.py` and supported by `output/supporting_claims/proposal_axis_validity_report.json`.
+- Coordinate calibration: calibrated coordinates are documented in `output/supporting_claims/coordinate_calibration_report.json` and `output/supporting_claims/primitive_seeded_calibration_report.json`.
+- Hybrid superiority: `full_hybrid` improves over `raw_head_on_z` in `output/supporting_claims/hybrid_gtr_v2_ablation_report.json`.
+- Interaction necessity: statute-specific field/residual variants are compared in the same ablation report.
+- Suppression: false-positive removal is summarized in `output/supporting_claims/hybrid_gtr_v2_mechanism_report.json`.
+- Hard-negative margin: confuser-pair margins are summarized in `output/supporting_claims/hard_negative_margin_report.json`.
+- LLM routing: saved GPT-5.4 routing metrics are under `output/cail2018_gtr_v2_only/full/gpt54_gtr_v2_rerank_276/`.
+
+## LLM Routing Conditions
+
+| Condition | Role |
+| --- | --- |
+| `full_fact + LLM` | LLM-only baseline |
+| `raw_topk + LLM` | retrieval baseline |
+| `gtr_topk + LLM` | direct GTR router ablation |
+| `raw_pool_gtr_rerank + LLM` | best router |
+| `raw_pool_gtr_rerank_score_prompt + LLM` | strongest setting |
+
 ## GTR Checkpoint
 
 Source:

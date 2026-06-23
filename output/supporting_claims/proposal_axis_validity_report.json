@@ -1,0 +1,151 @@
+{
+  "meta": {
+    "experiment": "proposal_8_1_axis_validity",
+    "model_name": "BAAI/bge-m3",
+    "axes": [
+      {
+        "axis_id": "injury",
+        "korean_name": "상해성",
+        "positive_definition": "상해 사건",
+        "negative_definition": "단순 폭행 사건",
+        "prompt": "상해성: 피해자에게 치료가 필요한 신체 상해, 전치 진단, 골절, 타박상, 찰과상 등 생리적 기능 훼손이 발생했는가",
+        "positive_statutes": [
+          "형법 제257조"
+        ],
+        "positive_keywords": [
+          "상해",
+          "치료",
+          "진단",
+          "골절",
+          "찰과상",
+          "타박상",
+          "염좌",
+          "전치",
+          "상처"
+        ],
+        "negative_statutes": [
+          "형법 제260조"
+        ],
+        "negative_keywords": [
+          "폭행",
+          "밀치",
+          "때리",
+          "주먹",
+          "발로"
+        ],
+        "negative_if_not_positive": false
+      },
+      {
+        "axis_id": "official_victim",
+        "korean_name": "공무원성",
+        "positive_definition": "공무원 피해/대상 사건",
+        "negative_definition": "일반인 피해 사건",
+        "prompt": "공무원성: 피해자 또는 상대방이 경찰관, 공무원, 소방관, 단속 공무원 등 공무수행자인가",
+        "positive_statutes": [
+          "형법 제136조"
+        ],
+        "positive_keywords": [
+          "경찰관",
+          "공무원",
+          "소방관",
+          "단속",
+          "공무수행",
+          "공무집행",
+          "출동"
+        ],
+        "negative_statutes": [
+          "형법 제260조",
+          "형법 제257조"
+        ],
+        "negative_keywords": [
+          "피해자",
+          "일반인",
+          "폭행",
+          "상해"
+        ],
+        "negative_if_not_positive": false
+      },
+      {
+        "axis_id": "dangerous_object",
+        "korean_name": "위험한 물건성",
+        "positive_definition": "흉기/위험물 사건",
+        "negative_definition": "맨손 폭행/협박 사건",
+        "prompt": "위험한 물건성: 칼, 흉기, 위험한 물건, 병, 망치, 차량 등 사람에게 위해를 가할 수 있는 물건이 사용되었는가",
+        "positive_statutes": [
+          "형법 제261조",
+          "형법 제284조"
+        ],
+        "positive_keywords": [
+          "흉기",
+          "위험한 물건",
+          "칼",
+          "망치",
+          "병",
+          "각목",
+          "차량",
+          "특수"
+        ],
+        "negative_statutes": [
+          "형법 제260조",
+          "형법 제283조"
+        ],
+        "negative_keywords": [
+          "폭행",
+          "협박",
+          "주먹",
+          "손바닥",
+          "발로",
+          "밀치"
+        ],
+        "negative_if_not_positive": false
+      },
+      {
+        "axis_id": "property_damage",
+        "korean_name": "재물손괴성",
+        "positive_definition": "물건 파손/훼손 사건",
+        "negative_definition": "재물손괴와 무관한 사건",
+        "prompt": "재물손괴성: 타인의 물건, 차량, 휴대전화, 문, 유리 등 재물의 효용을 해치거나 파손, 손괴, 훼손했는가",
+        "positive_statutes": [
+          "형법 제366조"
+        ],
+        "positive_keywords": [
+          "재물손괴",
+          "손괴",
+          "파손",
+          "훼손",
+          "부수",
+          "깨뜨",
+          "망가뜨",
+          "효용",
+          "유리창",
+          "차량을 긁"
+        ],
+        "negative_statutes": [],
+        "negative_keywords": [],
+        "negative_if_not_positive": true
+      }
+    ]
+  },
+  "summary": [
+    {
+      "score_family": "prompt_axis_platt",
+      "mean_auc": 0.7187724345361982,
+      "mean_gap": 0.05927622318267822,
+      "mean_cohen_d": 0.8730280198817642,
+      "mean_ece": 0.27576863373547106,
+      "mean_brier": 0.22779954969882965
+    },
+    {
+      "score_family": "supervised_axis_probe",
+      "mean_auc": 0.9651865020494056,
+      "mean_gap": 0.5481531098484993,
+      "mean_cohen_d": 3.108257571255665,
+      "mean_ece": 0.14534389599895853,
+      "mean_brier": 0.08361544646322727
+    }
+  ],
+  "label_counts_csv": "/home/sbyoon/patrol-law-llm/output/proposal_axis_validity/proposal_axis_label_counts.csv",
+  "axis_validity_csv": "/home/sbyoon/patrol-law-llm/output/proposal_axis_validity/proposal_axis_validity.csv",
+  "calibration_curve_csv": "/home/sbyoon/patrol-law-llm/output/proposal_axis_validity/proposal_axis_calibration_curve.csv",
+  "counterfactual_sensitivity_csv": "/home/sbyoon/patrol-law-llm/output/proposal_axis_validity/proposal_axis_counterfactual_sensitivity.csv"
+}
