@@ -2,6 +2,24 @@
 
 Run commands from the repository root.
 
+## Paper Artifact Reproduction
+
+These are the primary paper-facing commands:
+
+```bash
+python scripts/01_build_axis_bank.py --config configs/data/lbox.yaml
+python scripts/run_all_main_experiments.py --config configs/exp/main_table.yaml
+python scripts/make_paper_tables.py --input outputs/metrics
+```
+
+Outputs:
+
+- `outputs/metrics/axis_bank_summary.json`
+- `outputs/metrics/main_table.json`
+- `outputs/metrics/paper_tables.md`
+
+Each generated metrics JSON stores the git commit, dirty status, config path, config hash, seed, and timestamp under `provenance`.
+
 ## Environment Check
 
 ```bash

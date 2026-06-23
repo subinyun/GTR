@@ -27,6 +27,20 @@ Qwen LoRA:
 - `run_qwen_completion_eval.py`: runs Qwen adapter predictions.
 - `evaluate_qwen_completion_results.py`: evaluates Qwen outputs.
 
+## Paper-Facing Structure
+
+- `configs/data/lbox.yaml`: included LBOX split paths.
+- `configs/model/raw.yaml`: raw-only baseline model config.
+- `configs/model/gtr_v2_hybrid.yaml`: Hybrid GTR model config.
+- `configs/exp/main_table.yaml`: main result table inputs and outputs.
+- `configs/exp/ablation.yaml`: ablation, suppression, and hard-negative inputs.
+- `configs/exp/threshold_vs_gtr.yaml`: threshold-vs-GTR comparison.
+- `configs/exp/llm_routing.yaml`: LLM routing condition map.
+- `src/gtr/`: small stable interfaces for models, coordinates, metrics, and routing condition names.
+- `scripts/`: paper table/claim wrappers.
+- `experiments/`: named experiment buckets matching paper sections.
+- `outputs/`: normalized metrics, predictions, figures, logs, and copied configs.
+
 ## Reproduction Helpers
 
 - `repro/scripts/`: wrapper scripts for environment checks, prompt generation, GPT reruns, Qwen LoRA, and saved-result metric recomputation.
@@ -63,4 +77,21 @@ Paper-claim support:
 - `output/supporting_claims/hybrid_gtr_v2_ablation_report.json`
 - `output/supporting_claims/hybrid_gtr_v2_mechanism_report.json`
 - `output/supporting_claims/hard_negative_margin_report.json`
+- `output/supporting_claims/threshold_vs_gtr_report.json`
+
+## Output Policy
+
+Commit small paper artifacts:
+
+- `outputs/metrics/*.json`
+- `outputs/metrics/paper_tables.md`
+
+Do not commit generated large or sensitive artifacts:
+
+- `outputs/checkpoints/`
+- `outputs/predictions/*.jsonl`
+- `outputs/logs/`
+- full CAIL raw data
+- embeddings and caches
+- API outputs that may contain sensitive text
 

@@ -1,0 +1,8 @@
+name: threshold_vs_gtr
+description: Tests whether GTR improves over raw threshold tuning.
+table: Table 3 Threshold vs GTR
+script: scripts/06_threshold_vs_gtr.py
+inputs:
+  report: output/supporting_claims/threshold_vs_gtr_report.json
+outputs:
+  metrics: outputs/metrics/threshold_vs_gtr.json

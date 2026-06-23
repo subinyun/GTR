@@ -1,0 +1,8 @@
+name: raw_only
+class_name: RawModel
+description: Raw embedding classifier baseline.
+inputs:
+  - z
+outputs:
+  - statute_scores
+paper_role: raw-only baseline for hybrid-superiority and suppression comparisons

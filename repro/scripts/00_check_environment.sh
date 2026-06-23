@@ -63,7 +63,7 @@ require_file "output/cail2018_gtr_v2_only/full/hybrid_gtr_v2_report.json"
 if [[ -s "output/cail2018_gtr_v2_only/full/hybrid_gtr_v2_best.pt" ]]; then
   echo "OK   output/cail2018_gtr_v2_only/full/hybrid_gtr_v2_best.pt"
 else
-  echo "WARN missing checkpoint; run scripts/01_train_cail_gtr.sh to rebuild it"
+  echo "WARN missing checkpoint; run repro/scripts/01_train_cail_gtr.sh to rebuild it"
 fi
 
 echo

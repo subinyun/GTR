@@ -1,0 +1,18 @@
+name: ablation
+description: Ablations for hybrid superiority, interaction necessity, suppression, and hard-negative behavior.
+tables:
+  - Table 2 Ablation
+  - Figure 3 Hard-Negative Margin
+scripts:
+  ablation: scripts/05_ablation.py
+  threshold_vs_gtr: scripts/06_threshold_vs_gtr.py
+  suppression: scripts/07_suppression_analysis.py
+  hard_negative: scripts/08_hard_negative_margin.py
+inputs:
+  ablation_report: output/supporting_claims/hybrid_gtr_v2_ablation_report.json
+  mechanism_report: output/supporting_claims/hybrid_gtr_v2_mechanism_report.json
+  hard_negative_report: output/supporting_claims/hard_negative_margin_report.json
+outputs:
+  ablation_metrics: outputs/metrics/ablation.json
+  suppression_metrics: outputs/metrics/suppression.json
+  hard_negative_metrics: outputs/metrics/hard_negative.json

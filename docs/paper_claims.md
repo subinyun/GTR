@@ -62,12 +62,24 @@ Claim: GTR selectively removes false positives.
 Evidence:
 
 - `output/supporting_claims/hybrid_gtr_v2_mechanism_report.json`
+- `scripts/07_suppression_analysis.py`
 
 Key supporting numbers:
 
 - `raw_plus_field_no_residual_vs_raw` removed `145` predictions.
 - `122` of those removed predictions were false positives.
 - Suppression precision: `0.8414`.
+
+## Threshold vs GTR
+
+Claim: GTR improves legal over-application beyond raw threshold tuning.
+
+Evidence:
+
+- `output/supporting_claims/threshold_vs_gtr_report.json`
+- `scripts/06_threshold_vs_gtr.py`
+
+Interpretation: raw threshold tuning is an important baseline, but GTR is evaluated as a structured legal routing mechanism rather than a pure threshold adjustment.
 
 ## 6. Hard-Negative Margin
 
@@ -76,6 +88,7 @@ Claim: GTR improves margins for confusing statute pairs.
 Evidence:
 
 - `output/supporting_claims/hard_negative_margin_report.json`
+- `scripts/08_hard_negative_margin.py`
 
 Aggregate signal:
 
@@ -95,6 +108,7 @@ Evidence:
 - `evaluate_llm_candidate_routing_results.py`
 - `output/cail2018_gtr_v2_only/full/llm_prompts/`
 - `output/cail2018_gtr_v2_only/full/gpt54_gtr_v2_rerank_276/metrics_gpt54_rerank_276.json`
+- `scripts/09_llm_routing_export.py`
 
 Condition roles:
 

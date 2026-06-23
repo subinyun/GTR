@@ -1,0 +1,14 @@
+name: hybrid_gtr
+class_name: HybridGTRModel
+description: Hybrid GTR model with raw scores, calibrated coordinates, residual correction, and statute-specific decision field.
+components:
+  raw: w^T z
+  coordinates: q
+  residual: z_prime = z + B h(q)
+  decision_field: F_g(q)
+  hybrid_score: w^T z_prime + F_g(q)
+paper_role:
+  - hybrid superiority
+  - interaction necessity
+  - selective suppression
+  - hard-negative margin

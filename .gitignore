@@ -19,6 +19,14 @@ output/**/*.npy
 output/**/*.safetensors
 output/**/*.bin
 output/**/*.zip
+outputs/checkpoints/*
+outputs/predictions/*
+outputs/logs/*
+outputs/configs/*
+!outputs/checkpoints/.gitkeep
+!outputs/predictions/.gitkeep
+!outputs/logs/.gitkeep
+!outputs/configs/.gitkeep
 
 # Keep the small released checkpoint and selected result artifacts.
 !output/cail2018_gtr_v2_only/full/hybrid_gtr_v2_best.pt

@@ -1,39 +1,62 @@
 # GTR
 
-This repository is a compact review and reproducibility package for the GTR experiments. It is organized around the paper story, not around experiment timestamps.
+This repository is organized as a paper-facing reproducibility package. The code is arranged by paper claim/table, so a reviewer can see which script produces which result.
 
-## What This Repository Shows
+## Reproduce Paper Artifacts
 
-GTR is a legally structured routing layer. The main claim is that legal-coordinate structure improves statute prediction and also gives LLMs cleaner candidate statutes.
+```bash
+python scripts/01_build_axis_bank.py --config configs/data/lbox.yaml
+python scripts/run_all_main_experiments.py --config configs/exp/main_table.yaml
+python scripts/make_paper_tables.py --input outputs/metrics
+```
 
-The evidence is organized into seven claims:
+The commands above write normalized outputs under:
 
-| Claim | Short version | Main evidence |
+- `outputs/metrics/`
+- `outputs/predictions/`
+- `outputs/logs/`
+- `outputs/configs/`
+
+## Paper Claim Map
+
+| Claim | Paper role | Script/artifact |
 | --- | --- | --- |
-| 1. Axis validity | axes measure primitive legal concepts | `cail_gtr_axis_schema.py`, `output/supporting_claims/proposal_axis_validity_report.json` |
-| 2. Coordinate calibration | calibrated coordinates are more stable than raw projections | `output/supporting_claims/coordinate_calibration_report.json` |
-| 3. Hybrid superiority | Hybrid GTR improves over raw-only | `output/supporting_claims/hybrid_gtr_v2_ablation_report.json` |
-| 4. Interaction necessity | statute-specific decision fields help beyond additive features | `train_hybrid_gtr_v2.py`, ablation report |
-| 5. Suppression | GTR selectively removes false positives | `output/supporting_claims/hybrid_gtr_v2_mechanism_report.json` |
-| 6. Hard-negative margin | confusing statute pairs get better separated | `output/supporting_claims/hard_negative_margin_report.json` |
-| 7. LLM routing | GTR candidate filtering improves LLM decisions | `output/cail2018_gtr_v2_only/full/gpt54_gtr_v2_rerank_276/` |
+| Axis validity | Figure 2 / method validation | `scripts/01_build_axis_bank.py`, `output/supporting_claims/proposal_axis_validity_report.json` |
+| Coordinate calibration | coordinate sanity | `output/supporting_claims/coordinate_calibration_report.json` |
+| Hybrid superiority | Table 1 main results | `scripts/run_all_main_experiments.py` |
+| Interaction necessity | Table 2 ablation | `scripts/05_ablation.py` |
+| Threshold vs GTR | Table 3 threshold comparison | `scripts/06_threshold_vs_gtr.py` |
+| Suppression | mechanism analysis | `scripts/07_suppression_analysis.py` |
+| Hard-negative margin | Figure 3 hard negatives | `scripts/08_hard_negative_margin.py` |
+| LLM routing | Table 4 LLM routing | `scripts/09_llm_routing_export.py` |
 
-## Where To Read
+See `docs/paper_claims.md` for the detailed claim-by-claim evidence map.
 
-- `docs/paper_claims.md`: the seven claims and evidence map.
-- `docs/reproduce.md`: how to rerun the saved-result check, GPT decoding, CAIL path, and Qwen LoRA path.
-- `docs/files.md`: what each important folder/file is for.
+## Paper Table Outputs
 
-## Key LLM Result
+| Paper item | Output file |
+| --- | --- |
+| Table 1 Main results | `outputs/metrics/main_table.json` |
+| Table 2 Ablation | `outputs/metrics/ablation.json` |
+| Table 3 Threshold vs GTR | `outputs/metrics/threshold_vs_gtr.json` |
+| Table 4 LLM routing | `outputs/metrics/llm_routing.json` |
+| Figure 3 Hard-negative margin | `outputs/metrics/hard_negative.json` |
+| Rendered compact tables | `outputs/metrics/paper_tables.md` |
 
-Saved GPT-5.4 result on the 276-case CAIL sample:
+Every generated metrics JSON includes provenance:
 
-| Condition | Role | Exact match | Micro-F1 |
-| --- | --- | ---: | ---: |
-| `raw_pool_gtr_rerank + LLM` | best router | `0.7428` | `0.7987` |
-| `raw_pool_gtr_rerank_score_prompt + LLM` | strongest setting | `0.7609` | `0.8039` |
+```json
+{
+  "git_commit": "...",
+  "git_dirty": true,
+  "config_path": "configs/exp/main_table.yaml",
+  "config_hash": "...",
+  "seed": 42,
+  "timestamp": "..."
+}
+```
 
-The full prompt design also includes:
+## LLM Routing Conditions
 
 | Condition | Role |
 | --- | --- |
@@ -43,13 +66,45 @@ The full prompt design also includes:
 | `raw_pool_gtr_rerank + LLM` | best router |
 | `raw_pool_gtr_rerank_score_prompt + LLM` | strongest setting |
 
-## Quick Check
+Saved GPT-5.4 result on the 276-case CAIL sample:
 
-Run the no-API evaluator check:
+| Condition | Exact match | Micro-F1 |
+| --- | ---: | ---: |
+| `raw_pool_gtr_rerank` | `0.7428` | `0.7987` |
+| `raw_pool_gtr_rerank_score_prompt` | `0.7609` | `0.8039` |
 
-```bash
-bash repro/scripts/08_recompute_saved_gpt_metrics.sh
+## Repository Layout
+
+```text
+configs/      YAML configs for data, model variants, and paper experiments
+src/gtr/      paper-facing GTR interfaces and helper utilities
+scripts/      paper table/claim wrappers
+repro/        low-level reproduction scripts and expected metrics
+experiments/  named experiment buckets
+outputs/      normalized metrics, predictions, figures, logs, configs
+docs/         claim map, reproduction guide, and file map
 ```
 
 The repository includes the full `LBOX/statute_classification/` splits. For CAIL2018, it includes a small label-vocabulary placeholder for evaluator-only reproduction; the full CAIL2018 split files are excluded because the train file is too large for a normal GitHub push.
+
+## Output Policy
+
+Committed:
+
+- `configs/`
+- `src/`
+- `scripts/`
+- `tests/`
+- `docs/`
+- small `outputs/metrics/*.json`
+- `outputs/metrics/paper_tables.md`
+
+Ignored or kept out of Git:
+
+- raw full CAIL data
+- checkpoints and adapters except the small released GTR checkpoint
+- embeddings and caches
+- large predictions
+- logs
+- API outputs that may contain sensitive text
 

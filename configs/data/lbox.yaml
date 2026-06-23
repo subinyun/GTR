@@ -1,0 +1,13 @@
+name: lbox_statute_classification
+description: LBOX statute-classification splits included in this repository.
+splits:
+  train: LBOX/statute_classification/train.jsonl
+  valid: LBOX/statute_classification/valid.jsonl
+  test: LBOX/statute_classification/test.jsonl
+  test2: LBOX/statute_classification/test2.jsonl
+  plus_train: LBOX/statute_classification/plus_train.jsonl
+  plus_valid: LBOX/statute_classification/plus_valid.jsonl
+  plus_test: LBOX/statute_classification/plus_test.jsonl
+notes:
+  - CAIL2018 full splits are not included because the full train split exceeds normal GitHub file limits.
+  - final_all_data/cail2018_statute_classification/train.jsonl is a label-vocabulary placeholder for evaluator-only reproduction.
